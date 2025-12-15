@@ -1,0 +1,92 @@
+baseURL = "https://chlzhong.org/"
+title = "Chlzhong"
+author = "Steve Francia"
+copyright = "© 2024-2025, tuffy.so"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+[pagination]
+  pagerSize = 3
+
+# ------------------------------
+theme = "hugo-paper"
+
+[params]
+  color = 'linen'
+  github = 'Liam-Zhong'
+  mastodon = 'https://mastodon.social/@tuffy1883'
+  rss = true 
+  monoDarkIcon = true
+  favicon = "favicon.ico" 
+
+avatar = 'https://pic3.zhimg.com/80/v2-5598b103af19fca6dfc20d8183853c48_1440w.jpg'
+  name = 'Tuffy'
+  bio = '骋我径寸翰，流藻垂华芬'
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+#  [markup.highlight]
+#    lineNos = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.x]
+    disableInlineCSS = true
+
+ignoreFiles = [
+  "desktop\\.ini",
+  "Thumbs\\.db",
+  "\\.DS_Store"
+]
