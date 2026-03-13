@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+<title>Little Prince for ♥️</title>
+<description>Reading for you, dear dollya</description>
+<author>Tuffy</author>
+<image>
+  <url>https://chlzhong.org/audio/avatar.jpeg</url>
+</image>
+
+<item>
+<title>Chapters 1–7</title>
+<enclosure url="https://chlzhong.org/audio/little_prince_1.m4a" type="audio/mp4"/>
+</item>
+
+<item>
+<title>Chapters 8–15</title>
+<enclosure url="https://chlzhong.org/audio/little_prince_2.m4a" type="audio/mp4"/>
+</item>
+
+</channel>
+</rss>

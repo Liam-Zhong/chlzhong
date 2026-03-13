@@ -1,7 +1,7 @@
 baseURL = "https://chlzhong.org/"
 title = "Chlzhong"
 author = "Steve Francia"
-copyright = "© 2024-2025, tuffy.so"
+copyright = "© 2024-2026, tuffy.so"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
