@@ -6,7 +6,7 @@ math = true
 comments = true
 toc = false
 title = '春夜吻'
-
+password = '090406wly'
 +++
 
 是雨后，是色静深山的春夜。
