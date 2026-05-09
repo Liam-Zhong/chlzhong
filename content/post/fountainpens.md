@@ -5,7 +5,6 @@ date = 2024-09-10T21:15:28+08:00
 math = true 
 draft = false
 comments = true
-weight = 10
 description = "{钢笔推荐，五大，龙鸟派犀水}"
 
 +++
