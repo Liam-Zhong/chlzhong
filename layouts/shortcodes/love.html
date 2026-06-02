@@ -127,7 +127,7 @@
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     opacity: 0; transition: opacity 2s ease; z-index: 1;
 }
-.timer-text { font-size: clamp(16px, 3vw, 20px); color: #ffb3c6; margin-top: 15px; font-weight: 300; }
+.timer-text { font-size: clamp(16px, 3vw, 20px); color: #ffb3c6; margin-top: 10px; font-weight: 300; }
 .timer-text b { font-size: clamp(20px, 4vw, 24px); color: #fff; text-shadow: 0 0 8px #ff4d88; }
 </style>
 
@@ -188,54 +188,46 @@ function initHeart() {
     const scale = window.innerWidth < 768 ? 9 : 14; 
     const isMobile = window.innerWidth < 768;
     
-    // 性能火力全开，分四层构建 3D 视觉
-    
-    // 【层级 1：深色肉体核心】 负责填充心脏内部，用较暗的红色制造“厚度”和“景深”
     let count1 = isMobile ? 12000 : 20000;
     for (let i = 0; i < count1; i++) {
         let t = Math.random() * Math.PI * 2;
         let p = getHeartPoint(t, scale);
-        // 让粒子偏向内侧坍缩
         let ratio = Math.pow(Math.random(), 0.6); 
         particles.push({ 
             ox: p.x * ratio, oy: p.y * ratio, 
             size: Math.random() * 1.5 + 0.5, 
-            color: '#aa0022', // 暗深红
-            force: 0.5 + ratio * 0.4 // 内部粒子受力小，跳动幅度弱
+            color: '#aa0022', 
+            force: 0.5 + ratio * 0.4 
         });
     }
 
-    // 【层级 2：经典极客轮廓】 负责完美复刻截图里的密集亮红沙粒，堆积在边缘
     let count2 = isMobile ? 15000 : 30000;
     for (let i = 0; i < count2; i++) {
         let t = Math.random() * Math.PI * 2;
         let p = getHeartPoint(t, scale);
-        // 原汁原味的对数散列，模拟毛糙的沙粒感
         let rx = -0.06 * Math.log(Math.random());
         let ry = -0.06 * Math.log(Math.random());
         particles.push({ 
             ox: p.x * (1 - rx), oy: p.y * (1 - ry), 
             size: Math.random() * 2 + 0.5, 
-            color: '#ff2d55', // 刺目的亮红
-            force: 1.0 // 标准受力
+            color: '#ff2d55', 
+            force: 1.0 
         });
     }
 
-    // 【层级 3：3D 凸起高光】 随机分布在中部和边缘之间，用粉色欺骗眼睛产生凸面反光错觉
     let count3 = isMobile ? 5000 : 10000;
     for (let i = 0; i < count3; i++) {
         let t = Math.random() * Math.PI * 2;
         let p = getHeartPoint(t, scale);
-        let ratio = Math.random() * 0.7 + 0.3; // 避开正中心
+        let ratio = Math.random() * 0.7 + 0.3; 
         particles.push({ 
             ox: p.x * ratio, oy: p.y * ratio, 
             size: Math.random() * 1.8 + 0.5, 
-            color: '#ff7aa2', // 粉亮色
+            color: '#ff7aa2', 
             force: 0.8 + ratio * 0.3
         });
     }
 
-    // 【层级 4：外围散落星斑】 悬浮在心脏外部，灵动飘逸
     let count4 = isMobile ? 3000 : 6000;
     for (let i = 0; i < count4; i++) {
         let t = Math.random() * Math.PI * 2;
@@ -248,7 +240,7 @@ function initHeart() {
             ox: p.x * (1 + rx * dx), oy: p.y * (1 + ry * dy), 
             size: Math.random() * 1.2 + 0.3, 
             color: '#ff4d88', 
-            force: 1.2 + Math.random() * 0.3 // 外围粒子受力极大，有一种被甩出去的张力
+            force: 1.2 + Math.random() * 0.3 
         });
     }
 }
@@ -256,29 +248,22 @@ function initHeart() {
 function drawHeart() {
     const dpr = window.devicePixelRatio || 1;
     
-    // 黑底清屏，保留极短的残影让边缘有微弱的动态模糊感
     ctx.fillStyle = 'rgba(0, 0, 0, 0.85)';
     ctx.fillRect(0, 0, canvas.width / dpr, canvas.height / dpr);
     
     ctx.save();
-    ctx.translate(window.innerWidth / 2, window.innerHeight / 2 - 30); 
+    // 🌟 将爱心整体向下偏移 40px，为顶部文字腾出空间
+    ctx.translate(window.innerWidth / 2, window.innerHeight / 2 + 40); 
     
-    // 🌟 一分钟 60 下的心跳引擎 (精确到 1Hz / 1000ms)
     let t = (Date.now() % 1000) / 1000; 
-    
-    // 使用快速起跳、顺滑回落的物理函数，模拟真实心肌收缩
     let curve = Math.sin(t * Math.PI) * Math.exp(-t * 2.5); 
 
     particles.forEach(p => {
-        // 🌟 3D 鼓胀算法：利用 force 参数，让外层粒子膨胀得多，内层膨胀得少，形成立体视觉差
         let beatScale = 1 + 0.12 * curve * p.force; 
-        
-        // 赋予每个粒子极微小的原地随机生命力抖动
         let curX = p.ox * beatScale + (Math.random() - 0.5) * 1.5;
         let curY = p.oy * beatScale + (Math.random() - 0.5) * 1.5;
 
         ctx.fillStyle = p.color;
-        // 使用 fillRect 渲染方形像素点，性能无敌，且完美还原截图中那种程序员专属的代码质感
         ctx.fillRect(curX, curY, p.size, p.size);
     });
 
@@ -311,22 +296,33 @@ function showHeart() {
         initHeart();
         drawHeart();
 
+        // 🌟 将文案固定在屏幕上方，退出按钮固定在底部
         typing.innerHTML = `
             <div style="
+                position: fixed;
+                top: 12vh;
+                left: 0;
+                width: 100%;
                 color: #ff2d55;
                 font-size: clamp(32px, 6vw, 42px);
                 text-shadow: 0 0 10px #ff4d88, 0 0 30px #ff2d75;
-                margin-top: 20vh;
+                text-align: center;
+                z-index: 20;
             ">
                 ❤️ 豆老师 (Dollya) ❤️<br>
                 <div id="timeCounter" class="timer-text"></div>
             </div>
             <div id="closeBtn" style="
-                margin-top: 40px;
+                position: fixed;
+                bottom: 8vh;
+                left: 0;
+                width: 100%;
+                text-align: center;
                 font-size: 14px;
                 color: #888;
                 text-decoration: underline;
                 cursor: pointer;
+                z-index: 20;
             ">退出心跳系统</div>
         `;
         typing.style.opacity = 1; 
