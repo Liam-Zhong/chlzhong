@@ -166,7 +166,6 @@ function typeChar() {
     }
 }
 
-/* ===== 核心算法升级：5万粒子级 3D 纵深心跳 ===== */
 const canvas = document.getElementById("heartCanvas");
 const ctx = canvas.getContext("2d");
 let particles = [];
@@ -252,7 +251,6 @@ function drawHeart() {
     ctx.fillRect(0, 0, canvas.width / dpr, canvas.height / dpr);
     
     ctx.save();
-    // 🌟 将爱心整体向下偏移 40px，为顶部文字腾出空间
     ctx.translate(window.innerWidth / 2, window.innerHeight / 2 + 40); 
     
     let t = (Date.now() % 1000) / 1000; 
@@ -296,7 +294,6 @@ function showHeart() {
         initHeart();
         drawHeart();
 
-        // 🌟 将文案固定在屏幕上方，退出按钮固定在底部
         typing.innerHTML = `
             <div style="
                 position: fixed;
