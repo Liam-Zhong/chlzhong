@@ -1,0 +1,371 @@
+<div class="chat-container">
+    
+    <div class="chat-row left">
+        <div class="avatar">🐱</div>
+        <div class="message-group">
+            <div class="bubble">你完了</div>
+            <div class="bubble">人家说</div>
+        </div>
+    </div>
+    
+    <div class="chat-row right">
+        <div class="message-group">
+            <div class="bubble">只是鼻子被挡住了 （</div>
+        </div>
+        <div class="avatar">🐶</div>
+    </div>
+
+    <div class="chat-row left">
+        <div class="avatar">🐱</div>
+        <div class="message-group">
+            <div class="bubble">当你说一个人可爱</div>
+        </div>
+    </div>
+
+    <div class="chat-row right">
+        <div class="message-group">
+            <div class="bubble">叫妳往</div>
+            <div class="bubble">天上看</div>
+        </div>
+        <div class="avatar">🐶</div>
+    </div>
+
+    <div class="chat-row left">
+        <div class="avatar">🐱</div>
+        <div class="message-group">
+            <div class="bubble">那你肯定喜欢上了</div>
+        </div>
+    </div>
+
+    <div class="chat-row right">
+        <div class="message-group">
+            <div class="bubble" style="font-size: 28px; background: transparent; box-shadow: none; padding: 0;">😢</div>
+            <div class="bubble">染上豆老师了吗</div>
+        </div>
+        <div class="avatar">🐶</div>
+    </div>
+
+    <div class="chat-row left">
+        <div class="avatar">🐱</div>
+        <div class="message-group">
+            <div class="bubble">染上了</div>
+        </div>
+    </div>
+
+    <div class="chat-row right">
+        <div class="message-group">
+            <div class="bubble">我去，不早说</div>
+            <div class="bubble">那怎么治疗</div>
+            <div class="bubble">🉐每天看豆老师照片吗</div>
+        </div>
+        <div class="avatar">🐶</div>
+    </div>
+
+    <div class="chat-row left">
+        <div class="avatar">🐱</div>
+        <div class="message-group">
+            <div class="bubble">我去</div>
+            <div class="bubble">罚你每天默念</div>
+            <div class="bubble trigger-bubble" id="loveTriggerBtn">豆老师最美</div>
+        </div>
+    </div>
+
+</div>
+
+<div id="loveOverlay">
+    <div id="typing"></div>
+    <canvas id="heartCanvas"></canvas>
+</div>
+
+<style>
+.chat-container {
+    max-width: 500px; 
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f3f3f3; 
+    border-radius: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.chat-row { display: flex; margin-bottom: 20px; align-items: flex-start; }
+.chat-row.left { justify-content: flex-start; }
+.chat-row.right { justify-content: flex-end; }
+.avatar { font-size: 32px; margin: 0 8px; line-height: 1; user-select: none; }
+.message-group { display: flex; flex-direction: column; gap: 4px; max-width: 70%; }
+.left .message-group { align-items: flex-start; }
+.right .message-group { align-items: flex-end; }
+.bubble {
+    padding: 10px 14px; font-size: 15px; line-height: 1.4; word-wrap: break-word;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-radius: 18px; 
+}
+.left .bubble { background-color: #ffffff; color: #333; }
+.left .message-group .bubble:first-child { border-top-left-radius: 4px; }
+.right .bubble { background-color: #007aff; color: #ffffff; }
+.right .message-group .bubble:first-child { border-top-right-radius: 4px; }
+.trigger-bubble {
+    cursor: pointer; background-color: #ff2d55 !important; color: white !important;
+    font-weight: bold; animation: pulse 2s infinite; transition: transform 0.1s;
+}
+.trigger-bubble:active { transform: scale(0.95); }
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 45, 85, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 45, 85, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 45, 85, 0); }
+}
+
+#loveOverlay {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: #000; z-index: 999999; display: none; flex-direction: column;
+    justify-content: center; align-items: center; opacity: 0; transition: opacity 1s ease;
+}
+#typing {
+    color: #ff7aa2; font-size: clamp(18px, 4vw, 26px); line-height: 2;
+    text-shadow: 0 0 10px #ff4d88, 0 0 20px #ff2d75; text-align: center;
+    padding: 0 20px; z-index: 10; width: 100%; box-sizing: border-box;
+}
+#heartCanvas {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    opacity: 0; transition: opacity 2s ease; z-index: 1;
+}
+.timer-text { font-size: clamp(16px, 3vw, 20px); color: #ffb3c6; margin-top: 15px; font-weight: 300; }
+.timer-text b { font-size: clamp(20px, 4vw, 24px); color: #fff; text-shadow: 0 0 8px #ff4d88; }
+</style>
+
+<script>
+const lines = [
+    "正在连接心跳系统...",
+    "加载情感模块...",
+    "识别唯一变量：豆老师 (Dollya) ❤️",
+    "检索记忆数据库：2003年农历九月十四，那是奇迹诞生的日子。",
+    "而 5月11日，是我们的开始。",
+    "",
+    "我想写一段代码，",
+    "只为妳一个人运行。",
+    "",
+    "编译完成。"
+];
+
+let lineIdx = 0; let charIdx = 0;
+let typing = document.getElementById("typing");
+let timerInterval;
+
+function typeChar() {
+    if (lineIdx < lines.length) {
+        let currentLine = lines[lineIdx];
+        if (charIdx < currentLine.length) {
+            typing.innerHTML += currentLine.charAt(charIdx);
+            charIdx++;
+            setTimeout(typeChar, 100);
+        } else {
+            typing.innerHTML += "<br>";
+            lineIdx++; charIdx = 0;
+            setTimeout(typeChar, 600);
+        }
+    } else {
+        setTimeout(showHeart, 1000);
+    }
+}
+
+/* ===== 核心算法升级：5万粒子级 3D 纵深心跳 ===== */
+const canvas = document.getElementById("heartCanvas");
+const ctx = canvas.getContext("2d");
+let particles = [];
+let animationFrameId;
+
+function getHeartPoint(t, scale) {
+    let x = 16 * Math.pow(Math.sin(t), 3);
+    let y = -(13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t));
+    return { x: x * scale, y: y * scale };
+}
+
+function initHeart() {
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = window.innerWidth * dpr;
+    canvas.height = window.innerHeight * dpr;
+    ctx.scale(dpr, dpr);
+    
+    particles = [];
+    const scale = window.innerWidth < 768 ? 9 : 14; 
+    const isMobile = window.innerWidth < 768;
+    
+    // 性能火力全开，分四层构建 3D 视觉
+    
+    // 【层级 1：深色肉体核心】 负责填充心脏内部，用较暗的红色制造“厚度”和“景深”
+    let count1 = isMobile ? 12000 : 20000;
+    for (let i = 0; i < count1; i++) {
+        let t = Math.random() * Math.PI * 2;
+        let p = getHeartPoint(t, scale);
+        // 让粒子偏向内侧坍缩
+        let ratio = Math.pow(Math.random(), 0.6); 
+        particles.push({ 
+            ox: p.x * ratio, oy: p.y * ratio, 
+            size: Math.random() * 1.5 + 0.5, 
+            color: '#aa0022', // 暗深红
+            force: 0.5 + ratio * 0.4 // 内部粒子受力小，跳动幅度弱
+        });
+    }
+
+    // 【层级 2：经典极客轮廓】 负责完美复刻截图里的密集亮红沙粒，堆积在边缘
+    let count2 = isMobile ? 15000 : 30000;
+    for (let i = 0; i < count2; i++) {
+        let t = Math.random() * Math.PI * 2;
+        let p = getHeartPoint(t, scale);
+        // 原汁原味的对数散列，模拟毛糙的沙粒感
+        let rx = -0.06 * Math.log(Math.random());
+        let ry = -0.06 * Math.log(Math.random());
+        particles.push({ 
+            ox: p.x * (1 - rx), oy: p.y * (1 - ry), 
+            size: Math.random() * 2 + 0.5, 
+            color: '#ff2d55', // 刺目的亮红
+            force: 1.0 // 标准受力
+        });
+    }
+
+    // 【层级 3：3D 凸起高光】 随机分布在中部和边缘之间，用粉色欺骗眼睛产生凸面反光错觉
+    let count3 = isMobile ? 5000 : 10000;
+    for (let i = 0; i < count3; i++) {
+        let t = Math.random() * Math.PI * 2;
+        let p = getHeartPoint(t, scale);
+        let ratio = Math.random() * 0.7 + 0.3; // 避开正中心
+        particles.push({ 
+            ox: p.x * ratio, oy: p.y * ratio, 
+            size: Math.random() * 1.8 + 0.5, 
+            color: '#ff7aa2', // 粉亮色
+            force: 0.8 + ratio * 0.3
+        });
+    }
+
+    // 【层级 4：外围散落星斑】 悬浮在心脏外部，灵动飘逸
+    let count4 = isMobile ? 3000 : 6000;
+    for (let i = 0; i < count4; i++) {
+        let t = Math.random() * Math.PI * 2;
+        let p = getHeartPoint(t, scale);
+        let rx = -0.15 * Math.log(Math.random());
+        let ry = -0.15 * Math.log(Math.random());
+        let dx = Math.random() > 0.5 ? 1 : -1;
+        let dy = Math.random() > 0.5 ? 1 : -1;
+        particles.push({ 
+            ox: p.x * (1 + rx * dx), oy: p.y * (1 + ry * dy), 
+            size: Math.random() * 1.2 + 0.3, 
+            color: '#ff4d88', 
+            force: 1.2 + Math.random() * 0.3 // 外围粒子受力极大，有一种被甩出去的张力
+        });
+    }
+}
+
+function drawHeart() {
+    const dpr = window.devicePixelRatio || 1;
+    
+    // 黑底清屏，保留极短的残影让边缘有微弱的动态模糊感
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.85)';
+    ctx.fillRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+    
+    ctx.save();
+    ctx.translate(window.innerWidth / 2, window.innerHeight / 2 - 30); 
+    
+    // 🌟 一分钟 60 下的心跳引擎 (精确到 1Hz / 1000ms)
+    let t = (Date.now() % 1000) / 1000; 
+    
+    // 使用快速起跳、顺滑回落的物理函数，模拟真实心肌收缩
+    let curve = Math.sin(t * Math.PI) * Math.exp(-t * 2.5); 
+
+    particles.forEach(p => {
+        // 🌟 3D 鼓胀算法：利用 force 参数，让外层粒子膨胀得多，内层膨胀得少，形成立体视觉差
+        let beatScale = 1 + 0.12 * curve * p.force; 
+        
+        // 赋予每个粒子极微小的原地随机生命力抖动
+        let curX = p.ox * beatScale + (Math.random() - 0.5) * 1.5;
+        let curY = p.oy * beatScale + (Math.random() - 0.5) * 1.5;
+
+        ctx.fillStyle = p.color;
+        // 使用 fillRect 渲染方形像素点，性能无敌，且完美还原截图中那种程序员专属的代码质感
+        ctx.fillRect(curX, curY, p.size, p.size);
+    });
+
+    ctx.restore();
+    animationFrameId = requestAnimationFrame(drawHeart);
+}
+
+const startDate = new Date("2026-05-11T00:00:00").getTime(); 
+
+function updateTimer() {
+    const now = new Date().getTime();
+    const diff = now - startDate;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    const timerEl = document.getElementById("timeCounter");
+    if(timerEl) {
+        timerEl.innerHTML = `我们已经相爱了<br><b>${days}</b> 天 <b>${hours}</b> 小时 <b>${minutes}</b> 分钟 <b>${seconds}</b> 秒`;
+    }
+}
+
+function showHeart() {
+    typing.style.opacity = 0; 
+
+    setTimeout(() => {
+        canvas.style.opacity = 1; 
+        initHeart();
+        drawHeart();
+
+        typing.innerHTML = `
+            <div style="
+                color: #ff2d55;
+                font-size: clamp(32px, 6vw, 42px);
+                text-shadow: 0 0 10px #ff4d88, 0 0 30px #ff2d75;
+                margin-top: 20vh;
+            ">
+                ❤️ 豆老师 (Dollya) ❤️<br>
+                <div id="timeCounter" class="timer-text"></div>
+            </div>
+            <div id="closeBtn" style="
+                margin-top: 40px;
+                font-size: 14px;
+                color: #888;
+                text-decoration: underline;
+                cursor: pointer;
+            ">退出心跳系统</div>
+        `;
+        typing.style.opacity = 1; 
+        
+        updateTimer();
+        timerInterval = setInterval(updateTimer, 1000);
+        document.getElementById("closeBtn").addEventListener('click', closeOverlay);
+
+    }, 1000);
+}
+
+const triggerBtn = document.getElementById('loveTriggerBtn');
+const overlay = document.getElementById('loveOverlay');
+
+triggerBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.body.style.overflow = 'hidden'; 
+    overlay.style.display = 'flex';
+    
+    setTimeout(() => {
+        overlay.style.opacity = 1;
+        typing.innerHTML = "";
+        lineIdx = 0; charIdx = 0;
+        typeChar();
+    }, 50);
+});
+
+function closeOverlay() {
+    overlay.style.opacity = 0;
+    setTimeout(() => {
+        overlay.style.display = 'none';
+        document.body.style.overflow = ''; 
+        cancelAnimationFrame(animationFrameId);
+        clearInterval(timerInterval);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }, 1000);
+}
+
+window.addEventListener('resize', () => {
+    if (overlay.style.display === 'flex') { initHeart(); }
+});
+</script>
