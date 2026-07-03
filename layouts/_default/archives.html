@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div id="archives-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  
+  <div class="archives-container">
+    {{ range .Site.RegularPages.GroupByDate "2006" }}
+    {{ if ge .Key "2024" }}
+    <div class="year-column">
+      <h2 style="margin-top: 40px; margin-bottom: 10px;">{{ .Key }}</h2>
+      {{ range .Pages.GroupByDate "2006-01" }}
+        <ul style="margin-bottom: 15px; list-style: none; padding-left: 0;">
+          {{ range .Pages.ByDate.Reverse }}
+          <li style="margin-bottom: 8px; display: inline-block; margin-right: 20px;">
+            <span class="date" style="color: #888; font-size: 0.85em;">{{ .Date.Format "2006-01-02" }}</span>
+            <a href="{{ .Permalink }}" style="text-decoration: none !important; border-bottom: none !important;">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

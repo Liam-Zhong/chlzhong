@@ -1,0 +1,12 @@
+# macos_shit
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# hugo_files
+/public/
+/resources/
+.hugo_build.lock

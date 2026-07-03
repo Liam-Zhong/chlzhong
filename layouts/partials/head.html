@@ -1,0 +1,127 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <!-- title -->
+  <title>
+    {{- if not .IsHome -}}{{- .Title }} - {{ end -}}{{- site.Title -}}
+  </title>
+
+  <!-- meta -->
+  <meta name="theme-color" />
+
+  <!-- author -->
+  {{- $site_author := or .Params.author site.Params.author site.Title -}}
+
+  <!---->
+  {{- if eq .Kind "page" -}}
+  <meta name="description" content="{{- .Summary -}}" />
+  <meta name="author" content="{{- or .Params.author $site_author -}}" />
+  {{- else -}}
+  <!---->
+  <meta
+    name="description"
+    content="{{- site.Params.description | default (print `chlzhong`) -}}"
+  />
+  <meta name="author" content="{{- $site_author -}}" />
+  {{- end -}}
+
+  <!-- css & js -->
+  {{- $main := resources.Get "css/main.css" -}}
+  <!---->
+  {{- $custom := resources.Get "css/custom.css" -}}
+  <!---->
+  {{- $css := slice $main $custom | resources.Concat "css/main.css" | minify | fingerprint -}}
+  <link rel="preload stylesheet" as="style" href="{{- $css.Permalink -}}" integrity="{{ $css.Data.Integrity }}" />
+
+  <!-- dark icon -->
+  {{- $dark_icon := resources.Get "images/theme.png" -}}
+  <!---->
+  {{- if site.Params.monoDarkIcon -}}
+    {{- $dark_icon = resources.Get "images/theme.svg" -}}
+  {{- end -}}
+  <!---->
+  {{- if $dark_icon -}}
+    <link rel="preload" as="image" href="{{- $dark_icon.Permalink -}}" />
+  {{- end -}}
+
+  <!-- avatar -->
+  {{- $avatar_url := $.Scratch.Get "avatar_url" -}}
+  <!---->
+  {{- if $avatar_url -}}
+  <link rel="preload" as="image" href="{{- $avatar_url -}}" />
+  {{- end -}}
+  <!---->
+
+  <!-- social list -->
+  {{- range $.Scratch.Get "social_list" -}}
+  {{- $icon := resources.Get (printf "icons/%s.svg" .) -}}
+  {{- if $icon -}}
+  <link rel="preload" as="image" href="{{- $icon.Permalink -}}" />
+  {{- end -}}
+  {{- end -}}
+  <!---->
+
+  <!-- highlight js -->
+  {{- if and .IsPage (not site.Params.disableHLJS) -}}
+  {{- $hljs := resources.Get "js/highlight.min.js" | minify -}}
+  {{- if $hljs -}}
+  <script defer src="{{- $hljs.Permalink -}}" onload="hljs.initHighlightingOnLoad();"></script>
+  {{- end -}}
+  {{- end -}}
+  <!---->
+
+  <!-- math -->
+  {{- if or .Params.math site.Params.math -}}
+  <!---->
+  {{- partial "math.html" . -}}
+  <!---->
+  {{- end -}}
+  <!---->
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="{{ `favicons/favicon-96x96.png` | relURL }}" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="{{ `favicons/favicon.svg` | relURL }}" />
+  <link rel="shortcut icon" href="{{ `favicons/favicon.ico` | relURL }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ `favicons/apple-touch-icon.png` | relURL }}" />
+  <meta name="apple-mobile-web-app-title" content="Chlzhong" />
+  <link rel="manifest" href="{{ `favicons/site.webmanifest` | relURL }}" />
+
+  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}">
+  <meta property="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ site.Params.description | default `chlzhong` }}{{ end }}">
+  <meta property="og:image" content="{{ `favicons/og-image-1200x630.png` | absURL }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+
+  <!-- generator -->
+  {{- hugo.Generator -}}
+
+  <!-- production -->
+  {{- if or hugo.IsProduction (eq site.Params.env "production") -}}
+  <!---->
+  {{- template "_internal/google_analytics.html" . -}}
+  <!---->
+  {{- template "_internal/schema.html" . -}}
+  <!---->
+  {{- template "_internal/opengraph.html" . -}}
+  <!---->
+  {{- template "_internal/twitter_cards.html" . -}}
+  <!-- RSS -->
+  {{- range .AlternativeOutputFormats -}}
+  <link
+    rel="{{- .Rel -}}"
+    type="{{- .MediaType.Type -}}"
+    href="{{- .Permalink -}}"
+    title="{{- site.Title -}}"
+  />
+  {{- end -}}
+
+  <!-- canonical -->
+  <link rel="canonical" href="{{- .Permalink -}}" />
+  {{- end -}}
+  <!---->
+</head>
