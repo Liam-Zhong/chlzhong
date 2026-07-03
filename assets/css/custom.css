@@ -63,7 +63,6 @@
   transition: all .1s ease-in-out;
 }
 
-/* 修复了脆弱的 DOM 结构依赖，防止误判 */
 .special-page a:not(.logo):hover {
   inset: 1px 0 0 1px;
   position: relative;
@@ -99,41 +98,46 @@
     url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2') format('woff2');
 }
 
-/* 思源宋体 (繁体) - 常规字重 400 */
+/* Source Han Serif (TC) - Regular 400 */
 @font-face {
   font-family: 'Blog-Serif-TC';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Source Han Serif TC'), 
        local('Source Han Serif TW'), 
        local('Noto Serif CJK TC'), 
        local('Noto Serif TC'), 
        local('Songti TC'), 
        local('Apple LiSung'),
-       url('https://fonts.gstatic.com/s/notoseriftc/v22/-nF-OG829Qqdt0MPlRhnzRl1eQj-k07z.woff2') format('woff2');
+       url('/fonts/NotoSerifTC-Regular.woff2') format('woff2');
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
 }
 
-/* 思源宋体 (繁体) - 粗体字重 600 (专为 strong 设计，彻底阻断算法加粗) */
+/* Source Han Serif (TC) - SemiBold 600 */
 @font-face {
   font-family: 'Blog-Serif-TC';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: local('Source Han Serif TC SemiBold'),
        local('Source Han Serif TC Bold'), 
        local('Source Han Serif TW Bold'), 
        local('Noto Serif CJK TC Bold'), 
        local('Noto Serif TC Bold'), 
        local('Songti TC Bold'), 
-       /* 粗体 Web Font 兜底 */
-       url('https://fonts.gstatic.com/s/notoseriftc/v22/-nF6OG829Qqdt0MPlRhnzRl1eQj-k07z1Lvl.woff2') format('woff2');
+       url('/fonts/NotoSerifTC-SemiBold.woff2') format('woff2');
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
 }
 
 /* Prose Typography */
 .prose {
-  font-family: 'Canela', 'Blog-Serif-TC', 'Palatino', serif !important;
-  /* 终极杀手锏：强制浏览器禁止使用算法生成伪粗体或伪斜体 */
+  /* 
+   * Western first, Chinese second.
+   * 1. Palatino & Georgia: Native elegant serifs for Apple and Windows.
+   * 2. Blog-Serif-TC: Catches all CJK characters.
+   */
+  font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', 'Georgia', 'Blog-Serif-TC', serif !important;
   font-synthesis: none !important; 
 }
 
@@ -146,7 +150,6 @@
 /* Fix bold weight */
 .prose strong,
 .prose b {
-  /* 匹配上方定义的 600 字重，宋体的 600 在中文阅读中粗细适中，800 会导致笔画糊死 */
   font-weight: 600 !important;
   color: inherit;
 }

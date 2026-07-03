@@ -2,8 +2,8 @@ baseURL = "https://chlzhong.org/"
 title = "chlzhong"
 author = "Steve Francia"
 copyright = "© 2026 chlzhong"
-languageCode = "en"
-DefaultContentLanguage = "en"
+locale = "zh-TW"
+DefaultContentLanguage = "zh-tw"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
