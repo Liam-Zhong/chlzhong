@@ -115,7 +115,7 @@
       local("Songti TC"),
       local("Apple LiSung"),
       local("Microsoft YaHei"),
-      url("/fonts/NotoSerifTC-Regular.woff2") format("woff2");
+      url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
     unicode-range:
       U+4E00-9FFF,
       U+3000-303F,
@@ -139,7 +139,7 @@
       local("Source Han Serif TW Bold"),
       local("Songti TC Bold"),
       local("Microsoft YaHei Bold"),
-      url("/fonts/NotoSerifTC-SemiBold.woff2") format("woff2");
+      url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
     unicode-range:
       U+4E00-9FFF,
       U+3000-303F,
