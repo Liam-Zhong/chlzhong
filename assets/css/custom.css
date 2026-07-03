@@ -78,15 +78,6 @@
   inset: auto;
 }
 
-/* Dark mode */
-.dark .special-page a {
-  color: #b0b0b0;
-}
-
-.dark .special-page a:hover {
-  color: #fff;
-}
-
 /* Font Definitions */
 @font-face {
   font-family: 'Kai TC';
@@ -106,10 +97,9 @@
   font-display: swap;
   src: local('Source Han Serif TC'), 
        local('Source Han Serif TW'), 
-       local('Noto Serif CJK TC'), 
-       local('Noto Serif TC'), 
        local('Songti TC'), 
        local('Apple LiSung'),
+       local('Microsoft YaHei'),
        url('/fonts/NotoSerifTC-Regular.woff2') format('woff2');
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
 }
@@ -123,20 +113,14 @@
   src: local('Source Han Serif TC SemiBold'),
        local('Source Han Serif TC Bold'), 
        local('Source Han Serif TW Bold'), 
-       local('Noto Serif CJK TC Bold'), 
-       local('Noto Serif TC Bold'), 
        local('Songti TC Bold'), 
+       local('Microsoft YaHei Bold'),
        url('/fonts/NotoSerifTC-SemiBold.woff2') format('woff2');
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
 }
 
 /* Prose Typography */
 .prose {
-  /* 
-   * Western first, Chinese second.
-   * 1. Palatino & Georgia: Native elegant serifs for Apple and Windows.
-   * 2. Blog-Serif-TC: Catches all CJK characters.
-   */
   font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', 'Georgia', 'Blog-Serif-TC', serif !important;
   font-synthesis: none !important; 
 }
