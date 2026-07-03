@@ -1,9 +1,10 @@
-@media (min-width: 769px) {
-  :root {
-    --w: 66.66% !important;
-  }
+:root {
+  --w: clamp(320px, 90vw, 820px) !important;
 }
-  
+body, .prose {
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
+}
 /* Archives */
 #archives-page h1 { margin-bottom: 20px; }
 
@@ -129,6 +130,7 @@
 .prose p {
   margin-top: 0.8em !important;
   margin-bottom: 0.8em !important;
+  line-height: clamp(1.6, 1.4 + 0.6vw, 1.95) !important;
 }
 
 /* Fix bold weight */
