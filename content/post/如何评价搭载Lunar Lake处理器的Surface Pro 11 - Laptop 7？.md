@@ -14,21 +14,27 @@ title = '如何评价搭载Lunar Lake处理器的Surface Pro 11 - Laptop 7？'
 
 在巨硬苏菲这里苹果都显得性价比十足！
 
-![](https://pic1.zhimg.com/50/v2-aeb77a2f0c85dc7af446234381bd44d4_720w.jpg?source=2c26e567)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic1.zhimg.com/50/v2-aeb77a2f0c85dc7af446234381bd44d4_720w.jpg?source=2c26e567" alt="" class="img-apple">
+</div>
 
 *14 时 MacBook Pro 16+512: $1500*
 
 
 
 
-![](https://pic1.zhimg.com/50/v2-7ecc9d8214974ff619bc7cb9b8b25287_720w.jpg?source=2c26e567)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic1.zhimg.com/50/v2-7ecc9d8214974ff619bc7cb9b8b25287_720w.jpg?source=2c26e567" alt="" class="img-apple">
+</div>
 
 *13 时 MacBook Air 16+512: $1100*
 
 
 
 
-![](https://pic1.zhimg.com/50/v2-4af51743ef2c849c9a53293819dd247c_720w.jpg?source=2c26e567)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic1.zhimg.com/50/v2-4af51743ef2c849c9a53293819dd247c_720w.jpg?source=2c26e567" alt="" class="img-apple">
+</div>
 
 *13 时 Surface Pro 16+512: $1700*
 
@@ -38,4 +44,6 @@ title = '如何评价搭载Lunar Lake处理器的Surface Pro 11 - Laptop 7？'
 
 官网大写的"为信任(yang）而生”已经给出了答案。
 
-![](https://pic1.zhimg.com/50/v2-df7e7cc02559e888c8294b0cb2086980_720w.jpg?source=2c26e567)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic1.zhimg.com/50/v2-df7e7cc02559e888c8294b0cb2086980_720w.jpg?source=2c26e567" alt="" class="img-apple">
+</div>

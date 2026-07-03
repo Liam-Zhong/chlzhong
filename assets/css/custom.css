@@ -38,20 +38,22 @@
   /* ==========================================================================
      Images
      ========================================================================== */
-  
   .img-apple {
-    max-width: 100%;
+    display: block;
+    margin-inline: auto;
+    max-width: min(100%, 700px);
+    max-height: 70vh;
+
+    width: auto;
     height: auto;
+    object-fit: contain;
+  
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    margin-top: 1.2em !important; 
+    margin-bottom: 1.2em !important;
   }
-  
-  @media (min-width: 768px) {
-    .img-apple {
-      max-width: 60%;
-    }
-  }
-  
   
   /* ==========================================================================
      Special Page

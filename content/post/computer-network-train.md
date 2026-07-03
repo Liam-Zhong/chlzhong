@@ -212,7 +212,9 @@ tsend=帧长度 (bit)数据传输率 (bit/s)=1200×810×106=0.96 mst_{send} = 
 
 ##  第4次作业
 
-> 1、主机 H 1 发送 IP 数据报给主机 H 2，途中经过了下图所示的设备。试问在 IP 数据报的发送过程中总共使用了几次 ARP ？![4.1](https://picx.zhimg.com/80/v2-94c2085349579e9c9c8454cf35acee9e_1440w.png)
+> 1、主机 H 1 发送 IP 数据报给主机 H 2，途中经过了下图所示的设备。试问在 IP 数据报的发送过程中总共使用了几次 ARP ？<div style="display: flex; justify-content: center;">
+  <img src="https://picx.zhimg.com/80/v2-94c2085349579e9c9c8454cf35acee9e_1440w.png" alt="4.1" class="img-apple">
+</div>
 
  
 
@@ -241,7 +243,9 @@ tsend=帧长度 (bit)数据传输率 (bit/s)=1200×810×106=0.96 mst_{send} = 
  
 
 > 6、 某通信子网如下图所示，请依据距离矢量路由算法回答如下问题：
-> ![](https://picx.zhimg.com/80/v2-f0c6fc869fe3b6f7838568a69ec9de65_1440w.png)
+> <div style="display: flex; justify-content: center;">
+  <img src="https://picx.zhimg.com/80/v2-f0c6fc869fe3b6f7838568a69ec9de65_1440w.png" alt="" class="img-apple">
+</div>
 > 表1.路由器 XYZ 的距离矢量表
 
 | 目的 | X的距离矢量（DV） | Y的距离矢量（DV） | Z的距离矢量（DV） |

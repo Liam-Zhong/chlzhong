@@ -52,7 +52,9 @@ iPhone 面世以來，iPhone 最矚目大事。
 
 • iPhone 5c:
 
-![](https://picx.zhimg.com/v2-ceffb6e68237e8cafef653597b98a833_r.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="https://picx.zhimg.com/v2-ceffb6e68237e8cafef653597b98a833_r.jpg" alt="" class="img-apple">
+</div>
 
 For the colorful.
 
@@ -126,7 +128,9 @@ Brilliant. In every way.
 
 • iPhone XS and XS Max
 
-![](https://pic2.zhimg.com/v2-6c3dbc9fd3c02753aedbb9a17c1d234f_r.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic2.zhimg.com/v2-6c3dbc9fd3c02753aedbb9a17c1d234f_r.jpg" alt="" class="img-apple">
+</div>
 
 Welcome to the big screens.
 
@@ -208,7 +212,9 @@ Big and bigger.
 
 • iPhone 14 Pro and 14 Pro Max
 
-![](https://pic3.zhimg.com/v2-383cbc597f0a11e53ffb79671a8f4e74_r.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic3.zhimg.com/v2-383cbc597f0a11e53ffb79671a8f4e74_r.jpg" alt="" class="img-apple">
+</div>
 
 Pro. Beyond.
 

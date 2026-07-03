@@ -52,13 +52,11 @@ description = "{{ .Summary }}"
 
 这就是我们每个人的使命:不是创造全新的事物，而是以我们独特的方式，为这个世界增添一抹不同的色彩。这种微小但真实的贡献，或许才是我们摆脱"平替人生"焦虑的最佳方式。这里摘一个子建"晨雾之微补宜山海，萤烛末广增辉日月"
 
-最后，我想说的是，所谓的"平替人生"也许并不是一件坏事。它提醒我们，我们都是站在巨人的肩膀上。重要的不是追求绝对的原创，而是如何在继承中创新，在重复中寻找独特。所以快来看看我买的金豪世纪：
+最后，我想说的是，快来看看我买的金豪世纪：
 
-<div style="text-align: center;">
-  <img src="https://pic1.zhimg.com/80/v2-9653d99663acc88b9800b3d8c93bb5a4_1440w.jpeg" alt="金豪世纪 100" style="width: 75%; height: auto;">
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic1.zhimg.com/80/v2-9653d99663acc88b9800b3d8c93bb5a4_1440w.jpeg" alt="金豪世纪 100" class="img-apple">
 </div>
-
-
 
 [^1]: 各年龄段使用的各种产品：常见的有 iPhone 与 Redmi、宝马和比亚迪。
 [^2]: 落花与芝盖齐飞，杨柳共春旗一色。

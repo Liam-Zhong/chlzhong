@@ -14,9 +14,9 @@ description = "{{ .Summary }}"
 
 在那个一切物资都匮乏的时代，钢笔自然十分金贵，同时也算是一种身份的象征
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-  <img src="https://p3.itc.cn/q_70/images03/20220711/3ca7dd79866740478aafd5d0e1a4e9ca.jpeg" alt="钢笔插在衬衫口袋" style="max-width: 100%; height: auto;">
-  <small style="text-align: center;">钢笔插在衬衫口袋 | 图源：搜狐</small>
+<div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">
+  <img src="https://p3.itc.cn/q_70/images03/20220711/3ca7dd79866740478aafd5d0e1a4e9ca.jpeg" alt="钢笔插在衬衫口袋" class="img-apple">
+  <small style="margin-top: 0.5em; color: #666;">钢笔插在衬衫口袋 | 图源：搜狐</small>
 </div>
 
 ## 1883 年
@@ -45,9 +45,9 @@ description = "{{ .Summary }}"
 ## 2001 年
 中国于 2001 年 12 月 11 日正式加入世界贸易组织。值得注意的是石广生先生使用的便是英雄钢笔。
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-  <img src="https://images.shobserver.com/img/2021/11/6/f194925d06334d72914e3e3d19346e8c.jpg" alt="石广生签署《中国加入世界贸易组织议定书》" style="max-width: 100%; height: auto;">
-  <small style="text-align: center;">石广生签署《中国加入世界贸易组织议定书》 | 图源：新华社</small>
+<div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">
+  <img src="https://images.shobserver.com/img/2021/11/6/f194925d06334d72914e3e3d19346e8c.jpg" alt="石广生签署《中国加入世界贸易组织议定书》" class="img-apple">
+  <small style="margin-top: 0.5em; color: #666;">石广生签署《中国加入世界贸易组织议定书》 | 图源：新华社</small>
 </div>
 
 
@@ -86,15 +86,14 @@ description = "{{ .Summary }}"
 对我来说，每只笔都有自己的故事。哪怕是垃圾如写乐的断杆，也是开学时候里不能磨灭的记忆。用百乐 78G 写下第一封情书，用英雄 100 作了两个月的练字，在不断的使用过程中她们好像是不同性格的女孩子，有源源不绝的可爱。
 
 
-
-<div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-  <div style="text-align: center;">
-    <img src="/images/暗尖.jpeg" alt="暗尖们" class="img-apple" style="max-width: 100%; height: auto;">
-    <small>暗尖们</small>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin: 2em 0;">
+  <div style="flex: 1; text-align: center;">
+    <img src="/images/暗尖.jpeg" alt="暗尖们" class="img-apple">
+    <small style="display: block; margin-top: 0.5em; color: #666;">暗尖们</small>
   </div>
 
-  <div style="text-align: center;">
-    <img src="/images/明尖.jpeg" alt="明尖们" class="img-apple" style="max-width: 100%; height: auto;">
-    <small>明尖们</small>
+  <div style="flex: 1; text-align: center;">
+    <img src="/images/明尖.jpeg" alt="明尖们" class="img-apple">
+    <small style="display: block; margin-top: 0.5em; color: #666;">明尖们</small>
   </div>
 </div>

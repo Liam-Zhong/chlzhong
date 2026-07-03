@@ -12,16 +12,17 @@ description = "{{ .Summary }}"
 
  T 先生在袭击中指头部受伤，随即倒地，歹猫迅速逃离现场。路人见状立即拍下照片，并未报警。相关人员迅速赶到现场，将 T 先生送往附近寝室进行救治。舍友表示， T 先生伤势较重，但暂无生命危险，目前正在接受进一步治疗和观察。
 
-![受伤图](https://picx.zhimg.com/80/v2-92ad0cfe9ef119cb670fcab4c3a4643a_1440w.jpeg)
-
-
+<div style="display: flex; justify-content: center;">
+  <img src="https://picx.zhimg.com/80/v2-92ad0cfe9ef119cb670fcab4c3a4643a_1440w.jpeg" alt="受伤" class="img-apple">
+</div>
 
 事发后，警方已对此次袭击事件展开全面调查，并加强了该区域的巡逻和警戒。初步调查显示，袭击可能是随机作案，但具体动机尚不明确。警方呼吁知情群众提供线索，协助破案。
 
 南岸区公安局相关负责人表示，此次袭击事件暴露出当前治安管理中存在的漏洞，将加大力度，提升治安防控水平，确保市民安全。公安局也提醒长相极佳市民，在日常生活中应提高警惕，避免单独行动，遇到可疑情况应及时报警。
 
-![犯罪嫌疑猫](https://pica.zhimg.com/80/v2-6fa35bd7c7add91cabf0d633558fb083_1440w.jpeg)
-<center><small>犯罪嫌疑猫</small></center>
+<div style="display: flex; justify-content: center;">
+  <img src="https://pica.zhimg.com/80/v2-6fa35bd7c7add91cabf0d633558fb083_1440w.jpeg" alt="犯罪嫌疑猫" class="img-apple">
+</div>
 
 此次事件引发了市民广泛关注和讨论。许多市民在社交媒体上表达了对 T 先生的关切和慰问，并呼吁政府和有关部门加强治安管理，确保社区安全。
 
