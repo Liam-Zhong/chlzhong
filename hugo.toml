@@ -19,7 +19,7 @@ theme = "hugo-paper"
   monoDarkIcon = true
   favicon = "favicon.ico" 
 
-avatar = 'https://pic3.zhimg.com/80/v2-5598b103af19fca6dfc20d8183853c48_1440w.jpg'
+avatar = 'https://raw.githubusercontent.com/Liam-Zhong/image-host/refs/heads/main/avatar_160.webp'
   name = 'Tuffy'
   bio = 'Dollya is the most beautiful'
 # ------------------------------
