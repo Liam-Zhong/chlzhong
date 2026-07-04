@@ -1,39 +1,27 @@
 /* ==========================================================================
    Archives
    ========================================================================== */
-
-   #archives-page h1 {
-    margin-bottom: 20px;
+   #archives-page li {
+    display: inline-block;
   }
   
-  .year-column {
-    margin-bottom: 10px;
-  }
-  
-  .year-column h2 {
-    font-size: 1.5em;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
-  }
-  
-  .year-column .date {
+  #archives-page .date {
     color: #888;
     margin-right: 8px;
   }
   
-  .year-column a {
-    color: #1a1a1a;
+  #archives-page a {
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
     position: relative;
     transition: all 0.2s;
   }
   
-  .year-column a:hover {
-    color: #000;
-    text-decoration: underline !important;
+  #archives-page a:hover {
     top: 1px;
     left: 1px;
   }
-  
   
   /* ==========================================================================
      Images
@@ -43,126 +31,89 @@
     margin-inline: auto;
     max-width: min(100%, 700px);
     max-height: 70vh;
-
     width: auto;
     height: auto;
     object-fit: contain;
-  
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    margin-top: 1.2em !important; 
+    margin-top: 1.2em !important;
     margin-bottom: 1.2em !important;
   }
   
   /* ==========================================================================
      Special Page
      ========================================================================== */
-  
-  .special-page a {
-    color: inherit;
+  .prose article section a {
+    color: inherit !important;
     text-decoration: none !important;
     border-bottom: 1px dashed currentColor !important;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   
-  .special-page a:not(.logo):hover {
+  .prose article section a:hover {
     position: relative;
     inset: 1px 0 0 1px;
-    color: #000;
   }
   
-  .special-page .no-special-link {
-    border-bottom: none !important;
+  del {
+    color: inherit;
+    text-decoration: line-through;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    opacity: 0.5;
   }
-  
-  .special-page .no-special-link:hover {
-    position: static;
-    inset: auto;
-  }
-  
   
   /* ==========================================================================
      Fonts
      ========================================================================== */
-  
   /* Kai */
-  
   @font-face {
     font-family: "Kai TC";
     font-style: normal;
     font-weight: 400;
-    src:
-      local("Kaiti"),
-      local("Kaiti TC"),
-      local("STKaiti"),
-      local("SimKai"),
-      local("DFKai-SB"),
-      url("https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2") format("woff2");
+    src: local("Kaiti"),
+         local("Kaiti TC"),
+         local("STKaiti"),
+         local("SimKai"),
+         local("DFKai-SB"),
+         url("https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2") format("woff2");
   }
   
-  
-  /* Blog Serif TC - Regular */
-  
+  /* Blog Serif SC - Regular */
   @font-face {
     font-family: "Blog-Serif-TC";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src:
-      local("Source Han Serif TC"),
-      local("Source Han Serif TW"),
-      local("Songti TC"),
-      local("Apple LiSung"),
-      local("Microsoft YaHei"),
-      url("/fonts/NotoSerifTC-Regular.woff2") format("woff2");
-    unicode-range:
-      U+4E00-9FFF,
-      U+3000-303F,
-      U+FF00-FFEF,
-      U+2014,
-      U+2018-2019,
-      U+201C-201D;
+    src: local("Source Han Serif TC"),
+         local("Source Han Serif TW"),
+         local("Songti TC"),
+         local("Apple LiSung"),
+         local("Microsoft YaHei"),
+         url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
+    unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
   }
   
-  
   /* Blog Serif TC - SemiBold */
-  
   @font-face {
     font-family: "Blog-Serif-TC";
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src:
-      local("Source Han Serif TC SemiBold"),
-      local("Source Han Serif TC Bold"),
-      local("Source Han Serif TW Bold"),
-      local("Songti TC Bold"),
-      local("Microsoft YaHei Bold"),
-      url("/fonts/NotoSerifTC-SemiBold.woff2") format("woff2");
-    unicode-range:
-      U+4E00-9FFF,
-      U+3000-303F,
-      U+FF00-FFEF,
-      U+2014,
-      U+2018-2019,
-      U+201C-201D;
+    src: local("Source Han Serif TC SemiBold"),
+         local("Source Han Serif TC Bold"),
+         local("Source Han Serif TW Bold"),
+         local("Songti TC Bold"),
+         local("Microsoft YaHei Bold"),
+         url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
+    unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
   }
-  
   
   /* ==========================================================================
      Typography
      ========================================================================== */
-  
   .prose {
-    font-family:
-      "Palatino",
-      "Palatino Linotype",
-      "Book Antiqua",
-      "Georgia",
-      "Blog-Serif-TC",
-      serif !important;
-  
+    font-family: "Palatino", "Palatino Linotype", "Book Antiqua", "Georgia", "Blog-Serif-TC", serif !important;
     font-synthesis: none !important;
   }
   
@@ -171,6 +122,7 @@
     margin-bottom: 0.8em !important;
     line-height: clamp(1.6, 1.4 + 0.6vw, 1.95) !important;
   }
+  
   .prose hr {
     margin-top: 1.5em !important;
     margin-bottom: 1.5em !important;
@@ -188,22 +140,17 @@
     font-style: normal !important;
   }
   
-  
   /* ==========================================================================
      Blockquote
      ========================================================================== */
-  
   .prose blockquote {
     font-family: "Kai TC", serif !important;
     font-size: 0.9em !important;
     font-style: normal !important;
-  
     margin: 1em 0 !important;
     padding: 0 2em 0 1em !important;
-  
     text-align: left !important;
     quotes: none !important;
-  
     border-left: 5px solid var(--border-color) !important;
   }
   
@@ -222,11 +169,9 @@
     background: var(--bg-block) !important;
   }
   
-  
   /* ==========================================================================
      Selection
      ========================================================================== */
-  
   ::selection {
     background: rgb(255, 255, 224);
     color: #000;

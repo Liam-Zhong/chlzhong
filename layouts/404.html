@@ -1,9 +1,14 @@
 {{ define "main" }}
 <div class="absolute inset-x-8 top-0 bottom-20 flex items-center justify-center">
+  {{ $img := resources.Get "images/404.png" }}
+  {{ $webp := $img.Resize "1200x webp q85" }}
+  
   <img
-    src="https://cdn.jsdelivr.net/gh/Liam-Zhong/image-host/IMG_0620.png"
+    src="{{ $webp.RelPermalink }}"
+    width="{{ $webp.Width }}"
+    height="{{ $webp.Height }}"
     alt="404 Not Found"
     class="w-4/5 max-w-2xl h-auto"
-  />
+  >
 </div>
 {{ end }}

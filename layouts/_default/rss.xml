@@ -2,10 +2,10 @@
 {{- /* Upstream Hugo bug - RSS dates can be in future: https://github.com/gohugoio/hugo/issues/3918 */ -}}
 {{- $page_context := cond .IsHome site . -}}
 {{- $pages := $page_context.RegularPages -}}
-{{- $postPages := where $pages "Section" "post" -}}  <!-- 添加这一行，筛选出post页面 -->
+{{- $postPages := where $pages "Section" "post" -}}
 {{- $limit := site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
-  {{- $postPages = $postPages | first $limit -}}  <!-- 修改这一行使用$postPages -->
+  {{- $postPages = $postPages | first $limit -}}
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -27,7 +27,7 @@
       <link>{{ .Permalink }}</link>
     </image>
     {{end -}}
-    {{ range $postPages }}  <!-- 修改这一行使用$postPages -->
+    {{ range $postPages }} 
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
