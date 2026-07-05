@@ -7,8 +7,8 @@
   }
   
   #archives-page .date {
-    color: #888;
     margin-right: 8px;
+    color: #888;
   }
   
   #archives-page a {
@@ -26,11 +26,20 @@
     left: 1px;
   }
   
-/* ==========================================================================
-   Images
-   ========================================================================== */
-
-   .img-apple {
+  
+  /* ==========================================================================
+     Images
+     ========================================================================== */
+  
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin: 1.8em 0 !important;
+  }
+  
+  .img-apple {
     display: block;
   
     width: auto;
@@ -43,30 +52,29 @@
     object-fit: contain;
   
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   
     content-visibility: auto;
     contain-intrinsic-size: 500px;
   }
   
-  figure {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1.0em 0 !important; 
-  }
-  
-  figure .img-apple {
-    margin-bottom: 0.1em !important;
+  figure > .img-apple {
+    margin-bottom: .75em !important;
   }
   
   figcaption {
-    margin-top: 0;
-    line-height: 1.4;
+    max-width: min(100%, 700px);
+  
+    margin: 0;
+    padding: 0 .5rem;
+  
+    font-size: .9rem;
+    line-height: 1.45;
     text-align: center;
-    color: #888;
+  
+    color: var(--secondary);
   }
+  
   
   /* ==========================================================================
      Special Page
@@ -96,11 +104,13 @@
     opacity: .5;
   }
   
+  
   /* ==========================================================================
      Fonts
      ========================================================================== */
   
   /* Kai */
+  
   @font-face {
     font-family: "Kai TC";
     font-style: normal;
@@ -116,6 +126,7 @@
   }
   
   /* Blog Serif TC - Regular */
+  
   @font-face {
     font-family: "Blog-Serif-TC";
     font-style: normal;
@@ -130,10 +141,17 @@
       local("Microsoft YaHei"),
       url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
   
-    unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
+    unicode-range:
+      U+4E00-9FFF,
+      U+3000-303F,
+      U+FF00-FFEF,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D;
   }
   
   /* Blog Serif TC - SemiBold */
+  
   @font-face {
     font-family: "Blog-Serif-TC";
     font-style: normal;
@@ -148,15 +166,29 @@
       local("Microsoft YaHei Bold"),
       url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
   
-    unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
+    unicode-range:
+      U+4E00-9FFF,
+      U+3000-303F,
+      U+FF00-FFEF,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D;
   }
+  
   
   /* ==========================================================================
      Typography
      ========================================================================== */
   
   .prose {
-    font-family: "Palatino", "Palatino Linotype", "Book Antiqua", "Georgia", "Blog-Serif-TC", serif !important;
+    font-family:
+      "Palatino",
+      "Palatino Linotype",
+      "Book Antiqua",
+      "Georgia",
+      "Blog-Serif-TC",
+      serif !important;
+  
     text-rendering: optimizeLegibility;
   }
   
@@ -171,10 +203,10 @@
   /* Paragraphs */
   
   .prose p {
-    margin-top: 0.8em !important;
-    margin-bottom: 0.8em !important;
+    margin-top: .8em !important;
+    margin-bottom: .8em !important;
   
-    line-height: clamp(1.6, 1.4 + 0.6vw, 1.95) !important;
+    line-height: clamp(1.6, 1.4 + .6vw, 1.95) !important;
     text-wrap: pretty;
   }
   
@@ -195,6 +227,7 @@
     font-style: normal !important;
   }
   
+  
   /* ==========================================================================
      Blockquote
      ========================================================================== */
@@ -204,7 +237,7 @@
     padding: 0 2em 0 1em !important;
   
     font-family: "Kai TC", serif !important;
-    font-size: 0.9em !important;
+    font-size: .9em !important;
     font-style: normal !important;
   
     text-align: left !important;
@@ -228,16 +261,17 @@
     background: var(--bg-block) !important;
   }
   
+  
   /* ==========================================================================
      Selection
      ========================================================================== */
   
   ::selection {
     color: #000;
-    background: rgb(255, 255, 224);
+    background: rgb(255 255 224);
   }
   
   ::-moz-selection {
     color: #000;
-    background: rgb(255, 255, 224);
+    background: rgb(255 255 224);
   }
