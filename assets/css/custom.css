@@ -134,10 +134,11 @@
     font-display: swap;
   
     src:
+      local("Songti TC"),
+      local("Songti TC Regular"),
+      local("Apple LiSung"),
       local("Source Han Serif TC"),
       local("Source Han Serif TW"),
-      local("Songti TC"),
-      local("Apple LiSung"),
       local("Microsoft YaHei"),
       url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
   
@@ -159,10 +160,10 @@
     font-display: swap;
   
     src:
+      local("Songti TC Bold"),
       local("Source Han Serif TC SemiBold"),
       local("Source Han Serif TC Bold"),
       local("Source Han Serif TW Bold"),
-      local("Songti TC Bold"),
       local("Microsoft YaHei Bold"),
       url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
   
