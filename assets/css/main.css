@@ -915,8 +915,8 @@ button:not(#\#):not(#\#), input:where([type="button"], [type="reset"], [type="su
   padding-right: calc(var(--spacing) * 5);
 }
 .px-8:not(#\#):not(#\#):not(#\#):not(#\#) {
-  padding-left: calc(var(--spacing) * 8);
-  padding-right: calc(var(--spacing) * 8);
+  padding-left: calc(var(--spacing) * 5);
+  padding-right: calc(var(--spacing) * 5);
 }
 .py-1:not(#\#):not(#\#):not(#\#):not(#\#) {
   padding-top: calc(var(--spacing) * 1);
@@ -1372,11 +1372,11 @@ body:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#)::before {
 }
 body:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#)::before {
   content: var(--tw-content);
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #27272a;
 }
 @supports (color: color-mix(in lab, red, red)) {
   body:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#)::before {
-    background-color: color-mix(in oklab, var(--color-black) 85%, transparent);
+    background-color: #27272a;
   }
 }
 h1:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#),
@@ -1389,14 +1389,14 @@ pre:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
   direction: ltr;
 }
 article:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-lg--line-height));
-  --tw-leading: 1.8;
-  line-height: 1.8;
+  --tw-leading: 1.55;
+  line-height: 1.55;
   color: var(--color-black);
 }
 article:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
-  color: var(--color-white);
+  color: #d1d5db;
 }
 article code {
   font-size: var(--text-sm) !important;
