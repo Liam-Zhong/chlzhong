@@ -137,7 +137,7 @@
   @font-face {
     font-family: "Blog-Serif-TC";
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     font-display: swap;
   
     src:
@@ -186,7 +186,7 @@
   .prose strong,
   .prose b {
     color: inherit;
-    font-weight: 600 !important;
+    font-weight: blod !important;
   }
   
   .prose em,
