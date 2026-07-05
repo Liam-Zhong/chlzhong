@@ -12,9 +12,7 @@ description = "{{ .Summary }}"
 
 一直用的知乎作为自己部落格的图床，优点是访问快，缺点就是 bigger 不高，不方便查看（当然主要原因是我没编辑 html...），于是今天想尝试更换为 Github 的，翻了几篇文章感觉为了这个东西牺牲访问速度不太划算，遂罢（建议加到未遂里）。
 
-好玩的是在教程的过程中看到有位自己网站的图都寄了，看来比起国内的审核，github 更严？（知乎惊喜.jpg）<div style="display: flex; justify-content: center;">
-  <img src="https://pic4.zhimg.com/80/v2-db0b7b35bc414a52f8c9cbec2d654677_1440w.webp" alt="图图" class="img-apple">
-</div>
+好玩的是在教程的过程中看到有位自己网站的图都寄了，看来比起国内的审核，github 更严？（知乎惊喜.jpg）![图图](https://pic4.zhimg.com/80/v2-db0b7b35bc414a52f8c9cbec2d654677_1440w.webp)
 
 -----
 

@@ -1,6 +1,7 @@
 /* ==========================================================================
    Archives
    ========================================================================== */
+
    #archives-page li {
     display: inline-block;
   }
@@ -11,11 +12,13 @@
   }
   
   #archives-page a {
+    position: relative;
+  
     text-decoration: none !important;
     border: none !important;
     box-shadow: none !important;
-    position: relative;
-    transition: all 0.2s;
+  
+    transition: all .2s;
   }
   
   #archives-page a:hover {
@@ -23,31 +26,59 @@
     left: 1px;
   }
   
-  /* ==========================================================================
-     Images
-     ========================================================================== */
-  .img-apple {
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+   .img-apple {
     display: block;
-    margin-inline: auto;
-    max-width: min(100%, 700px);
-    max-height: 70vh;
+  
     width: auto;
     height: auto;
+    max-width: min(100%, 700px);
+    max-height: 70vh;
+  
+    margin: 0 !important;
+  
     object-fit: contain;
+  
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 1.2em !important;
-    margin-bottom: 1.2em !important;
+  
+    content-visibility: auto;
+    contain-intrinsic-size: 500px;
+  }
+  
+  figure {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.0em 0 !important; 
+  }
+  
+  figure .img-apple {
+    margin-bottom: 0.1em !important;
+  }
+  
+  figcaption {
+    margin-top: 0;
+    line-height: 1.4;
+    text-align: center;
+    color: #888;
   }
   
   /* ==========================================================================
      Special Page
      ========================================================================== */
+  
   .prose article section a {
     color: inherit !important;
+  
     text-decoration: none !important;
     border-bottom: 1px dashed currentColor !important;
-    transition: all 0.1s ease-in-out;
+  
+    transition: all .1s ease-in-out;
   }
   
   .prose article section a:hover {
@@ -57,40 +88,48 @@
   
   del {
     color: inherit;
+  
     text-decoration: line-through;
     text-decoration-color: currentColor;
     text-decoration-thickness: 1px;
-    opacity: 0.5;
+  
+    opacity: .5;
   }
   
   /* ==========================================================================
      Fonts
      ========================================================================== */
+  
   /* Kai */
   @font-face {
     font-family: "Kai TC";
     font-style: normal;
     font-weight: 400;
-    src: local("Kaiti"),
-         local("Kaiti TC"),
-         local("STKaiti"),
-         local("SimKai"),
-         local("DFKai-SB"),
-         url("https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2") format("woff2");
+  
+    src:
+      local("Kaiti"),
+      local("Kaiti TC"),
+      local("STKaiti"),
+      local("SimKai"),
+      local("DFKai-SB"),
+      url("/fonts/tuffy-kaiti.woff2") format("woff2");
   }
   
-  /* Blog Serif SC - Regular */
+  /* Blog Serif TC - Regular */
   @font-face {
     font-family: "Blog-Serif-TC";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local("Source Han Serif TC"),
-         local("Source Han Serif TW"),
-         local("Songti TC"),
-         local("Apple LiSung"),
-         local("Microsoft YaHei"),
-         url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
+  
+    src:
+      local("Source Han Serif TC"),
+      local("Source Han Serif TW"),
+      local("Songti TC"),
+      local("Apple LiSung"),
+      local("Microsoft YaHei"),
+      url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
+  
     unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
   }
   
@@ -100,27 +139,43 @@
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: local("Source Han Serif TC SemiBold"),
-         local("Source Han Serif TC Bold"),
-         local("Source Han Serif TW Bold"),
-         local("Songti TC Bold"),
-         local("Microsoft YaHei Bold"),
-         url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
+  
+    src:
+      local("Source Han Serif TC SemiBold"),
+      local("Source Han Serif TC Bold"),
+      local("Source Han Serif TW Bold"),
+      local("Songti TC Bold"),
+      local("Microsoft YaHei Bold"),
+      url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
+  
     unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
   }
   
   /* ==========================================================================
      Typography
      ========================================================================== */
+  
   .prose {
     font-family: "Palatino", "Palatino Linotype", "Book Antiqua", "Georgia", "Blog-Serif-TC", serif !important;
     font-synthesis: none !important;
   }
   
+  /* Headings */
+  
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    text-wrap: balance;
+  }
+  
+  /* Paragraphs */
+  
   .prose p {
     margin-top: 0.8em !important;
     margin-bottom: 0.8em !important;
+  
     line-height: clamp(1.6, 1.4 + 0.6vw, 1.95) !important;
+    text-wrap: pretty;
   }
   
   .prose hr {
@@ -130,8 +185,8 @@
   
   .prose strong,
   .prose b {
-    font-weight: 600 !important;
     color: inherit;
+    font-weight: 600 !important;
   }
   
   .prose em,
@@ -143,13 +198,17 @@
   /* ==========================================================================
      Blockquote
      ========================================================================== */
+  
   .prose blockquote {
+    margin: 1em 0 !important;
+    padding: 0 2em 0 1em !important;
+  
     font-family: "Kai TC", serif !important;
     font-size: 0.9em !important;
     font-style: normal !important;
-    margin: 1em 0 !important;
-    padding: 0 2em 0 1em !important;
+  
     text-align: left !important;
+  
     quotes: none !important;
     border-left: 5px solid var(--border-color) !important;
   }
@@ -172,12 +231,13 @@
   /* ==========================================================================
      Selection
      ========================================================================== */
+  
   ::selection {
-    background: rgb(255, 255, 224);
     color: #000;
+    background: rgb(255, 255, 224);
   }
   
   ::-moz-selection {
-    background: rgb(255, 255, 224);
     color: #000;
+    background: rgb(255, 255, 224);
   }

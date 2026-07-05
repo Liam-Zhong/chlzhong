@@ -14,15 +14,11 @@ Windows 上最应该卸载的三个软件是谁？
 
 2345，360，金山毒霸我都下载过，想着安装在学校电脑玩…但只有 2345 
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://pic1.zhimg.com/50/v2-c292e25f5bf557d6f893c6a7a7bc0e97_720w.jpg?source=2c26e567" alt="" class="img-apple">
-</div>
+![](https://pic1.zhimg.com/50/v2-c292e25f5bf557d6f893c6a7a7bc0e97_720w.jpg?source=2c26e567)
 
 
 
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://picx.zhimg.com/50/v2-eadf7119be2ae4753499d2d498ed9200_720w.jpg?source=2c26e567" alt="" class="img-apple">
-</div>
+![](https://picx.zhimg.com/50/v2-eadf7119be2ae4753499d2d498ed9200_720w.jpg?source=2c26e567)
 
 此现象在为什么现在没有病毒这个问题中亦有记载。

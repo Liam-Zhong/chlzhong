@@ -11,10 +11,8 @@ title = '游武当山'
 
 武当山是道教名山，由于没有被红鬼子们破坏，还能够上联合国世界遗产名录。其地理位于中华人民共和国湖北省十堰市，对于后者我是完全不懂的，还好几年前有个心结，早早在地图上标记出来，于是乘坐火车睡一晚后到了山脚。
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/武当青瓦.jpeg" alt="武当青瓦" class="img-apple">
-  <small style="text-align: center;">武当青瓦</small>
-</div>
+![武当青瓦](/images/武当青瓦.jpeg)
+
 
  旅游不光是为了看风景，更想了解一下武当山的道教文化及历史背景，于是**蹭**了邻坐导游，除开躲过文革，就是 道教文化，这是中国的本土修行文化。
 
@@ -28,17 +26,11 @@ title = '游武当山'
 
  按导游图，一路石板路，上台阶，前往南岩宫探访，路过南天门，方知天底下不止泰山上有南天门，只是小孩子大多没甚见识，自以为登泰山便晓天下了。路途中，不时听见乌鸦的叫声，回荡山谷，难怪得名乌鸦岭。在武当山，历代道士都把乌鸦视为神鸟，投食喂之，并形成尊重神鸟的民俗。在我是很讨厌的，毕竟我是 [Rusty Lake](https://www.rustylake.com) 玩家
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/墙.jpeg" alt="雕栏" class="img-apple">
-  <small style="text-align: center;">雕栏</small>
-</div>
 
  南岩宫，建立于大自然风化形成的峭壁之上，道场布局唯美，依山造势，巧妙结合，龟驮御碑亭，玄帝宫大气雄伟，转角楼小巧玲珑，体现了古代工匠们的匠心智慧。在左侧山体，建一天乙真庆万寿宫石殿，依山而建，修建有举世闻名的「天下第一香 ——龙头香」。
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/龙头香.jpeg" alt="龙头香" class="img-apple">
-  <small style="text-align: center;">龙头香</small>
-</div>
+![龙头香](/images/龙头香.jpeg)
+
 
  建于明代的龙头香，由汉白玉雕刻的双龙顶香炉造型，整体伸出悬崖峭壁约三米有余，龙身为三十公分宽龙背造型，下方万丈深渊，眼前为空旷山谷，最谷底为自然形成的天一湖，冬季倒是来得一个空谷足音，可惜除了鹭鸶们大概没人愿意踩。
 
@@ -50,29 +42,17 @@ title = '游武当山'
 
  沿途观风景，一路有多间游客客栈，方便游客吃住，购买纪念品等。古神道边景点我不大记得，也没有记载必要，除那碗 ¥20 的小面总体还是好的。历时四小时才到达，武当山天柱峰金顶。由于登陡峭台阶太多，感受是：~~双脚累，膝盖疼，累并快乐着？~~  有腿就行，毕竟是开发过的景区，难度不算大。
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/顶.jpg" alt="从三天门看南岩宫" class="img-apple">
-  <small style="text-align: center;">从三天门看南岩宫</small>
-</div>
+![顶](/images/顶.jpg)
+
 
   天柱峰金殿，俗称金顶。建于明永乐十四年（ 1416 年），是我国最大的铜铸鎏金大殿。坐西向东朝向，据传，这是明成祖朱棣授意建造。意即，清晨第一缕阳光，照在真武大帝铜像脸上。金殿内供奉真武祖师铜像，重达 10 吨，还有 600 年来不灭的长明灯，殿外是白玉石栏杆台，台下是长约 1500 米的紫金城，城墙由巨大的长形石条，依山势垒砌而成，感叹古人的建筑智慧精神。
 
  站在峰顶，回望四周，七二峰来朝之景观浮现眼前。群峰跌宕起伏，绿海泛波，云雾飘渺于群山之间。还有晨曦微露，武当山日出的情景：阳光，金殿，群峰，尽展山河壮美，道法自然……
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/山顶.jpeg" alt="山景" class="img-apple">
-  <small style="text-align: center;">山景</small>
-</div>
+![日出](/images/日出.jpeg)
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/日出.jpeg" alt="日出" class="img-apple">
-  <small style="text-align: center;">日出</small>
-</div>
+![雪景](/images/雪景.jpeg)
 
- <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/雪景.jpeg" alt="带雪山景" class="img-apple">
-  <small style="text-align: center;">带雪山景</small>
-</div>
 
 写在这里，天下事还未大定，这山过了还有山 ——
 

@@ -970,8 +970,6 @@ copyright.<br>
 
 -----
 
-</div>
-
 <div align="center">    
     <div style="display: flex; justify-content: center; gap: 10px;">
         <div>

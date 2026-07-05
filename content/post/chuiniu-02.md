@@ -54,9 +54,7 @@ description = "{{ .Summary }}"
 
 最后，我想说的是，快来看看我买的金豪世纪：
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://pic1.zhimg.com/80/v2-9653d99663acc88b9800b3d8c93bb5a4_1440w.jpeg" alt="金豪世纪 100" class="img-apple">
-</div>
+![金豪世纪 100](https://pic1.zhimg.com/80/v2-9653d99663acc88b9800b3d8c93bb5a4_1440w.jpeg)
 
 [^1]: 各年龄段使用的各种产品：常见的有 iPhone 与 Redmi、宝马和比亚迪。
 [^2]: 落花与芝盖齐飞，杨柳共春旗一色。

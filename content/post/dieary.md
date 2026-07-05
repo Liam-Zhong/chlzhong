@@ -27,7 +27,4 @@ description = "{{ .Summary }}"
 水哥的天下事就大定了。<br>
 
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/日寄.jpg" alt="日寄" class="img-apple">
-  <small style="text-align: center;"></small>
-</div>
+![日寄](/images/日寄.jpg)

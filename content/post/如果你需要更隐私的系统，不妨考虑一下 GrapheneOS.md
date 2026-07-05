@@ -10,9 +10,7 @@ title = '如果你需要更隐私的系统，不妨考虑一下 GrapheneOS'
 
 如果你需要更隐私的系统，不妨考虑一下 GrapheneOS
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://pic1.zhimg.com/v2-355dceddcc83fac1d810a22553ffdb12_r.jpg" alt="" class="img-apple">
-</div>
+![](https://pic1.zhimg.com/v2-355dceddcc83fac1d810a22553ffdb12_r.jpg)
 
 ## 前言
 

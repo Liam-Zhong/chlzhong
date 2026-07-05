@@ -14,10 +14,8 @@ description = "{{ .Summary }}"
 
 在那个一切物资都匮乏的时代，钢笔自然十分金贵，同时也算是一种身份的象征
 
-<div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">
-  <img src="https://p3.itc.cn/q_70/images03/20220711/3ca7dd79866740478aafd5d0e1a4e9ca.jpeg" alt="钢笔插在衬衫口袋" class="img-apple">
-  <small style="margin-top: 0.5em; color: #666;">钢笔插在衬衫口袋 | 图源：搜狐</small>
-</div>
+![钢笔插在衬衫口袋 | 图源：搜狐](https://p3.itc.cn/q_70/images03/20220711/3ca7dd79866740478aafd5d0e1a4e9ca.jpeg)
+
 
 ## 1883 年
 
@@ -45,11 +43,7 @@ description = "{{ .Summary }}"
 ## 2001 年
 中国于 2001 年 12 月 11 日正式加入世界贸易组织。值得注意的是石广生先生使用的便是英雄钢笔。
 
-<div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">
-  <img src="https://images.shobserver.com/img/2021/11/6/f194925d06334d72914e3e3d19346e8c.jpg" alt="石广生签署《中国加入世界贸易组织议定书》" class="img-apple">
-  <small style="margin-top: 0.5em; color: #666;">石广生签署《中国加入世界贸易组织议定书》 | 图源：新华社</small>
-</div>
-
+![石广生签署《中国加入世界贸易组织议定书》 | 图源：新华社](https://images.shobserver.com/img/2021/11/6/f194925d06334d72914e3e3d19346e8c.jpg)
 
 
 

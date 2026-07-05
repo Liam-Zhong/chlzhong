@@ -196,6 +196,4 @@ $\max \{33.6, 18, 10\} = 33.6 $
 
 例题：找到 6.33 图的最小生成树！[例题2](https://pic1.zhimg.com/80/v2-dfd9d074c48f5407291bd0ce91b1535c_1440w.png)
 
-答案：<div style="display: flex; justify-content: center;">
-  <img src="https://pica.zhimg.com/80/v2-e8be91fc7ec227ca59fc7ad81b06a52e_1440w.png" alt="答案" class="img-apple">
-</div>
+答案：![答案](https://pica.zhimg.com/80/v2-e8be91fc7ec227ca59fc7ad81b06a52e_1440w.png)

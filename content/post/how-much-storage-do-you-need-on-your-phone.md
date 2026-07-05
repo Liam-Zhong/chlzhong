@@ -15,10 +15,7 @@ description = "{{ .Summary }}"
 
 顺手看了下问题日志：
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/问题日志_10_10.png" alt="问题日志_10_10" class="img-apple">
-  <small style="text-align: center;"> </small>
-</div>
+![问题日志_10_10](/images/问题日志_10_10.png)
 
 看样子是一个搞错了 RAM 和 Storage 的大学生提出的问题，正好最近与根哥聊天时很有吐槽意思，那不妨来看看这些「计算机术语」
 

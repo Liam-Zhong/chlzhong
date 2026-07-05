@@ -30,6 +30,4 @@ description = "{{ .Summary }}"
 
 到现代人们习惯把情绪用表情包表达出来，我想这才是第九艺术。
 
-<div style="text-align: center;">
-    <img src="https://picx.zhimg.com/80/v2-469fb2d996be0c6f50185b45167495d7_1440w.jpeg" alt="Stickers">
-</div>
+![Stickers](https://picx.zhimg.com/80/v2-469fb2d996be0c6f50185b45167495d7_1440w.jpeg)

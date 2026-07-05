@@ -23,12 +23,7 @@ $D=(x_1,y_1),(x_2,y_2),…,(x_m,y_m),y_i∈−1,+1$[^1]，
 
 我们的目标是找到一条分界线/超平面[^2]来将两类区分开，如下图：
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <!-- 图片部分 -->
-  <img src="https://pic1.zhimg.com/80/v2-37649244ba89c6387a151e8c0937f019_1440w.png" alt="晨起动征铎" class="img-apple">
-  <!-- 文字说明 -->
-  <small style="text-align: center;"></small>
-</div>
+![SVM](https://pic1.zhimg.com/80/v2-37649244ba89c6387a151e8c0937f019_1440w.png)
 在样本空间中，用 $w^{T}x+b=0$​ 来描述超平面。其中：
 
 - $w=(w_1,w_2,…,w_d)$ 为法向量，决定了超平面的方向

@@ -39,6 +39,4 @@ description = "{{ .Summary }}"
 
 说到鲁迅今天的月夜的确是深蓝色的，记录一下不是少年的我在尴尬期的头发：
 
-<div style="display: flex; justify-content: center;">
-  <img src="/images/me.jpeg" alt="蓝月夜" class="img-apple">
-</div>
+![蓝月夜](/images/me.jpeg)
