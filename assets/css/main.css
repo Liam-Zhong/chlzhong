@@ -915,8 +915,8 @@ button:not(#\#):not(#\#), input:where([type="button"], [type="reset"], [type="su
   padding-right: calc(var(--spacing) * 5);
 }
 .px-8:not(#\#):not(#\#):not(#\#):not(#\#) {
-  padding-left: calc(var(--spacing) * 5);
-  padding-right: calc(var(--spacing) * 5);
+  padding-left: calc(var(--spacing) * 6);
+  padding-right: calc(var(--spacing) * 6);
 }
 .py-1:not(#\#):not(#\#):not(#\#):not(#\#) {
   padding-top: calc(var(--spacing) * 1);
@@ -1203,7 +1203,7 @@ button:not(#\#):not(#\#), input:where([type="button"], [type="reset"], [type="su
   }
 }
 .ltr\:-mr-8:where([dir="ltr"],[dir="ltr"],[dir="ltr"] *):not(#\#):not(#\#):not(#\#):not(#\#) {
-  margin-right: calc(var(--spacing) * -8);
+  margin-right: calc(var(--spacing) * -6);
 }
 .ltr\:mr-1\.5:where([dir="ltr"],[dir="ltr"],[dir="ltr"] *):not(#\#):not(#\#):not(#\#):not(#\#) {
   margin-right: calc(var(--spacing) * 1.5);
