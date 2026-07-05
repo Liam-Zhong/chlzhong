@@ -190,6 +190,8 @@
       serif !important;
   
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: auto !important;
+    -moz-osx-font-smoothing: auto !important;
   }
   
   /* Headings */
