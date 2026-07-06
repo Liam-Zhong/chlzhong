@@ -5,20 +5,24 @@ author = "Tuffy"
 math = true
 comments = true
 toc = false
-title = 'Windows 上最應該卸載的三个軟件是誰？'
+title = 'Windows 上最应该卸载的三个软件是谁？'
 +++
 
-Windows 上最應該卸載的三个軟件是誰？
+Windows 上最应该卸载的三个软件是谁？
 
-提名 2345 瀏覽器。
+提名 2345 浏览器。
 
-2345，360，金山毒霸我都下載過，想着安装在学校电腦玩…但只有 2345 
+2345，360，金山毒霸我都下载过，想着安装在学校电脑玩…但只有 2345 
 
-![](https://pic1.zhimg.com/50/v2-c292e25f5bf557d6f893c6a7a7bc0e97_720w.jpg?source=2c26e567)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic1.zhimg.com/50/v2-c292e25f5bf557d6f893c6a7a7bc0e97_720w.jpg?source=2c26e567" alt="" class="img-apple">
+</div>
 
 
 
 
-![](https://picx.zhimg.com/50/v2-eadf7119be2ae4753499d2d498ed9200_720w.jpg?source=2c26e567)
+<div style="display: flex; justify-content: center;">
+  <img src="https://picx.zhimg.com/50/v2-eadf7119be2ae4753499d2d498ed9200_720w.jpg?source=2c26e567" alt="" class="img-apple">
+</div>
 
-此現象在爲什么現在沒有病毒這个問題中亦有記載。
+此现象在为什么现在没有病毒这个问题中亦有记载。

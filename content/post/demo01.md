@@ -6,6 +6,6 @@ comments = true
 description = "{{ .Summary }}"
 +++
 
-這是我的第一篇博客。
+这是我的第一篇博客。
 
 `HELLO WORLD！`

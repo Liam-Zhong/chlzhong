@@ -6,10 +6,10 @@ math = true
 comments = true
 toc = false
 weight = 10
-title = '豆老師最美'
+title = '豆老师最美'
 +++
 
-豆老師最美！
+豆老师最美！
 
 
 {{< love >}}

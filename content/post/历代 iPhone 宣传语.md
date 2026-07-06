@@ -5,10 +5,10 @@ author = "Tuffy"
 math = true
 comments = true
 toc = false
-title = '歷代 iPhone 宣傳語'
+title = '历代 iPhone 宣传语'
 +++
 
-歷代 iPhone 宣傳語
+历代 iPhone 宣传语
 
 • 1st iPhone
 
@@ -46,17 +46,19 @@ The most amazing iPhone yet
 
 The biggest thing to happen to iPhone since iPhone.
 
-iPhone 問世以來，一次及其重大的飞跃。
+iPhone 问世以来，一次及其重大的飞跃。
 
 iPhone 面世以來，iPhone 最矚目大事。
 
 • iPhone 5c:
 
-![](https://picx.zhimg.com/v2-ceffb6e68237e8cafef653597b98a833_r.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="https://picx.zhimg.com/v2-ceffb6e68237e8cafef653597b98a833_r.jpg" alt="" class="img-apple">
+</div>
 
 For the colorful.
 
-生來多彩
+生来多彩
 
 天賦多彩
 
@@ -72,7 +74,7 @@ Forward thinking.
 
 Bigger than bigger
 
-豈止于大
+岂止于大
 
 豈止於大
 
@@ -112,7 +114,7 @@ A new generation of iPhone.
 
 Say hello to the future.
 
-hello，未來。
+hello，未来。
 
 向未來說聲 hello。
 
@@ -126,7 +128,9 @@ Brilliant. In every way.
 
 • iPhone XS and XS Max
 
-![](https://pic2.zhimg.com/v2-6c3dbc9fd3c02753aedbb9a17c1d234f_r.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic2.zhimg.com/v2-6c3dbc9fd3c02753aedbb9a17c1d234f_r.jpg" alt="" class="img-apple">
+</div>
 
 Welcome to the big screens.
 
@@ -138,7 +142,7 @@ Welcome to the big screens.
 
 Just the right amount of everything.
 
-一切都剛剛好。
+一切都刚刚好。
 
 剛剛好，就好。
 
@@ -146,7 +150,7 @@ Just the right amount of everything.
 
 Pro cameras. Pro display. Pro performance.
 
-攝像头、顯示屏、性能，样样 Pro 如其名。
+摄像头、显示屏、性能，样样 Pro 如其名。
 
 相機、顯示器、效能，樣樣 Pro。
 
@@ -154,7 +158,7 @@ Pro cameras. Pro display. Pro performance.
 
 Lots to love. Less to spend.
 
-稱心稱手，超值入手。
+称心称手，超值入手。
 
 精彩多多，付出不多。
 
@@ -162,7 +166,7 @@ Lots to love. Less to spend.
 
 Blast past fast.
 
-升維大提速
+升维大提速
 
 速度，突破另一層次。
 
@@ -178,7 +182,7 @@ It's a leap year.
 
 Your new superpower.
 
-解鎖超能力
+解锁超能力
 
 超能，超多可能。
 
@@ -194,7 +198,7 @@ Oh. So. Pro.
 
 Love the power. Love the price.
 
-重磅实力，輕松入手。
+重磅实力，轻松入手。
 
 精彩多多，付出不多。
 
@@ -208,7 +212,9 @@ Big and bigger.
 
 • iPhone 14 Pro and 14 Pro Max
 
-![](https://pic3.zhimg.com/v2-383cbc597f0a11e53ffb79671a8f4e74_r.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="https://pic3.zhimg.com/v2-383cbc597f0a11e53ffb79671a8f4e74_r.jpg" alt="" class="img-apple">
+</div>
 
 Pro. Beyond.
 
@@ -220,7 +226,7 @@ Pro. Beyond.
 
 New camera. New design. Newphoria.
 
-新主攝，新设計，開新超開心。
+新主摄，新设计，开新超开心。
 
 新相機，新設計，新在手，心在跳。
 
@@ -228,7 +234,7 @@ New camera. New design. Newphoria.
 
 Titanium. So strong. So light. So Pro.
 
-鈦金属，堅固輕盈，Pro 得真材实料。
+钛金属，坚固轻盈，Pro 得真材实料。
 
 鈦金屬、極堅固、極輕、極 Pro。
 
@@ -246,7 +252,7 @@ iPhone 上新，超值刷新。
 
 The thinnest iPhone ever. With the power of pro inside.
 
-迄今最薄 iPhone，身藏高能內核。
+迄今最薄 iPhone，身藏高能内核。
 
 歷來最薄的iPhone ，內藏雄厚實力
 
