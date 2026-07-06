@@ -1,276 +1,222 @@
 /* ==========================================================================
-   Archives
+   0. Base / Foundations
    ========================================================================== */
 
-   #archives-page li {
-    display: inline-block;
-  }
-  
-  #archives-page .date {
-    color: #888;
-  }
-  
-  #archives-page a {
-    position: relative;
-    text-decoration: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    display: inline-block;
-    transition: transform .2s;
-  }
-  
-  #archives-page a:hover {
-    transform: translate(2px, 2px);
-  }
-  
-  /* ==========================================================================
-     Images
-     ========================================================================== */
-  
-  figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    margin: 1.8em 0 !important;
-  }
-  
-  .img-apple {
-    display: block;
-  
-    width: auto;
-    height: auto;
-    max-width: min(100%, 700px);
-    max-height: 70vh;
-  
-    margin: 0 !important;
-  
-    object-fit: contain;
-  
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
-  
-    content-visibility: auto;
-    contain-intrinsic-size: 500px;
-  }
-  
-  figure > .img-apple {
-    margin-bottom: .75em !important;
-  }
-  
-  figcaption {
-    max-width: min(100%, 700px);
-  
-    margin: 0;
-    padding: 0 .5rem;
-  
-    font-size: .9rem;
-    line-height: 1.45;
-    text-align: center;
-  
-    color: var(--secondary);
-  }
-  
-  
-  /* ==========================================================================
-     Special Page
-     ========================================================================== */
-  
-  .prose article section a {
-    color: inherit !important;
-  
-    text-decoration: none !important;
-    border-bottom: 1px dashed currentColor !important;
-  
-    transition: all .1s ease-in-out;
-  }
-  
-  .prose article section a:hover {
-    position: relative;
-    inset: 1px 0 0 1px;
-  }
-  
-  del {
-    color: inherit;
-  
-    text-decoration: line-through;
-    text-decoration-color: currentColor;
-    text-decoration-thickness: 1px;
-  
-    opacity: .5;
-  }
-  
-  
-  /* ==========================================================================
-     Fonts
-     ========================================================================== */
-  
-  /* Kai */
-  
-  @font-face {
-    font-family: "Kai TC";
-    font-style: normal;
-    font-weight: 400;
-  
-    src:
-      local("Kaiti"),
-      local("Kaiti TC"),
-      local("STKaiti"),
-      local("SimKai"),
-      local("DFKai-SB"),
-      url("/fonts/tuffy-kaiti.woff2") format("woff2");
-  }
-  
-  /* Blog Serif TC - Regular */
-  
-  @font-face {
-    font-family: "Blog-Serif-TC";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  
-    src:
-      local("Songti TC"),
-      local("Songti TC Regular"),
-      local("Apple LiSung"),
-      local("Source Han Serif TC"),
-      local("Source Han Serif TW"),
-      local("Microsoft YaHei"),
-      url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
-  
-    unicode-range:
-      U+4E00-9FFF,
-      U+3000-303F,
-      U+FF00-FFEF,
-      U+2014,
-      U+2018-2019,
-      U+201C-201D;
-  }
-  
-  /* Blog Serif TC - SemiBold */
-  
-  @font-face {
-    font-family: "Blog-Serif-TC";
-    font-style: normal;
-    font-weight: bold;
-    font-display: swap;
-  
-    src:
-      local("Songti TC Bold"),
-      local("Source Han Serif TC SemiBold"),
-      local("Source Han Serif TC Bold"),
-      local("Source Han Serif TW Bold"),
-      local("Microsoft YaHei Bold"),
-      url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
-  
-    unicode-range:
-      U+4E00-9FFF,
-      U+3000-303F,
-      U+FF00-FFEF,
-      U+2014,
-      U+2018-2019,
-      U+201C-201D;
-  }
-  
-  
-  /* ==========================================================================
-     Typography
-     ========================================================================== */
-  
-  .prose {
-    font-family:
-      "Palatino",
-      "Palatino Linotype",
-      "Book Antiqua",
-      "Georgia",
-      "Blog-Serif-TC",
-      serif !important;
-  
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: auto !important;
-    -moz-osx-font-smoothing: auto !important;
-  }
-  
-  /* Headings */
-  
-  .prose h1,
-  .prose h2,
-  .prose h3 {
-    text-wrap: balance;
-  }
-  
-  /* Paragraphs */
-  
-  .prose p {
-    margin-top: .8em !important;
-    margin-bottom: .8em !important;
-  
-    line-height: clamp(1.6, 1.4 + .6vw, 1.95) !important;
-    text-wrap: pretty;
-  }
-  
-  .prose hr {
-    margin-top: 1.5em !important;
-    margin-bottom: 1.5em !important;
-  }
-  
-  .prose strong,
-  .prose b {
-    color: inherit;
-    font-weight: bold !important;
-  }
-  
-  .prose em,
-  .prose strong em {
-    font-family: "Kai TC", serif !important;
-    font-style: normal !important;
-  }
-  
-  
-  /* ==========================================================================
-     Blockquote
-     ========================================================================== */
-  
-  .prose blockquote {
-    margin: 1em 0 !important;
-    padding: 0 2em 0 1em !important;
-  
-    font-family: "Kai TC", serif !important;
-    font-size: .9em !important;
-    font-style: normal !important;
-  
-    text-align: left !important;
-  
-    quotes: none !important;
-    border-left: 5px solid var(--border-color) !important;
-  }
-  
-  .prose blockquote p::before,
-  .prose blockquote p::after {
-    content: none !important;
-  }
-  
-  .prose blockquote,
-  .prose blockquote p,
-  .prose blockquote cite {
-    font-style: normal !important;
-  }
-  
-  .single blockquote {
-    background: var(--bg-block) !important;
-  }
-  
-  
-  /* ==========================================================================
-     Selection
-     ========================================================================== */
-  
-  ::selection {
-    color: #000;
-    background: rgb(255 255 224);
-  }
-  
-  ::-moz-selection {
-    color: #000;
-    background: rgb(255 255 224);
-  }
+/* Selection */
+::selection {
+  color: #000;
+  background: rgb(255 255 224);
+}
+
+::-moz-selection {
+  color: #000;
+  background: rgb(255 255 224);
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Kai TC";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Kaiti"),
+    local("Kaiti TC"),
+    local("STKaiti"),
+    local("SimKai"),
+    local("DFKai-SB"),
+    url("/fonts/tuffy-kaiti.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Blog-Serif-TC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Songti TC"),
+    local("Songti TC Regular"),
+    local("Apple LiSung"),
+    local("Source Han Serif TC"),
+    local("Source Han Serif TW"),
+    local("Microsoft YaHei"),
+    url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
+  unicode-range:
+    U+4E00-9FFF,
+    U+3000-303F,
+    U+FF00-FFEF,
+    U+2014,
+    U+2018-2019,
+    U+201C-201D;
+}
+
+@font-face {
+  font-family: "Blog-Serif-TC";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    local("Songti TC Bold"),
+    local("Source Han Serif TC SemiBold"),
+    local("Source Han Serif TC Bold"),
+    local("Source Han Serif TW Bold"),
+    local("Microsoft YaHei Bold"),
+    url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
+  unicode-range:
+    U+4E00-9FFF,
+    U+3000-303F,
+    U+FF00-FFEF,
+    U+2014,
+    U+2018-2019,
+    U+201C-201D;
+}
+
+
+/* ==========================================================================
+   1. Typography System
+   ========================================================================== */
+
+.prose {
+  font-family:
+    "Palatino",
+    "Palatino Linotype",
+    "Book Antiqua",
+    "Georgia",
+    "Blog-Serif-TC",
+    serif !important;
+
+  text-rendering: optimizeLegibility;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  text-wrap: balance;
+}
+
+.prose p {
+  margin-top: .8em !important;
+  margin-bottom: .8em !important;
+  text-wrap: pretty;
+}
+
+.prose hr {
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
+}
+
+.prose strong,
+.prose b {
+  color: inherit;
+  font-weight: bold !important;
+}
+
+.prose em,
+.prose strong em {
+  font-family: "Kai TC", serif !important;
+  font-style: normal !important;
+}
+
+
+/* ==========================================================================
+   2. Components
+   ========================================================================== */
+
+/* Blockquote */
+.prose blockquote {
+  font-family: "Kai TC", serif !important;
+  border-left: 5px solid var(--border-color) !important;
+}
+
+/* Images */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.8em 0 !important;
+}
+
+.img-apple {
+  display: block;
+
+  width: auto;
+  height: auto;
+  max-width: min(100%, 700px);
+  max-height: 70vh;
+
+  margin: 0 !important;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+}
+
+figure > .img-apple {
+  margin-bottom: .75em !important;
+}
+
+figcaption {
+  max-width: min(100%, 700px);
+
+  margin: 0;
+  padding: 0 .5rem;
+
+  font-size: .9rem;
+  line-height: 1.45;
+  text-align: center;
+
+  color: var(--secondary);
+}
+
+
+/* ==========================================================================
+   3. Pages
+   ========================================================================== */
+
+/* Archives */
+#archives-page li {
+  display: inline-block;
+}
+
+#archives-page .date {
+  color: #888;
+}
+
+#archives-page a {
+  position: relative;
+  text-decoration: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: transform .2s;
+}
+
+#archives-page a:hover {
+  transform: translate(2px, 2px);
+}
+
+
+/* Special Page */
+.prose article section a {
+  color: inherit !important;
+
+  text-decoration: none !important;
+  border-bottom: 1px dashed currentColor !important;
+
+  transition: all .1s ease-in-out;
+}
+
+.prose article section a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
+}
+
+del {
+  color: inherit;
+  text-decoration: line-through;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  opacity: .5;
+}

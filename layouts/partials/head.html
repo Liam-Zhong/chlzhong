@@ -12,7 +12,7 @@
   </title>
 
   <!-- meta -->
-  <meta name="theme-color" />
+  <meta name="theme-color" content="{{ $.Scratch.Get "bg_color" }}">
 
   <!-- author -->
   {{- $site_author := or .Params.author site.Params.author site.Title -}}

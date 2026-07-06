@@ -393,8 +393,8 @@ button:not(#\#):not(#\#), input:where([type="button"], [type="reset"], [type="su
   margin-bottom: 3em;
 }
 .prose:not(#\#):not(#\#):not(#\#):not(#\#) :where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  font-weight: 500;
-  font-style: italic;
+  font-weight: 400;
+  font-style: normal;
   color: var(--tw-prose-quotes);
   border-left-width: 0.25rem;
   border-left-color: var(--tw-prose-quote-borders);
@@ -404,10 +404,10 @@ button:not(#\#):not(#\#), input:where([type="button"], [type="reset"], [type="su
   padding-left: 1em;
 }
 .prose:not(#\#):not(#\#):not(#\#):not(#\#) :where(blockquote p:first-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::before {
-  content: open-quote;
+  content: none;
 }
 .prose:not(#\#):not(#\#):not(#\#):not(#\#) :where(blockquote p:last-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
-  content: close-quote;
+  content: none;
 }
 .prose:not(#\#):not(#\#):not(#\#):not(#\#) :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   color: var(--tw-prose-headings);
@@ -606,7 +606,7 @@ button:not(#\#):not(#\#), input:where([type="button"], [type="reset"], [type="su
   --tw-prose-counters: rgb(106, 114, 130);
   --tw-prose-bullets: rgb(209, 213, 220);
   --tw-prose-hr: rgb(229, 231, 235);
-  --tw-prose-quotes: rgb(16, 24, 40);
+  --tw-prose-quotes: rgb(107, 85, 99);
   --tw-prose-quote-borders: rgb(229, 231, 235);
   --tw-prose-captions: rgb(106, 114, 130);
   --tw-prose-kbd: rgb(16, 24, 40);
@@ -1025,7 +1025,7 @@ button:not(#\#):not(#\#), input:where([type="button"], [type="reset"], [type="su
   --tw-prose-counters: rgb(115, 115, 115);
   --tw-prose-bullets: rgb(212, 212, 212);
   --tw-prose-hr: rgb(229, 229, 229);
-  --tw-prose-quotes: rgb(23, 23, 23);
+  --tw-prose-quotes: rgb（107, 85, 99）;
   --tw-prose-quote-borders: rgb(229, 229, 229);
   --tw-prose-captions: rgb(115, 115, 115);
   --tw-prose-kbd: rgb(23, 23, 23);
@@ -1391,8 +1391,8 @@ pre:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
 article:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-lg--line-height));
-  --tw-leading: 1.55;
-  line-height: 1.55;
+  --tw-leading: 1.6;
+  line-height: 1.6;
   color: var(--color-black);
 }
 article:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
