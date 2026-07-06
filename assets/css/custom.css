@@ -17,14 +17,21 @@
 @font-face {
   font-family: "Kai TC";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src:
     local("Kaiti"),
     local("Kaiti TC"),
     local("STKaiti"),
     local("SimKai"),
     local("DFKai-SB"),
-    url("/fonts/tuffy-kaiti.woff2") format("woff2");
+    url("/fonts/Tuffy-AR PL KaitiM GB.woff2") format("woff2");
+    unicode-range:
+    U+4E00-9FFF,
+    U+3000-303F,
+    U+FF00-FFEF,
+    U+2014,
+    U+2018-2019,
+    U+201C-201D;
 }
 
 @font-face {
@@ -39,7 +46,7 @@
     local("Source Han Serif TC"),
     local("Source Han Serif TW"),
     local("Microsoft YaHei"),
-    url("/fonts/NotoSerifSC-Regular.woff2") format("woff2");
+    url("/fonts/Tuffy-NotoSerifTC-Regular.woff2") format("woff2");
   unicode-range:
     U+4E00-9FFF,
     U+3000-303F,
@@ -60,7 +67,7 @@
     local("Source Han Serif TC Bold"),
     local("Source Han Serif TW Bold"),
     local("Microsoft YaHei Bold"),
-    url("/fonts/NotoSerifSC-SemiBold.woff2") format("woff2");
+    url("/fonts/Tuffy-NotoSerifTC-SemiBold.woff2") format("woff2");
   unicode-range:
     U+4E00-9FFF,
     U+3000-303F,
@@ -79,8 +86,8 @@
   font-family:
     "Palatino",
     "Palatino Linotype",
-    "Book Antiqua",
     "Georgia",
+    "Book Antiqua",
     "Blog-Serif-TC",
     serif !important;
 
