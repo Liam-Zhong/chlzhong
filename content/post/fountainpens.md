@@ -2,7 +2,7 @@
 author = "Tuffy"
 title = '印象中的钢笔们'
 date = 2024-09-10T21:15:28+08:00
-math = true 
+math = false
 draft = false
 comments = true
 description = "{钢笔推荐，五大，龙鸟派犀水}"
