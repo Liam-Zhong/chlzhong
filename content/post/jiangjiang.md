@@ -36,7 +36,7 @@ description = "{江阿姨}"
 
    这两点都难以证明。小林倒倾向于这样认为，因为这是生平第一次听见有人在他面前说：
 
-<p style="text-align: center; font-style: italic;">
+<p style="text-align: center; font-weight: bold;">
     「欸，你怎么变丑了？」
 </p>
 
