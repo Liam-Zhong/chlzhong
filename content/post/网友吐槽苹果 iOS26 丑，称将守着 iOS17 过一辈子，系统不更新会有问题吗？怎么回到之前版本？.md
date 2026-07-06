@@ -2,7 +2,7 @@
 date = '2026-06-04T23:59:27+08:00'
 draft = false
 author = "Tuffy"
-math = true
+math = false
 comments = true
 toc = false
 title = '网友吐槽苹果 iOS26 丑，称将守着 iOS17 过一辈子，系统不更新会有问题吗？怎么回到之前版本？'

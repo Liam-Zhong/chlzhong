@@ -2,7 +2,7 @@
 date = '2026-06-04T23:59:27+08:00'
 draft = false
 author = "Tuffy"
-math = true
+math = false
 comments = true
 toc = false
 title = '电脑小白求助 电脑使用过程中对微软账户以及office等有疑惑（问题补充被吞了，在问题评论那）？'
