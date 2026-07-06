@@ -56,14 +56,12 @@
    ========================================================================== */
 .prose {
   font-family:
-    "Palatino",
-    "Palatino Linotype",
+    ui-serif,
+    "New York",
     "Georgia",
-    "Book Antiqua",
-    "Source Han Serif TC", 
+    "Noto Serif",
     "Songti TC",   
-    "Blog-Serif-TC",        
-    "STSong",              
+    "Blog-Serif-TC",                     
     serif !important;      
   font-weight: 550;
   text-rendering: optimizeLegibility;
