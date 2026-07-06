@@ -54,18 +54,6 @@
 /* ==========================================================================
    1. Typography System
    ========================================================================== */
-
-.prose {
-  font-family:
-    "Palatino",
-    "Palatino Linotype",
-    "Georgia",
-    "Book Antiqua",
-    "Blog-Serif-TC",
-    serif !important;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-}
 .prose {
   font-family:
     "Palatino",
@@ -77,7 +65,7 @@
     "Blog-Serif-TC",        
     "STSong",              
     serif !important;      
-  font-weight: 400;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
 }
 
@@ -101,7 +89,7 @@
 .prose strong,
 .prose b {
   color: inherit;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .prose em,
