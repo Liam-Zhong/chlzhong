@@ -17,7 +17,7 @@
 @font-face {
   font-family: "Kai TC";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   src:
     local("Kaiti"),
     local("Kaiti TC"),
@@ -37,7 +37,7 @@
 @font-face {
   font-family: "Blog-Serif-TC";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200 900;
   font-display: swap;
   src:
     local("Songti TC"),
@@ -56,26 +56,6 @@
     U+201C-201D;
 }
 
-@font-face {
-  font-family: "Blog-Serif-TC";
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src:
-    local("Songti TC Bold"),
-    local("Source Han Serif TC SemiBold"),
-    local("Source Han Serif TC Bold"),
-    local("Source Han Serif TW Bold"),
-    local("Microsoft YaHei Bold"),
-    url("/fonts/Tuffy-NotoSerifTC-SemiBold.woff2") format("woff2");
-  unicode-range:
-    U+4E00-9FFF,
-    U+3000-303F,
-    U+FF00-FFEF,
-    U+2014,
-    U+2018-2019,
-    U+201C-201D;
-}
 
 /* ==========================================================================
    1. Typography System
@@ -89,7 +69,7 @@
     "Book Antiqua",
     "Blog-Serif-TC",
     serif !important;
-
+  font-weight: 400;
   text-rendering: optimizeLegibility;
 }
 
@@ -113,13 +93,13 @@
 .prose strong,
 .prose b {
   color: inherit;
-  font-weight: bold !important;
+  font-weight: 600;
 }
 
 .prose em,
 .prose strong em {
-  font-family: "Kai TC", serif !important;
-  font-style: normal !important;
+  font-family: "Blog-Serif-TC", serif !important;
+  font-style: bold !important;
 }
 
 
