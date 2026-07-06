@@ -10,16 +10,16 @@ toc = false
 +++
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/chuiyachiya.jpg" alt="是你的童心吗" class="img-apple">
-  <small style="text-align: center;">是你的童心吗</small>
+  <img src="/images/chuiyachiya.jpg" alt="是你的童心嗎" class="img-apple">
+  <small style="text-align: center;">是你的童心嗎</small>
 </div>
 
 
 <br>
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/down_sun.jpg" alt="西下圆一个虚幻" class="img-apple">
-  <small style="text-align: center;">西下圆一个虚幻</small>
+  <img src="/images/down_sun.jpg" alt="西下圓一个虛幻" class="img-apple">
+  <small style="text-align: center;">西下圓一个虛幻</small>
 </div>
 
 <br>
@@ -32,15 +32,15 @@ toc = false
 <br>
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/mememe.jpg" alt="全身上下没有一口袋放✒" class="img-apple">
-  <small style="text-align: center;">全身上下没有一口袋放✒</small>
+  <img src="/images/mememe.jpg" alt="全身上下沒有一口袋放✒" class="img-apple">
+  <small style="text-align: center;">全身上下沒有一口袋放✒</small>
 </div>
 
 <br>
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
   <img src="/images/same_thing.jpg" alt="冬，同？"class="img-apple">
-  <small style="text-align: center;">你也是这样吗</small>
+  <small style="text-align: center;">你也是這样嗎</small>
 </div>
 
 <br>

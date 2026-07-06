@@ -10,5 +10,5 @@ author = "lee.so"
   )
 - [邮箱](mailto:chlzhong@outlook.com)
 - ~~[知乎](https://people/zhongcl-jiang/)~~
-- [哔哩哔哩](https://space.bilibili.com/3546587322124798/)
+- [嗶哩嗶哩](https://space.bilibili.com/3546587322124798/)
 - [Steam](https://steamcommunity.com/profiles/76561199395884361/)

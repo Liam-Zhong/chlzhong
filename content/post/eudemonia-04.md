@@ -13,13 +13,13 @@ description = "{{ .Summary }}"
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">
-  <img src="/images/02.png" alt="饿肚海星粉" class="img-apple">
-  <small style="margin-top: 0.5em;">饿肚海星粉</small>
+  <img src="/images/02.png" alt="餓肚海星粉" class="img-apple">
+  <small style="margin-top: 0.5em;">餓肚海星粉</small>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">
-  <img src="/images/03.png" alt="谢阿金" class="img-apple">
-  <small style="margin-top: 0.5em;">谢阿金</small>
+  <img src="/images/03.png" alt="謝阿金" class="img-apple">
+  <small style="margin-top: 0.5em;">謝阿金</small>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">

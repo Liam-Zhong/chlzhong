@@ -8,10 +8,10 @@ comments = true
 description = "{{ .Summary }}"
 +++
 
-东风游莲塘，灼灼入吾心。
+东风游蓮塘，灼灼入吾心。
 
-愿为檐下霖，十旬长倾倾。
+愿爲檐下霖，十旬长傾傾。
 
 ![lighting](https://picx.zhimg.com/80/v2-f1c237b1fef29259eddca5fd70feeccc_1440w.jpeg)[^1]
-[^1]:闪电瞬间
+[^1]:閃电瞬间
 

@@ -1,6 +1,6 @@
 +++
 author = "Tuffy"
-title = '闲话零'
+title = '閒話零'
 date = 2025-05-11T22:33:03+08:00
 math = true 
 draft = false
@@ -9,6 +9,6 @@ toc = false
 
 +++
 
-没有更新的时候在干嘛？
+沒有更新的時候在干嘛？
 
-图书馆学高数...
+圖書館学高數...

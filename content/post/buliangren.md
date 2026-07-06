@@ -11,13 +11,13 @@ toc = false
 
 从手心处看太阳到星星陪着走夜路——
 
-我就这样披星戴月地游手好闲。
+我就這样披星戴月地游手好閒。
 
 
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="https://github.com/Liam-Zhong/image-host/blob/main/Screenshot%20from%202025-07-10%2020-07-29.png?raw=true" alt="小帅和小帅" class="img-apple">
-  <small style="text-align: center;">小帅和小帅</small>
+  <img src="https://github.com/Liam-Zhong/image-host/blob/main/Screenshot%20from%202025-07-10%2020-07-29.png?raw=true" alt="小帥和小帥" class="img-apple">
+  <small style="text-align: center;">小帥和小帥</small>
 </div>
 
 

@@ -1,6 +1,6 @@
 +++
 author = "Tuffy"
-title = 'Eudemonia - 来自天空的蓝翎鸟儿是我的爱人'
+title = 'Eudemonia - 來自天空的藍翎鸟儿是我的愛人'
 date = 2024-06-30T21:07:31+08:00
 math = true                                
 draft = false
@@ -13,8 +13,8 @@ description = "{{ .Summary }}"
 
 -----
 
-![蓝鸟出现的湖](https://pica.zhimg.com/80/v2-e722fa743ad52c82051d0f316451e476_1440w.jpeg)
-<center><small>蓝鸟出现的湖</small></center>
+![藍鸟出現的湖](https://pica.zhimg.com/80/v2-e722fa743ad52c82051d0f316451e476_1440w.jpeg)
+<center><small>藍鸟出現的湖</small></center>
 
 -----
 
@@ -23,8 +23,8 @@ description = "{{ .Summary }}"
 
 -----
 
-![飘扬的红旗](https://picx.zhimg.com/80/v2-8ce086060d201b5a53d8934ebd21b5b8_1440w.jpeg)
-<center><small>飘扬的红旗</small></center>
+![飄揚的紅旗](https://picx.zhimg.com/80/v2-8ce086060d201b5a53d8934ebd21b5b8_1440w.jpeg)
+<center><small>飄揚的紅旗</small></center>
 
 -----
 

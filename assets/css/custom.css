@@ -77,18 +77,6 @@
     U+201C-201D;
 }
 
-@font-face {
-  font-family: "Blog-Serif-SC";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local("Source Han Serif SC"),
-    local("Noto Serif SC"),
-    url("/fonts/Tuffy-NotoSerifSC-Regular.woff2") format("woff2");
-}
-
-
 /* ==========================================================================
    1. Typography System
    ========================================================================== */
@@ -100,7 +88,6 @@
     "Georgia",
     "Book Antiqua",
     "Blog-Serif-TC",
-    "Blog-Serif-SC"
     serif !important;
 
   text-rendering: optimizeLegibility;

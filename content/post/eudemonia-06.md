@@ -9,14 +9,14 @@ comments = true
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
   <img src="/images/fangyuhang_water.JPEG" alt="俳壹" class="img-apple">
-  <small style="text-align: center;">既秋又夜且雨，<br>我却一事无成，<br>所喜一诗无成。</small>
+  <small style="text-align: center;">既秋又夜且雨，<br>我却一事无成，<br>所喜一詩无成。</small>
 </div>
 
 
 **********
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/zhihu_water.png" alt="俳贰" class="img-apple">
-  <small style="text-align: center;">登舟的登舟，<br>弃岸的弃岸，<br>冷落清秋节。<br>
+  <img src="/images/zhihu_water.png" alt="俳貳" class="img-apple">
+  <small style="text-align: center;">登舟的登舟，<br>棄岸的棄岸，<br>冷落清秋節。<br>
 </small>
 </div>
