@@ -6,6 +6,7 @@ math = true
 draft = false
 comments = true
 description = "{{ .Summary }}"
+
 +++
 
 东风游莲塘，灼灼入吾心。
@@ -14,6 +15,7 @@ description = "{{ .Summary }}"
 
 <div style="display: flex; justify-content: center;">
   <img src="https://picx.zhimg.com/80/v2-f1c237b1fef29259eddca5fd70feeccc_1440w.jpeg" alt="lighting" class="img-apple">
-</div>[^1]
+</div>
+
 [^1]:闪电瞬间
 
