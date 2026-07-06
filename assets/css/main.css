@@ -1372,11 +1372,11 @@ body:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#)::before {
 }
 body:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#)::before {
   content: var(--tw-content);
-  background-color: #27272a;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 @supports (color: color-mix(in lab, red, red)) {
   body:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#)::before {
-    background-color: #27272a;
+    background-color: color-mix(in oklab, var(--color-black) 85%, transparent);
   }
 }
 h1:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#),
@@ -1396,7 +1396,7 @@ article:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
   color: var(--color-black);
 }
 article:where(.dark,.dark *):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
-  color: #d1d5db;
+  color: var(--color-white);
 }
 article code {
   font-size: var(--text-sm) !important;

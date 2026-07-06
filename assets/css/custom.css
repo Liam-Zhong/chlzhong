@@ -40,13 +40,7 @@
   font-weight: 200 900;
   font-display: swap;
   src:
-    local("Songti TC"),
-    local("Songti TC Regular"),
-    local("Apple LiSung"),
-    local("Source Han Serif TC"),
-    local("Source Han Serif TW"),
-    local("Microsoft YaHei"),
-    url("/fonts/Tuffy-NotoSerifTC-Regular.woff2") format("woff2");
+    url("/fonts/Tuffy-SourceHanSerifTC-VF.otf.woff2") format("woff2");
   unicode-range:
     U+4E00-9FFF,
     U+3000-303F,
@@ -69,6 +63,20 @@
     "Book Antiqua",
     "Blog-Serif-TC",
     serif !important;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+.prose {
+  font-family:
+    "Palatino",
+    "Palatino Linotype",
+    "Georgia",
+    "Book Antiqua",
+    "Source Han Serif TC", 
+    "Songti TC",   
+    "Blog-Serif-TC",        
+    "STSong",              
+    serif !important;      
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
@@ -99,7 +107,7 @@
 .prose em,
 .prose strong em {
   font-family: "Blog-Serif-TC", serif !important;
-  font-style: bold !important;
+  font-style: normal !important;
 }
 
 
