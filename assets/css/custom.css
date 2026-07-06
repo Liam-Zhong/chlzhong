@@ -5,12 +5,12 @@
 /* Selection */
 ::selection {
   color: #000;
-  background: rgb(255 255 224);
+  background: rgb(191 181 163);
 }
 
 ::-moz-selection {
   color: #000;
-  background: rgb(255 255 224);
+  background: rgb(191 181 163);
 }
 
 /* Fonts */
