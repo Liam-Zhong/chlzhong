@@ -2,8 +2,8 @@ baseURL = "https://chlzhong.org/"
 title = "chlzhong"
 author = "Tuffy"
 copyright = "© 2026 chlzhong"
-locale = "zh-TW"
-DefaultContentLanguage = "zh-tw"
+locale = "en"
+DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 [pagination]
