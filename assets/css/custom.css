@@ -116,8 +116,14 @@
      4. Pages & Specifics
      ========================================================================== */
   /* Archives */
+  #archives-page ul.archive-list {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
   #archives-page li {
     display: inline-block;
+    font-size: 16px !important; 
+    margin-bottom: 0.4rem;
   }
   
   #archives-page .date {
@@ -133,10 +139,8 @@
   }
   
   #archives-page a:hover {
-    position: relative;
     inset: 1px 0 0 1px;
   }
-  
   /* Special Page Links */
   .prose article section a {
     color: inherit !important;
