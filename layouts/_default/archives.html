@@ -4,7 +4,7 @@
   {{ .Content }}
 
   <div class="archives-container">
-    {{ range .Site.RegularPages.GroupByDate "2006" }}
+    {{ range (where .Site.RegularPages "Section" "post").GroupByDate "2006" }}
       {{ if ge .Key "2019" }}
         <div class="year-column">
           <h2>{{ .Key }}</h2>
@@ -13,7 +13,7 @@
             <ul class="archive-list">
               {{ range .Pages.ByDate.Reverse }}
                 <li class="archive-item">
-                  <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+                  <span class="date">{{ .Date.Format "01-02" }}</span>
                   <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </li>
               {{ end }}
