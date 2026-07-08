@@ -76,12 +76,23 @@
     text-wrap: pretty;
   }
   .prose strong,
-  .prose b{
+  .prose b {
     font-weight: inherit !important;
     color: inherit !important;
-    box-shadow: inset 0 -.55em 0 rgb(234 189 87 / 72%);
+    background:
+    linear-gradient(
+      to bottom,
+      transparent 8%,
+      rgb(234 189 87 / 70%) 8%,
+      rgb(234 189 87 / 70%) 92%,
+      transparent 92%
+    );
+    border-radius: 0.35em;
+    padding-inline: 0.12em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
-  
+    
   /* ==========================================================================
      3. Components
      ========================================================================== */
