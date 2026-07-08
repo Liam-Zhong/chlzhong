@@ -79,7 +79,7 @@
   .prose b{
     font-weight: inherit !important;
     color: inherit !important;
-    box-shadow: inset 0 -.55em - rgb(234 189 87 / 72%);
+    box-shadow: inset 0 -.55em 0 rgb(234 189 87 / 72%);
   }
   
   /* ==========================================================================
