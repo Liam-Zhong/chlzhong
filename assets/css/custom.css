@@ -73,6 +73,7 @@
   }
   
   .prose p {
+    color: rgb(50, 49, 29) !important;
     text-wrap: pretty;
   }
   .prose strong,
@@ -92,7 +93,7 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
   }
-    
+
   /* ==========================================================================
      3. Components
      ========================================================================== */
