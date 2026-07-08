@@ -1,7 +1,7 @@
 {{- define "main" -}}
 
 <article>
-  <header class="mb-14">
+  <header class="mb-10">
     <h1 class="my-0! pb-2.5">{{- .Title -}}</h1>
 
     {{- if ne .Type "page" -}}
@@ -21,9 +21,9 @@
 
   <!-- Password-->
   {{- if .Params.password -}}
-  <div id="login-box" style="margin: 40px 0;">
-    <input type="password" id="pwd" placeholder="输入密码" style="padding:8px;">
-    <button onclick="checkPwd()" style="padding:8px;">进入</button>
+  <div id="login-box" class="my-10 flex gap-2">
+    <input type="password" id="pwd" placeholder="输入密码" class="rounded-md border border-gray-300 px-3 py-2 outline-none focus:border-black dark:border-gray-700 dark:bg-transparent dark:focus:border-white">
+    <button onclick="checkPwd()" class="btn">进入</button>
   </div>
   <section id="protected-content" style="display:none;">
     {{- .Content -}}
@@ -65,7 +65,7 @@
   {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}<!---->
   {{- if and (gt (len $pages) 1) (in $pages . ) -}}
   <nav
-    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-xl leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   >
     {{- with $pages.Next . -}}
     <a class="ltr:pr-3 rtl:pl-3" href="{{- .Permalink -}}"

@@ -25,6 +25,7 @@ h1,
 h2,
 h3 {
   @apply font-semibold;
+  @apply font-semibold text-balance;
 }
 
 pre {
@@ -32,7 +33,7 @@ pre {
 }
 
 article {
-  @apply text-lg leading-[1.8] text-black dark:text-white;
+  @apply text-xl leading-[1.6] text-black dark:text-white;
 
   code {
     @apply inline-block text-sm! leading-6!;
@@ -93,12 +94,66 @@ article {
 
 .prose {
   @apply break-words;
+  
+  font-family: "Iowan Old Style", "Georgia", "Noto Serif", "Songti TC", "Blog-Serif-TC", serif;
+  font-synthesis: none;
+  
+  p {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    line-height: clamp(1.6, 1.4 + 0.6vw, 1.95);
+    @apply text-pretty;
+  }
+  
+  hr {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  strong,
+  b {
+    font-weight: 600;
+    color: inherit;
+  }
+  
+  em,
+  strong em {
+    font-family: "Kai Tuffy", serif;
+    font-style: normal;
+  }
+  
+  blockquote {
+    font-family: "Iowan Old Style", "Georgia", "Noto Serif","Kai Tuffy", serif;
+    font-size: 1.0em;
+    margin: 1em 0;
+    padding: 0 2em 0 1em;
+    text-align: left;
+    quotes: none;
+    border-left: 5px solid var(--border-color);
+    
+    font-weight: 400;
+    font-style: normal;
 
+    p::before,
+    p::after {
+    content: none;
+    }
+    p,
+    cite {
+      font-style: normal;
+    }
+  }
+  
   kbd:has(kbd) {
     @apply shadow-none;
   }
 }
 
+.latin {
+  font-family: "Iowan Old Style", "Georgia", "Noto Serif", serif;
+  font-weight: 400; /* 强制细体 */
+  font-variation-settings: normal; 
+}
 .btn-menu {
   &::before,
   &::after {

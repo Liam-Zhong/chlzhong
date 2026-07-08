@@ -1,201 +1,159 @@
 /* ==========================================================================
-   0. Base / Foundations
+   0. Design Tokens
    ========================================================================== */
-
-/* Selection */
-::selection {
-  color: #000;
-  background: rgb(191 181 163);
-}
-
-::-moz-selection {
-  color: #000;
-  background: rgb(191 181 163);
-}
-
-/* Fonts */
-@font-face {
-  font-family: "Kai Tuffy";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Kaiti TC"),
-    local("STKaiti"),
-    local("SimKai"),
-    local("DFKai-SB"),
-    url("/fonts/Tuffy-AR PL KaitiM GB.woff2") format("woff2");
+   :root {
+    --theme-selection-bg: rgb(191 181 163);
+    --text-muted: #888;
+  }
+  
+  @view-transition {
+    navigation: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    @view-transition { navigation: none; }
+  }
+  
+  /* ==========================================================================
+     1. Base / Foundations
+     ========================================================================== */
+  /* Selection */
+  ::selection {
+    color: #000;
+    background: color-mix(in srgb, var(--theme-selection-bg) 100%, transparent);
+  }
+  
+  ::-moz-selection {
+    color: #000;
+    background: color-mix(in srgb, var(--theme-selection-bg) 100%, transparent);
+  }
+  
+  /* Fonts */
+  @font-face {
+    font-family: "Kai Tuffy";
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url("/fonts/Tuffy-AR PL KaitiM GB.woff2") format("woff2");
     unicode-range:
-    U+4E00-9FFF,
-    U+3000-303F,
-    U+FF00-FFEF,
-    U+2014,
-    U+2018-2019,
-    U+201C-201D;
-}
-
-@font-face {
-  font-family: "Blog-Serif-TC";
-  font-style: normal;
-  font-weight: 200 900;
-  font-display: swap;
-  src:
-    url("/fonts/Tuffy-SourceHanSerifTC-VF.otf.woff2") format("woff2");
-  unicode-range:
-    U+4E00-9FFF,
-    U+3000-303F,
-    U+FF00-FFEF,
-    U+2014,
-    U+2018-2019,
-    U+201C-201D;
-}
-
-
-/* ==========================================================================
-   1. Typography System
-   ========================================================================== */
-.prose {
-  font-family:
-    "Iowan Old Style",
-    "Georgia",
-    "Noto Serif",
-    "Songti TC",   
-    "Blog-Serif-TC",                     
-    serif !important;      
-  font-weight: 550;
-  text-rendering: optimizeLegibility;
-}
-
-.prose h1,
-.prose h2,
-.prose h3 {
-  text-wrap: balance;
-}
-
-.prose p {
-  margin-top: .8em !important;
-  margin-bottom: .8em !important;
-  text-wrap: pretty;
-}
-
-.prose hr {
-  margin-top: 1.5em !important;
-  margin-bottom: 1.5em !important;
-}
-
-.prose strong,
-.prose b {
-  color: inherit;
-  font-weight: 700;
-}
-
-.prose em,
-.prose strong em {
-  font-family: "Blog-Serif-TC", serif !important;
-  font-style: normal !important;
-}
-
-
-/* ==========================================================================
-   2. Components
-   ========================================================================== */
-
-/* Blockquote */
-.prose blockquote {
-  font-family: ui-serif, "New York", "Georgia", "Noto Serif",
-  "Kai Tuffy", serif !important;
-  border-left: 5px solid var(--border-color) !important;
-}
-
-/* Images */
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1.8em 0 !important;
-}
-
-.img-apple {
-  display: block;
-
-  width: auto;
-  height: auto;
-  max-width: min(100%, 700px);
-  max-height: 70vh;
-
-  margin: 0 !important;
-
-  object-fit: contain;
-
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
-
-  content-visibility: auto;
-  contain-intrinsic-size: 500px;
-}
-
-figure > .img-apple {
-  margin-bottom: .75em !important;
-}
-
-figcaption {
-  max-width: min(100%, 700px);
-
-  margin: 0;
-  padding: 0 .5rem;
-
-  font-size: .9rem;
-  line-height: 1.45;
-  text-align: center;
-
-  color: var(--secondary);
-}
-
-
-/* ==========================================================================
-   3. Pages
-   ========================================================================== */
-
-/* Archives */
-#archives-page li {
-  display: inline-block;
-}
-
-#archives-page .date {
-  color: #888;
-}
-
-#archives-page a {
-  position: relative;
-  text-decoration: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition: transform .2s;
-}
-
-#archives-page a:hover {
-  transform: translate(2px, 2px);
-}
-
-
-/* Special Page */
-.prose article section a {
-  color: inherit !important;
-
-  text-decoration: none !important;
-  border-bottom: 1px dashed currentColor !important;
-
-  transition: all .1s ease-in-out;
-}
-
-.prose article section a:hover {
-  position: relative;
-  inset: 1px 0 0 1px;
-}
-
-del {
-  color: inherit;
-  text-decoration: line-through;
-  text-decoration-color: currentColor;
-  text-decoration-thickness: 1px;
-  opacity: .5;
-}
+      U+4E00-9FFF,
+      U+3000-303F,
+      U+FF00-FFEF,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D;
+  }
+  
+  @font-face {
+    font-family: "Blog-Serif-TC";
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url("/fonts/Tuffy-SourceHanSerifTC-VF.otf.woff2") format("woff2");
+    unicode-range:
+      U+4E00-9FFF,
+      U+3000-303F,
+      U+FF00-FFEF,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D;
+  }
+  
+  /* ==========================================================================
+     2. Typography System (补充 app.css 没有的细节)
+     ========================================================================== */
+  .prose {
+    font-weight: 550;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    text-wrap: balance;
+  }
+  
+  .prose p {
+    text-wrap: pretty;
+  }
+  
+  /* ==========================================================================
+     3. Components
+     ========================================================================== */
+  /* Images */
+  figure {
+    display: grid;
+    gap: .75rem;
+    justify-items: center;
+    margin-block: 1.8em !important;
+  }
+  
+  .img-apple {
+    display: block;
+    max-inline-size: min(100%, 700px); 
+    max-block-size: 70vh;            
+    
+    margin: 0 !important;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  
+    content-visibility: auto;
+    contain-intrinsic-size: 500px;
+  }
+  
+  figcaption {
+    max-inline-size: min(100%, 700px); 
+    margin: 0;
+    padding-inline: .5rem;
+  
+    font-size: .9rem;
+    line-height: 1.45;
+    text-align: center;
+    color: var(--secondary);
+  }
+  
+  /* ==========================================================================
+     4. Pages & Specifics
+     ========================================================================== */
+  /* Archives */
+  #archives-page li {
+    display: inline-block;
+  }
+  
+  #archives-page .date {
+    color: var(--text-muted);
+  }
+  
+  #archives-page a {
+    position: relative;
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: translate .2s ease-out;
+  }
+  
+  #archives-page a:hover {
+    position: relative;
+    inset: 1px 0 0 1px;
+  }
+  
+  /* Special Page Links */
+  .prose article section a {
+    color: inherit !important;
+    text-decoration: none !important;
+    border-bottom: 1px dashed currentColor !important;
+    transition: translate .1s ease-in-out;
+  }
+  
+  .prose article section a:hover {
+    position: relative;
+    inset: 1px 0 0 1px;
+  }
+  
+  del {
+    color: inherit;
+    text-decoration: line-through;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    opacity: .5;
+  }
