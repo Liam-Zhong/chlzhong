@@ -21,9 +21,9 @@
 
   <!-- Password-->
   {{- if .Params.password -}}
-  <div id="login-box" class="my-10 flex gap-2">
-    <input type="password" id="pwd" placeholder="输入密码" class="rounded-md border border-gray-300 px-3 py-2 outline-none focus:border-black dark:border-gray-700 dark:bg-transparent dark:focus:border-white">
-    <button onclick="checkPwd()" class="btn">进入</button>
+  <div id="login-box" style="margin: 40px 0;">
+    <input type="password" id="pwd" placeholder="输入密码" style="padding:8px;">
+    <button onclick="checkPwd()" style="padding:8px;">进入</button>
   </div>
   <section id="protected-content" style="display:none;">
     {{- .Content -}}
