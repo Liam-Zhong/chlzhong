@@ -59,7 +59,7 @@
   }
   
   /* ==========================================================================
-     2. Typography System (补充 app.css 没有的细节)
+     2. Typography System 
      ========================================================================== */
   .prose {
     font-weight: 550;
@@ -74,6 +74,12 @@
   
   .prose p {
     text-wrap: pretty;
+  }
+  .prose strong,
+  .prose b{
+    font-weight: inherit !important;
+    color: inherit !important;
+    box-shadow: inset 0 -.55em - rgb(234 189 87 / 72%);
   }
   
   /* ==========================================================================
