@@ -1,7 +1,7 @@
 baseURL = "https://chlzhong.org/"
 title = "chlzhong"
 author = "Tuffy"
-copyright = "© 2026 chlzhong"
+# copyright = "© 2026 chlzhong"
 locale = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
