@@ -26,6 +26,10 @@
     color: #000;
     background: color-mix(in srgb, var(--theme-selection-bg) 100%, transparent);
   }
+
+  html{
+    overflow-y: scroll;
+  }
   
   /* Fonts */
   @font-face {

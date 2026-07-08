@@ -1,27 +1,41 @@
 {{ define "main" }}
-<div id="archives-page">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
 
-  <div class="archives-container">
-    {{ range (where .Site.RegularPages "Section" "post").GroupByDate "2006" }}
-      {{ if ge .Key "2019" }}
-        <div class="year-column">
-          <h2>{{ .Key }}</h2>
+<article>
+  <header class="mb-10">
+    <h1 class="my-0! pb-2.5">{{ .Title }}</h1>
+  </header>
 
-          {{ range .Pages.GroupByDate "2006-01" }}
-            <ul class="archive-list">
-              {{ range .Pages.ByDate.Reverse }}
-                <li class="archive-item">
-                  <span class="date">{{ .Date.Format "01-02" }}</span>
-                  <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </li>
-              {{ end }}
-            </ul>
-          {{ end }}
-        </div>
+  <div id="archives-page">
+
+    {{ .Content }}
+
+    <div class="archives-container">
+      {{ range (where .Site.RegularPages "Section" "post").GroupByDate "2006" }}
+        {{ if ge .Key "2019" }}
+
+          <div class="year-column">
+            <h2>{{ .Key }}</h2>
+
+            {{ range .Pages.GroupByDate "2006-01" }}
+              <ul class="archive-list">
+
+                {{ range .Pages.ByDate.Reverse }}
+                  <li class="archive-item">
+                    <span class="date">{{ .Date.Format "01-02" }}</span>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </li>
+                {{ end }}
+
+              </ul>
+            {{ end }}
+
+          </div>
+
+        {{ end }}
       {{ end }}
-    {{ end }}
+    </div>
+
   </div>
-</div>
+</article>
+
 {{ end }}
