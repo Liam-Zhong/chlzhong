@@ -2,11 +2,9 @@
 author = "Tuffy"
 title = '今天下雨'
 date = 2024-09-30T16:05:16+08:00
-math = true 
+math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
-
 +++
 
 前天（9/28/2024）晚上在和伊人儿通讯时意外撞见一位故人[^1]预与他聊天，便自觉盖上手指。~~不巧的是旧疾偶发，疼痛难忍，只好移开手指~~,总之是瞥见了他们的内容：
@@ -23,14 +21,7 @@ description = "{{ .Summary }}"
 
 幸好，她很快解释了第一个问题。原来是朋友圈分享的书里有我的回应，于是惊讶于我的看过，继而引其怀疑。
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/moments.jpg" alt="Moments" class="img-apple">
-  <small style="text-align: center;">事起朋友圈 | 已获小姐姐授权</small>
-</div>
-
-
-
-
+![事起朋友圈 | 已获本人授权](/images/moments.jpg)
 
 [^1]: 她的名字，第一次为我所知可算在初二。托了刘洋聪的微信昵称，即这位瑕不掩瑜者。初见是在一九年的五月五，不过在这之前，也在根哥那里知道一点的。写到这里就没什么大的印象了，不过说到底，应该是一次读书时的代入。
 
@@ -40,10 +31,7 @@ description = "{{ .Summary }}"
 
 第二个问题其实比较难回答。我想我不会喜欢抽象的性别，而是选择具体的人。这一点其实看我的 QQ 也能发现。
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/qq.jpg" alt="qq" class="img-apple">
-  <small style="text-align: center;"></small>
-</div>
+![](/images/qq.jpg)
 
 当然，写下这个回答的时候是在抄阿植诗句的，聚焦于身体这个范围的话我想名单会加长：[正常人](https://www.4kvm.net/episodes/普通人-1-11)的男主也是喜欢的款式。
 

@@ -2,9 +2,8 @@
 author = "Tuffy"
 title = '日寄'
 date = 2024-09-28T22:15:32+08:00
-math = true 
+math = false 
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 
@@ -26,8 +25,4 @@ description = "{{ .Summary }}"
 「是的 多点辣」<br>
 水哥的天下事就大定了。<br>
 
-
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/日寄.jpg" alt="日寄" class="img-apple">
-  <small style="text-align: center;"></small>
-</div>
+![](/images/日寄.jpg)

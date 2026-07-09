@@ -2,9 +2,8 @@
 author = "Tuffy"
 title = '融创小镇：渝西南游乐行'
 date = 2024-10-05T21:36:45+08:00
-math = true 
+math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 

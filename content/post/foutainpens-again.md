@@ -4,7 +4,6 @@ title = '又说钢笔'
 date = 2024-09-13T13:28:39+08:00
 math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 
@@ -14,10 +13,7 @@ description = "{{ .Summary }}"
 
 在那个一切物资都匮乏的时代，钢笔自然十分金贵，同时也算是一种身份的象征
 
-<div style="display: flex; flex-direction: column; align-items: center; margin: 2em 0;">
-  <img src="https://p3.itc.cn/q_70/images03/20220711/3ca7dd79866740478aafd5d0e1a4e9ca.jpeg" alt="钢笔插在衬衫口袋" class="img-apple">
-  <small style="margin-top: 0.5em; color: #666;">钢笔插在衬衫口袋 | 图源：搜狐</small>
-</div>
+![钢笔插在衬衫口袋 | 图源：搜狐](https://p3.itc.cn/q_70/images03/20220711/3ca7dd79866740478aafd5d0e1a4e9ca.jpeg)
 
 ## 1883 年
 

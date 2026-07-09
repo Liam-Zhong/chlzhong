@@ -2,14 +2,13 @@
 author = "Tuffy"
 title = '采风集（一）：我独何人，能不靖乱'
 date = 2024-09-29T10:00:05+08:00
-math = true 
+math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
 
 +++
 
-~~浏览器标签栏越来越长，typora 里的文件数量却不见长。于是把一闪而过的想法记录于此，聊以清净。又高中清秋述胡适之逸事予我极深印象，遂名为麻将。~
+~~浏览器标签栏越来越长，typora 里的文件数量却不见长。于是把一闪而过的想法记录于此，聊以清净。又高中清秋述胡适之逸事予我极深印象，遂名为麻将。~~
 
 不好听，还是叫采风吧。
 
@@ -23,10 +22,7 @@ description = "{{ .Summary }}"
 
 4. 陈宁学校麻辣烫也小火了一把。老实说我自己刚开始看到这个词也觉得不太好，先入脑者是诸如上海媛、佛媛、爬山媛等等奇怪的没有定义的印象，在饼上搜索了一下基本含义是"美女"，又是一个我有[偏见](https://liam-zhong.github.io/post/about-titles/)的词汇。但是黑话说了一大堆，到底是什么印象？
 
-   <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-     <img src="/images/校媛.png" alt="事起帖子" class="img-apple">
-     <small style="text-align: center;">事起帖子 | 图源：小红书</small>
-   </div>
+![事起帖子 | 图源：小红书](/images/校媛.png)
 
    这段话对我来说信息密度有点低，带有一些调侃和讽刺的意味，我是这样理解的：
 
@@ -44,10 +40,5 @@ description = "{{ .Summary }}"
    > 这个世界还有好多事我还没做，但我已经没有力气去做了，我还想去看王楚钦打球呢
 
    酸唧唧的夜晚看不得这样的句子，尽管我不喜欢妳的楚钦哥哥，但是祝福妳如愿。
-      <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-     <img src="/images/对联.jpg" alt="对联" class="img-apple">
-     <small style="text-align: center;"></small>
-   </div>
-   
    
 

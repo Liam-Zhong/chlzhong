@@ -2,9 +2,8 @@
 author = "Tuffy"
 title = '二十'
 date = 2024-07-13T07:28:23+08:00
-math = true 
+math = false
 draft = false
-comments = true
 description = "happy birthday to 承霖"
 +++
 
@@ -29,9 +28,7 @@ description = "happy birthday to 承霖"
 
 长沟流月去无声，杏花疏影里，吹笛[^2]到天明。
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://picx.zhimg.com/80/v2-45bb315bee5ebbbfd77472da09b5e599_1440w.jpeg" alt="20" class="img-apple">
-</div>
+![](https://picx.zhimg.com/80/v2-45bb315bee5ebbbfd77472da09b5e599_1440w.jpeg)
 
 [^1]:今年的生日可同往年不一样，在一个人的一生应该是做一个记号的日子，所以我忽然想起就在这里写一笔作为日记，其实我很想做一个弱冠式的浪漫，只是按照虚岁算已经是二十一了。
 [^2]:其实现在我很苦恼怎么把这根笛子带回家。另外夔哥的字是真好。

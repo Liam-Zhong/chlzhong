@@ -2,17 +2,15 @@
 author = "Tuffy"
 title = '青色魇'
 date = 2024-08-11T14:34:48+08:00
-math = true 
+math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 
 七夕猛雨，十个传统习俗便破了两个。于是观影。
 
-<div style="display: flex; justify-content: center;">
-  <img src="/images/白蛇 浮生.png" alt="电影海报" class="img-apple">
-</div>
+![白蛇 浮生](/images/白蛇 浮生.webp)
+
 一鸣草又生，草木青青不过一百数十日，到头来又是樵夫担上薪；</br>
 一鸣虫又生，百虫生来不过一百数十日，到头来又要纷纷扑红灯。</br>
 

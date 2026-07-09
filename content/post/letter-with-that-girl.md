@@ -2,9 +2,8 @@
 author = "植、丫头"
 title = '和丫头的信'
 date = 2024-07-05T15:38:31+08:00
-math = true                                
+math = false                               
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 

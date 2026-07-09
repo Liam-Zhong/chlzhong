@@ -4,7 +4,6 @@ title = '印象中的钢笔们'
 date = 2024-09-10T21:15:28+08:00
 math = false
 draft = false
-comments = true
 description = "{钢笔推荐，五大，龙鸟派犀水}"
 
 +++
@@ -106,11 +105,6 @@ description = "{钢笔推荐，五大，龙鸟派犀水}"
 1919 [Aurora](https://www.aurorapen.it/) 国内没有官网， **不买**
 
 1925 [OMAS](https://omasofficial.com/) 国内没有官网。台湾有店大陆没有， **不买**
-
-
-
-
-
 
 
 ####  总结：别买

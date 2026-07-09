@@ -2,9 +2,8 @@
 author = "Tuffy"
 title = '兄弟，愿为西南风'
 date = 2024-07-06T13:36:16+08:00
-math = true                                
+math = false                               
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 
@@ -39,9 +38,7 @@ description = "{{ .Summary }}"
 
 ——这次又是半个小时。
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://picx.zhimg.com/80/v2-2aadfa2d9e1730f6791d997836638a30_1440w.jpeg" alt="曹植墓大门" class="img-apple">
-</div>
+![曹植墓大门](https://picx.zhimg.com/80/v2-2aadfa2d9e1730f6791d997836638a30_1440w.jpeg)
 
 她就站在门边上，像你一样，望着对面那张有点苍茫的面孔，而你又止不住去望她。这山乡小镇上，她那么出众，那身影，那姿态，那份茫然的神情，都非本地人所有。你想走远开去，心里却惦记着，等你再转回到门前，她已经不在了，天色渐冷，窗户里亮着两点烟火，明明暗暗，有人在轻声刷抖音。
 
@@ -49,9 +46,7 @@ description = "{{ .Summary }}"
 
 于是你就免除了那二十块钱的门票，进入了这据说要修缮两年的你的鱼山。
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://picx.zhimg.com/80/v2-6f64cde49cd2149220ed16657ff695bc_1440w.png" alt="鱼山顶" class="img-apple">
-</div>
+![鱼山顶](https://picx.zhimg.com/80/v2-6f64cde49cd2149220ed16657ff695bc_1440w.png)
 
 你终于明白什么叫一眼万年，只是黄河旁边的那些泥屋，不免又让你心头生些我这时写不出来的想法，所以我不写这个。
 

@@ -2,9 +2,8 @@
 author = "Tuffy"
 title = '舞动身体的羞耻感'
 date = 2024-09-30T16:06:14+08:00
-math = true 
+math = false
 draft = false
-comments = true
 +++
 
 >或许十年后还是这样子 听到 hip-hop 会想跟着点头 <br>

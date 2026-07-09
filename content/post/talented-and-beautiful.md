@@ -6,7 +6,6 @@ math = false
 draft = false
 comments = true
 description = "{{ .Summary }}"
-
 +++
 
 这篇博客的一个起意来自考试周的[电视剧](https://movie.douban.com/subject/5258658/)，只是我没想到它的服化道我实在受不了[^1]，便不再看下去。

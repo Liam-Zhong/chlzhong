@@ -45,7 +45,7 @@ description = "{{ .Summary }}"
 - 线性回归：是回归分析的一种，假设因变量与自变量之间存在线性关系，即因变量与自变量的关系可以用一条直线来描述。
 - 非线性回归：是回归分析的一种，假设因变量与自变量之间不存在线性关系，即因变量与自变量的关系不能用一条直线来描述，需要用更复杂的函数模型来描述。
 
-  一元线性回归模型：$ y = \beta_0 + \beta_1 x$ <br>
+  一元线性回归模型：$y = \beta_0 + \beta_1 x$ <br>
 
   $$\color{red}\begin{cases} 斜率 \beta_1：\frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sum_{i=1}^n x_i^2 - n \bar{x}^2} \\\ 截距 \beta_0：\bar{y} - \beta_1 \bar{x}\end{cases}$$
 
@@ -59,10 +59,10 @@ description = "{{ .Summary }}"
 
 二阶差分：$\Delta {\Delta y_{x}} = \Delta^2 y_{x} = y_{x+2} - 2y_{x+1} +y_{x}$
 
-一阶线性差分方程的一般形式为：$ y_{x+1} = ay_x + f(x)$
+一阶线性差分方程的一般形式为：$y_{x+1} = ay_x + f(x)$
 
 1. **齐次方程：**
-   如果 $f(x) = 0$，方程变为齐次方程：$ y_{x+1} = ay_x $ <br>
+   如果 $f(x) = 0$，方程变为齐次方程：$y_{x+1} = ay_x$ <br>
    其解为：<br>
    $$ \color{red}{y_x = C a^x} $$
    
@@ -133,31 +133,31 @@ description = "{{ .Summary }}"
 |  送货上门 $(d_2)$  |     30     |     25      |     0      |
 | 不采取措施 $(d_3)$ |     10     |     10      |     10     |
 
-解：1、**乐观法**:$ \underset{i}{max}\text{ }\underset{j}{max}{a_{ij}} $
+解：1、**乐观法**:$\underset{i}{max}\text{ }\underset{j}{max}{a_{ij}}$
 
-$max \{60, 10, -6\} = 60 $<br>
+$max \{60, 10, -6\} = 60$<br>
 $max \{30, 25, 0\} = 30$<br>
-$max \{10, 10, 10\} = 10 $<br>
+$max \{10, 10, 10\} = 10$<br>
 
-$ \underset{i}{max}\text{ }\underset{j}{max}{a_{ij}} =60 $
+$\underset{i}{max}\text{ }\underset{j}{max}{a_{ij}} =60$
 
 对应的最优方案为 $(d_1)$。
 
-2. **悲观法**:$ \underset{i}{max}\text{ }\underset{j}{min}{a_{ij}} $
+2. **悲观法**:$\underset{i}{max}\text{ }\underset{j}{min}{a_{ij}}$
 
-$min \{60, 10, -6\} = -6 $<br>
-$min \{30, 25, 0\} = 0 $<br>
-$min \{10, 10, 10\} = 10 $<br>
+$min \{60, 10, -6\} = -6$<br>
+$min \{30, 25, 0\} = 0$<br>
+$min \{10, 10, 10\} = 10$<br>
 
-$ \underset{i}{max}\text{ }\underset{j}{min}{a_{ij}} =10$
+$\underset{i}{max}\text{ }\underset{j}{min}{a_{ij}} =10$
 
 对应的最优方案为 $(d_3)$。
 
 3. **乐观系数法** $\alpha = 0.6$:
 
-$CV_1 = 0.6 \times 60 + 0.4 \times (-6) = 33.6 $<br>
-$CV_2 = 0.6 \times 30 + 0.4 \times 0 = 18 $<br>
-$CV_3 = 0.6 \times 10 + 0.4 \times 10 = 10 $<br>
+$CV_1 = 0.6 \times 60 + 0.4 \times (-6) = 33.6$<br>
+$CV_2 = 0.6 \times 30 + 0.4 \times 0 = 18$<br>
+$CV_3 = 0.6 \times 10 + 0.4 \times 10 = 10$<br>
 $\max \{33.6, 18, 10\} = 33.6 $
 
 故最优方案为 $(d_1)$。
@@ -194,8 +194,8 @@ $\max \{33.6, 18, 10\} = 33.6 $
   2. 依次选择权重最小的边，如果这条边加入生成树后不形成环，则将其加入生成树。
   3. 重复步骤 2，直到生成树包含图中的所有顶点。
 
-例题：找到 6.33 图的最小生成树！[例题2](https://pic1.zhimg.com/80/v2-dfd9d074c48f5407291bd0ce91b1535c_1440w.png)
+例题：找到 6.33 图的最小生成树 
+![例题2](https://pic1.zhimg.com/80/v2-dfd9d074c48f5407291bd0ce91b1535c_1440w.png)
 
-答案：<div style="display: flex; justify-content: center;">
-  <img src="https://pica.zhimg.com/80/v2-e8be91fc7ec227ca59fc7ad81b06a52e_1440w.png" alt="答案" class="img-apple">
-</div>
+答案：
+![](https://pica.zhimg.com/80/v2-e8be91fc7ec227ca59fc7ad81b06a52e_1440w.png)

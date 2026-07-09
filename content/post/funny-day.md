@@ -2,9 +2,8 @@
 author = "Tuffy"
 title = '😒'
 date = 2024-07-16T18:44:03+08:00
-math = true 
+math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 

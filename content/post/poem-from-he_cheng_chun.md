@@ -2,11 +2,9 @@
 author = "何承春"
 title = '承春的诗'
 date = 2024-10-10T22:35:22+08:00
-math = true 
+math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
-
 +++
 
 《岁月》
