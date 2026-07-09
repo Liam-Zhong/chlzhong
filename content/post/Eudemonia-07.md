@@ -31,4 +31,3 @@ draft = false
 ![冷到变色](/images/blue_me.jpg)
 
 -----
-```
