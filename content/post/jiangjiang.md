@@ -2,7 +2,7 @@
 author = "Tuffy"
 title = '江阿姨'
 date = 2024-05-26T12:47:31+08:00
-math = true 
+math = false
 draft = false
 comments = true
 description = "{江阿姨}"
