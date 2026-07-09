@@ -2,9 +2,8 @@
 author = "Tuffy"
 title = '奶奶的'
 date = 2024-06-21T11:30:27+08:00
-math = true                                
+math = false                                
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 
@@ -29,16 +28,10 @@ description = "{{ .Summary }}"
 奶奶的奶奶的奶奶的奶奶的！<br>
 奶奶的奶奶的奶奶的奶奶的！<br>
 
------
-
-
 <div style="display: flex; gap: 16px; justify-content: center; align-items: flex-start;">
   <img src="https://picx.zhimg.com/80/v2-168f302dbfdbabccac3077a5d391c773_1440w.png" alt="左图" class="img-apple" style="flex: 1; min-width: 0;">
   <img src="https://picx.zhimg.com/80/v2-ea9d4879b9444b96468aeb61d12dd41f_1440w.png" alt="右图" class="img-apple" style="flex: 1; min-width: 0;">
 </div>
-
-
------
 
 附上解决方案（不知道 Excel 能不能直接做）
 

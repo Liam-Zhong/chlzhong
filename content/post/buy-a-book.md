@@ -4,7 +4,6 @@ title = '购书一本'
 date = 2024-06-09T19:25:53+08:00
 math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 

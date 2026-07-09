@@ -2,8 +2,7 @@
 author = "Tuffy"
 title = '吹牛（2）'
 date = 2024-06-18T23:49:03+08:00
-math = true                                
-comments = true
+math = false                                
 description = "{{ .Summary }}"
 +++
 
@@ -19,7 +18,7 @@ description = "{{ .Summary }}"
 >
 > 古人：落霞与孤鹜齐飞，秋水共长天一色<br>
 >
-> 我们：卧槽，好美<br>
+> 我们：我肏，好美<br>
 
 这个例子通常是在鼓励你多读书，不要遇到什么事情都只会说「卧槽」，甚至离开微信都无法完整地表达。然而，我觉得机械地复述王勃的名句又有什么意义呢？更何况这句也是他摘录的子山句[^2]。我一直觉得《滕王阁序》最好的是「天高地迥，觉宇宙之无穷；兴尽悲来，识盈虚之有数。」因为在初唐这个节点，很少有（虽然大概率是我孤陋寡闻）这样的思想，承袭了《兰亭序》的意思。
 
@@ -49,9 +48,7 @@ description = "{{ .Summary }}"
 
 最后，我想说的是，快来看看我买的金豪世纪：
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://pic1.zhimg.com/80/v2-9653d99663acc88b9800b3d8c93bb5a4_1440w.jpeg" alt="金豪世纪 100" class="img-apple">
-</div>
+![](https://pic1.zhimg.com/80/v2-9653d99663acc88b9800b3d8c93bb5a4_1440w.jpeg)
 
 [^1]: 各年龄段使用的各种产品：常见的有 iPhone 与 Redmi、宝马和比亚迪。
 [^2]: 落花与芝盖齐飞，杨柳共春旗一色。

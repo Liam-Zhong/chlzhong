@@ -4,7 +4,6 @@ title = '我的头发'
 date = 2024-06-13T22:48:27+08:00
 math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
 +++
 

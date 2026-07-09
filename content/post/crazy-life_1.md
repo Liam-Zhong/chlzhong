@@ -4,9 +4,7 @@ title = '发电系列之图图呢'
 date = 2024-06-03T22:34:40+08:00
 math = false
 draft = false
-comments = true
 description = "{{ .Summary }}"
-
 +++
 
 难得周一课少，再说几句——
