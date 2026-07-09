@@ -6,43 +6,29 @@ math = true
 draft = false
 +++
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/chuiyachiya.jpg" alt="是你的童心吗" class="img-apple">
-  <small style="text-align: center;">是你的童心吗</small>
-</div>
+-----
 
+![是你的童心吗](/images/chuiyachiya.jpg)
 
-<br>
+-----
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/down_sun.jpg" alt="西下圆一个虚幻" class="img-apple">
-  <small style="text-align: center;">西下圆一个虚幻</small>
-</div>
+![西下圆一个虚幻](/images/down_sun.jpg)
 
-<br>
+-----
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/white_tower.jpg" alt="她善画眉" class="img-apple">
-  <small style="text-align: center;">她善画眉</small>
-</div>
+![她善画眉](/images/white_tower.jpg)
 
-<br>
+-----
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/mememe.jpg" alt="全身上下没有一口袋放✒" class="img-apple">
-  <small style="text-align: center;">全身上下没有一口袋放✒</small>
-</div>
+![全身上下没有一口袋放✒](/images/mememe.jpg)
 
-<br>
+-----
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/same_thing.jpg" alt="冬，同？"class="img-apple">
-  <small style="text-align: center;">你也是这样吗</small>
-</div>
+![你也是这样吗](/images/same_thing.jpg)
 
-<br>
+-----
 
-<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/blue_me.jpg" alt="冷到变色"class="img-apple">
-  <small style="text-align: center;">冷到变色</small>
-</div>
+![冷到变色](/images/blue_me.jpg)
+
+-----
+```

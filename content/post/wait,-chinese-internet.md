@@ -2,11 +2,8 @@
 date = '2025-09-15T22:15:43+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '等等，中文局域网？'
-
 +++
 
 笔者最近在扯乎上被素质低下者攻击，于是有此文。

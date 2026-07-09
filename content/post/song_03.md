@@ -2,11 +2,8 @@
 date = '2026-03-12T11:31:53+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '听歌系列之你不知道的事'
-
 +++
 
 > 你想知道的事是你不能知道的事.

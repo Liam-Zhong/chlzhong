@@ -2,9 +2,7 @@
 date = '2026-05-03T15:37:24+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '发芽'
 password = '090406wly'
 +++

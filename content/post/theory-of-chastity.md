@@ -2,11 +2,8 @@
 author = "Tuffy"
 title = '贞操论'
 date = 2025-01-20T17:50:53+08:00
-math = true 
+math = false
 draft = false
-comments = true
-toc = false
-
 +++
 
 笔者最近在阅读金瓶梅，对社会问题的漠漠使我自然地关注到男女之事上，遂作此文。

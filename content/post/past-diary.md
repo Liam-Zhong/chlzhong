@@ -2,11 +2,8 @@
 date = '2026-02-14T22:38:36+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '林与豆'
-
 +++
 
 小林从[海上](https://chlzhong.org/post/soulsan/)的归来，正当春天。

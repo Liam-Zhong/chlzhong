@@ -2,9 +2,7 @@
 date = '2025-09-15T22:33:44+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '赛博斗蛐蛐'
 +++
 

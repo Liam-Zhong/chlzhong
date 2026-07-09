@@ -2,9 +2,7 @@
 date = '2026-03-05T18:23:29+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = 'Peanuts'
 +++
 

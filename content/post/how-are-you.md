@@ -2,14 +2,9 @@
 author = "Tuffy"
 title = '你好吗？'
 date = 2025-04-06T12:00:58+08:00
-math = true 
+math = false
 draft = false
-comments = true
-toc = false
-
 +++
-
-
 
 >月出皎兮，佼人僚兮，舒窈纠兮，劳心悄兮！<br>
 >月出皓兮，佼人懰兮，舒忧受兮，劳心慅兮！<br>

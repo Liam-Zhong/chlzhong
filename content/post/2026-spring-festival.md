@@ -2,11 +2,8 @@
 date = '2026-02-22T21:08:21+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '26 春节：同妳看日落'
-
 +++
 
 ### 二十九

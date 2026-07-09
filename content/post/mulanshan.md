@@ -2,11 +2,8 @@
 date = '2026-02-03T21:24:24+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '到木兰山去'
-
 +++
 
 这一章完全是意外。<br>

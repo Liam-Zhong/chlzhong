@@ -2,11 +2,8 @@
 author = "Tuffy"
 title = '我为什么讨厌苹果'
 date = 2025-06-23T13:16:37+08:00
-math = true 
+math = false
 draft = false
-comments = true
-toc = false
-
 +++
 
 2007 年，旧金山。

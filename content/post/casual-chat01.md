@@ -2,11 +2,8 @@
 author = "Tuffy"
 title = '闲话之秋'
 date = 2025-05-11T22:35:51+08:00
-math = true 
+math = false
 draft = false
-comments = true
-toc = false
-
 +++
 
 XX：

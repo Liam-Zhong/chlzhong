@@ -2,11 +2,8 @@
 author = "Tuffy"
 title = '研殇'
 date = 2025-01-24T10:19:01+08:00
-math = true 
+math = false 
 draft = false
-comments = true
-toc = false
-
 +++
 
 「学委，你知道……」，「学委，你有……」

@@ -2,11 +2,8 @@
 date = '2026-02-21T11:26:29+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = false
 title = '如何称呼自己的伴侣'
-
 +++
 
 两个人的亲密关系里，如何称呼另一位不构成问题。

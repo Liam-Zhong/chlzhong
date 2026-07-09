@@ -2,11 +2,8 @@
 author = "Tuffy"
 title = '守和守的续'
 date = 2025-06-06T23:46:53+08:00
-math = true 
+math = false
 draft = false
-comments = true
-toc = false
-
 +++
 
 \#守护

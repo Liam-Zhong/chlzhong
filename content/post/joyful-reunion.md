@@ -2,11 +2,8 @@
 author = "Tuffy"
 title = '相见欢'
 date = 2025-01-31T04:30:02+08:00
-math = true 
+math = false
 draft = false
-comments = true
-toc = false
-
 +++
 
 喜欢的作家有一个标新立异的句子：

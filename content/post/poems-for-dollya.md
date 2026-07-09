@@ -2,11 +2,8 @@
 date = '2026-05-08T17:29:09+08:00'
 draft = false
 author = "Tuffy"
-math = true 
-comments = true
-toc = false
+math = fasle
 title = '打油两首'
-
 +++
 
 > 明月照高楼，列宿正差参。<br>
