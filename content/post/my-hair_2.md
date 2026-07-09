@@ -16,6 +16,8 @@ description = "{{ .Summary }}"
 >林庚写落花真是写得神，尤其说最后的仿佛落了满地的后悔，寻不见一处回避的地方与水面的不自然，可以说是前无古人，在古人的诗与文里都没有的。落花落在地上真是仿佛落了满地的后悔。落花真是寻不见一处回避的地方。落花与水面也真是没有一点不自然的地方，所谓落花流水也。
 >
 
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh;">
-    <img src="https://picx.zhimg.com/80/v2-335ac6956dc414080b0b146341fed603_1440w.gif" alt="animated content" style="max-width: 100%; height: auto;" /> <small style="text-align: center;">学校里怎么有乞丐</small>
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="https://picx.zhimg.com/80/v2-335ac6956dc414080b0b146341fed603_1440w.gif"
+         style="max-width:100%; height:auto;">
+    <small>学校里怎么有乞丐</small>
 </div>
