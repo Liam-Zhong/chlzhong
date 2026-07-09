@@ -102,7 +102,7 @@ article {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
     line-height: clamp(1.6, 1.4 + 0.6vw, 1.95);
-    @apply text-pretty;
+    @apply text-pretty text-[rgb(50,49,29)] dark:text-[#d1d5db];
   }
   
   hr {

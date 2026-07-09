@@ -75,11 +75,6 @@
   .prose h3 {
     text-wrap: balance;
   }
-  
-  .prose p {
-    color: rgb(50, 49, 29) !important;
-    text-wrap: pretty;
-  }
   .prose strong,
   .prose b {
     font-weight: inherit !important;
