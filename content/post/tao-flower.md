@@ -20,64 +20,18 @@ description = "{{ .Summary }}"
 
 植物园一条线排着，十来重瓦屋，玻璃墙，钻切来得十分明，太阳底下更有一种光泽，表示这里总是兴旺的。虽然只有我们三个人。屋后竹林，绿叶堆成了台阶的样子，倾斜至河岸，河水沿竹子打一个弯，潺潺流过。这里离花才是真近，中间就只有河，馆的一段正对了竹子临水而立，竹林里一条小路，金鹰上也窥得见，不当心河边忽然站了一个人——南山上老头出来赏花。仿佛不会说水清竹叶绿——城下人亦望城上。
 
-<div style="display:flex; gap:16px; justify-content:center; align-items:flex-start;">
-  <img
-    src="https://picx.zhimg.com/80/v2-03f2f9b9c1f5fa0d69637479f03ada24_1440w.jpeg"
-    alt="城"
-    class="img-apple"
-    style="flex:1; min-width:0;"
-  >
+![城](https://picx.zhimg.com/80/v2-03f2f9b9c1f5fa0d69637479f03ada24_1440w.jpeg)
 
-  <img
-    src="https://picx.zhimg.com/80/v2-cb863f4758eb4f2b448b0cf2986ca47b_1440w.jpeg"
-    alt="sun"
-    class="img-apple"
-    style="flex:1; min-width:0;"
-  >
-</div>
 
 这样的花，总觉得有一个东西是深的，碧蓝的，绿的，又是那么圆。
 
-<div style="display:flex; gap:16px; justify-content:center; align-items:flex-start;">
-  <img
-    src="https://picx.zhimg.com/80/v2-4821da903afe198951408c5019e354fc_1440w.jpeg"
-    alt=""
-    class="img-apple"
-    style="flex:1; min-width:0;"
-  >
-
-  <img
-    src="https://pica.zhimg.com/80/v2-d854abb81218b11404b03daeaaec2209_1440w.jpeg"
-    alt=""
-    class="img-apple"
-    style="flex:1; min-width:0;"
-  >
-</div>
-
+![花花](https://pica.zhimg.com/80/v2-d854abb81218b11404b03daeaaec2209_1440w.jpeg)
 
 还有那比我大大得多的优雅龙舌兰——多半是黄昏时，孑然一身，躲着剑下贪凉，（热带植物贪凉？）于是惊动一声乡愁。
 
-<div style="display:flex; gap:16px; justify-content:center; align-items:flex-start;">
-  <img
-    src="https://pic1.zhimg.com/80/v2-a084f2b47d345ce3f9af3ee72193c05c_1440w.jpeg"
-    alt=""
-    class="img-apple"
-    style="width:calc(50% - 8px); height:auto;"
-  >
-
-  <img
-    src="https://pic1.zhimg.com/80/v2-727ad9727bbc1d9ba3ea6b3b417cdf9a_1440w.jpeg"
-    alt=""
-    class="img-apple"
-    style="width:calc(50% - 8px); height:auto;"
-  >
-</div>
-
 水人的栀子也好——小林的心里又渐渐滋长起花来了，我们双眼对双眼，这时的点金指就很萧瑟。
 
-
 —见山──黑不了的青天。
-
 
 ------
 
