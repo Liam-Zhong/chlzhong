@@ -2,7 +2,7 @@
 date = '2026-05-08T17:29:09+08:00'
 draft = false
 author = "Tuffy"
-math = fasle
+math = false
 title = '打油两首'
 +++
 
