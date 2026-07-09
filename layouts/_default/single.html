@@ -21,9 +21,10 @@
 
   <!-- Password-->
   {{- if .Params.password -}}
-  <div id="login-box" style="margin: 40px 0;">
-    <input type="password" id="pwd" placeholder="输入密码" style="padding:8px;">
-    <button onclick="checkPwd()" style="padding:8px;">进入</button>
+  <div id="login-box" style="margin: 40px 0; display: flex; width: 100%; gap: 8px;">
+    <input type="password" id="pwd" placeholder="输入密码" style="padding:8px; flex: 1; min-width: 0;">
+    <button onclick="checkPwd()" style="padding:8px 16px; flex-shrink: 0;">进入</button>
+    
   </div>
   <section id="protected-content" style="display:none;">
     {{- .Content -}}
