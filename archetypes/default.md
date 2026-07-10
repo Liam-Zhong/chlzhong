@@ -1,9 +1,8 @@
 +++
 date = '{{ .Date }}'
 draft = false
-author = "Tuffy"
 math = false
+author = "Tuffy"
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 +++
-
 
