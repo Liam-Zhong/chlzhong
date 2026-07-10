@@ -53,10 +53,11 @@
   {{- end -}}
 
   <!-- avatar -->
-  {{- $avatar_url := $.Scratch.Get "avatar_url" -}}
-  <!---->
-  {{- if $avatar_url -}}
-  <link rel="preload" as="image" href="{{- $avatar_url -}}" />
+  {{- if .IsHome -}}
+    {{- $avatar_url := $.Scratch.Get "avatar_url" -}}
+    {{- if $avatar_url -}}
+    <link rel="preload" as="image" href="{{- $avatar_url -}}" />
+    {{- end -}}
   {{- end -}}
   <!---->
 
