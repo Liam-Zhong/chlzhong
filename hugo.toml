@@ -1,0 +1,83 @@
+baseURL = "https://chlzhong.org/"
+title = "chlzhong"
+author = "Tuffy"
+# copyright = "© 2026 chlzhong"
+locale = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+[pagination]
+  pagerSize = 3
+
+# ------------------------------
+theme = "hugo-paper"
+
+[params]
+  color = 'linen'
+  github = 'Liam-Zhong'
+  rss = true 
+  monoDarkIcon = true
+  favicon = "favicon.ico" 
+
+avatar = 'https://chlzhong.org/images/avatar_160.webp'
+  name = 'Tuffy'
+  bio = 'Dollya is the most beautiful'
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+#  [markup.highlight]
+#    lineNos = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.x]
+    disableInlineCSS = true
