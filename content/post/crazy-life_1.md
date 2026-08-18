@@ -48,7 +48,7 @@ description = "{{ .Summary }}"
 <br>
 > 秋风发微凉，寒蝉鸣我侧，<br>
 > 今天的烦忧就死在今天，<br>
-> 假如有人。.....<br>
+> 假如有人.....<br>
 <br>
 > No, por favor, no lo hagas[^1]
 
