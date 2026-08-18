@@ -6,9 +6,9 @@ math = false
 title = '听歌系列之你不知道的事'
 +++
 
-> 你想知道的事是你不能知道的事.
+> 你想知道的事是你不能知道的事。
 >
-> 那些遗失掉的是你应该知道的事.
+> 那些遗失掉的是你应该知道的事。
 
 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/1947-overture-feat-%E6%A5%8A%E8%88%92%E9%9B%85-dwagie/1566295749?i=1566295751"></iframe>
 
