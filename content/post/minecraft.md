@@ -7,7 +7,7 @@ draft = false
 description = "{{ .Summary }}"
 +++
 
-故事的...
+故事的……
 
 ![小黄花](https://pic4.zhimg.com/80/v2-f6598674aa505a28aa1323fdbb6b4677_1440w.webp)
 
