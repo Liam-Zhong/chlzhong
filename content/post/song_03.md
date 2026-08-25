@@ -56,11 +56,11 @@ title = '听歌系列之你不知道的事'
 
 ### 参考文献
 
-[^1]: https://www.chinadaily.com.cn/china/2008-03/22/content_6557829.htm
-[^2]:https://web.archive.org/web/20091005041212/http://news.xinhuanet.com/english/2009-07/18/content_11727782.htm
-[^3]:https://news.sina.com.cn/c/z/kmhczks/?from=wap
-[^4]:https://www.ts.cn/xwzx/shxw/202211/t20221125_10249936.shtml
-[^5]:https://www.wenxuecity.com/news/2023/11/24/125292236.html
-[^6]:https://m.163.com/dy/article/K0PNJK3A0556BWUL.html?spss=adap_pc
-[^7]:https://zhuanlan.zhihu.com/p/540168184
-[^8]:https://m.thepaper.cn/newsDetail_forward_31309581
+[^1]: [18 civilians, 1 police officer killed by Lhasa rioters](https://www.chinadaily.com.cn/china/2008-03/22/content_6557829.htm)
+[^2]:[Xinjiang riot hits regional anti-terror nerve](https://web.archive.org/web/20091005041212/http://news.xinhuanet.com/english/2009-07/18/content_11727782.htm)
+[^3]:[昆明火车站严重暴力恐怖事件](https://news.sina.com.cn/c/z/kmhczks/)
+[^4]:[乌鲁木齐市一高层住宅楼发生火灾](https://www.ts.cn/xwzx/shxw/202211/t20221125_10249936.shtml)
+[^5]:[白纸后这一年:不被恐惧牵着走,我们可以牵着恐惧](https://www.wenxuecity.com/news/2023/11/24/125292236.html)
+[^6]:[河南村镇银行的血泪教训：储户的血汗钱，亟需一个公道交代！](https://m.163.com/dy/article/K0PNJK3A0556BWUL.html)
+[^7]:[河南打人事件，也该回应说明！](https://zhuanlan.zhihu.com/p/540168184)
+[^8]:[四川江油“校园霸凌”事件三点关切，为何报警十多天后才作出处理决定？](https://m.thepaper.cn/newsDetail_forward_31309581)
