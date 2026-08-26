@@ -125,7 +125,7 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 
 - [《史努比开心呈献：盛夏音乐剧》 Snoopy Presents: A Summer Musical (2025)](https://tv.apple.com/us/movie/a-summer-musical/umc.cmc.xesgxj0bt8yrrkrunae0wke7)
 
-- [《史努比开心呈献：有家真好》 Snoopy Presents: There’s No Place Like Home, Snoopyl (2026)](https://tv.apple.com/us/movie/a-summer-musical/umc.cmc.xesgxj0bt8yrrkrunae0wke7)
+- [《史努比开心呈献：有家真好》 Snoopy Presents: There’s No Place Like Home, Snoopyl (2026)](https://tv.apple.com/us/movie/theres-no-place-like-home-snoopy/umc.cmc.52sgmi3vdpedurrbtz6louqqo)
 
 [^1]:由于版权问题，某些特别节目仅通过 VHS 录像带发行。此后，派拉蒙家庭娱乐和华纳家庭影业都未发行过这些节目。
 包括——
