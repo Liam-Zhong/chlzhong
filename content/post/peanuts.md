@@ -93,9 +93,9 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 
 - *You're in the Super Bowl, Charlie Brown! (1994)*
 
-- [It Was My Best Birthday Ever, Charlie Brown (1997)](https://tv.apple.com/us/movie/it-was-my-best-birthday-ever-charlie-brown/umc.cmc.2u42dndxup4bd4n8dfczerdj8)
+- [It Was My Best Birthday Ever, Charlie Brown (1997)](http://apple.com/us/movie/it-was-my-best-birthday-ever-charlie-brown/umc.cmc.2u42dndxup4bd4n8dfczerdj8)—— 需单独付费
 
-- [It's the Pied Piper, Charlie Brown (2000)](https://tv.apple.com/us/movie/its-the-pied-piper-charlie-brown/umc.cmc.36ujobs1liemcihbgswwp4g8l)
+- [It's the Pied Piper, Charlie Brown (2000)](https://tv.apple.com/us/movie/its-the-pied-piper-charlie-brown/umc.cmc.36ujobs1liemcihbgswwp4g8l)—— 需单独付费
 
 - [《查理布朗的情人节》 A Charlie Brown Valentine (2002)](https://tv.apple.com/us/movie/a-charlie-brown-valentine/umc.cmc.30cyxu8by31op677sm0djtm72)
 
@@ -127,4 +127,4 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 
 - [《史努比开心呈献：有家真好》 Snoopy Presents: There’s No Place Like Home, Snoopyl (2026)](https://tv.apple.com/us/movie/theres-no-place-like-home-snoopy/umc.cmc.52sgmi3vdpedurrbtz6louqqo)
 
-[^1]:由于版权问题，某些特别节目仅通过 VHS 录像带发行。此后，派拉蒙家庭娱乐和华纳家庭影业都未发行过这些节目。包括——**Snoopy!!! The Musical**、**It's the Girl in the Red Truck, Charlie Brown**、**You're in the Super Bowl, Charlie Brown!**、**It Was My Best Birthday Ever, Charlie Brown**.
+[^1]:由于版权问题，某些特别节目仅通过 VHS 录像带发行。此后，派拉蒙家庭娱乐和华纳家庭影业都未发行过这些节目。包括——**Snoopy!!! The Musical**、**It's the Girl in the Red Truck, Charlie Brown**、**You're in the Super Bowl, Charlie Brown!**
