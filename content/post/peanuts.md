@@ -129,8 +129,13 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 
 [^1]:由于版权问题，某些特别节目仅通过 VHS 录像带发行。此后，派拉蒙家庭娱乐和华纳家庭影业都未发行过这些节目。
 包括——
+
 Snoopy!!! The Musical
+
 It's the Girl in the Red Truck, Charlie Brown
+
 You're in the Super Bowl, Charlie Brown!
+
 It Was My Best Birthday Ever,
+
 Charlie Brown.
