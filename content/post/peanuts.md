@@ -109,7 +109,7 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 
 - [《幸福就是有条温暖的毛毯》 Happiness Is a Warm Blanket, Charlie Brown (2011)](https://tv.apple.com/us/episode/happiness-is-a-warm-blanket-charlie-brown/umc.cmc.6moilxdfqmp79p03v5vqg5jdp?showId=umc.cmc.63led2pm5a1w4wvabyn4xxxjp)
 
-  by Apple, Only on Apple TV :
+  **by Apple, Only on Apple TV :**
 
 - [《史努比开心呈献：祝我们友谊长存》 Snoopy Presents: For Auld Lang Syne (2021)](https://tv.apple.com/us/movie/for-auld-lang-syne/umc.cmc.5xuo4simneuqt8ibn2kyskonu)
 
