@@ -8,7 +8,7 @@ title = 'Peanuts'
 
 Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整理，现根据 fandom 以及 Apple TV 将部分剧集汇合于此：
 
-剧集：
+**剧集：**
 
 - [The Charlie Brown and Snoopy Show](https://tv.apple.com/us/show/the-charlie-brown-and-snoopy-show/umc.cmc.1kt2wacwwoz0brw6duwve9hje)
 - [This Is America, Charlie Brown](https://tv.apple.com/us/show/this-is-america-charlie-brown/umc.cmc.3glsixv3225ngtbm57lq72oam)
@@ -17,7 +17,7 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 - [The Snoopy Show](https://tv.apple.com/us/show/the-snoopy-show/umc.cmc.5iswprrvjjw6ab020a17x4ca3)
 - [Camp Snoopy](https://tv.apple.com/us/show/camp-snoopy/umc.cmc.4erhnrmkf9vgeojl3uryxsc0j)
 
-《花生漫画》电视特辑（TV Specials）[^1]：
+**《花生漫画》电视特辑（TV Specials）[^1]：**
 
 - [《查理布朗的耶诞节》 A Charlie Brown Christmas (1965)](https://tv.apple.com/us/movie/a-charlie-brown-christmas/umc.cmc.mbxalimrwrtq72wj4h601pyf)
 
