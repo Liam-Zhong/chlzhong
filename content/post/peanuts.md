@@ -93,9 +93,9 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 
 - *You're in the Super Bowl, Charlie Brown! (1994)*
 
-- *It Was My Best Birthday Ever, Charlie Brown (1997)*
+- [It Was My Best Birthday Ever, Charlie Brown (1997)](https://tv.apple.com/us/movie/it-was-my-best-birthday-ever-charlie-brown/umc.cmc.2u42dndxup4bd4n8dfczerdj8)
 
-- *It's the Pied Piper, Charlie Brown (2000)*
+- [It's the Pied Piper, Charlie Brown (2000)](https://tv.apple.com/us/movie/its-the-pied-piper-charlie-brown/umc.cmc.36ujobs1liemcihbgswwp4g8l)
 
 - [《查理布朗的情人节》 A Charlie Brown Valentine (2002)](https://tv.apple.com/us/movie/a-charlie-brown-valentine/umc.cmc.30cyxu8by31op677sm0djtm72)
 
