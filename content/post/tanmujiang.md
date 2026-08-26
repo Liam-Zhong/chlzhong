@@ -7,7 +7,7 @@ title = '谭木匠木梳'
 
 +++
 
-梳子按[款式](https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=6E961C6DB78254EF883B5053D08BFA3B&request_locale=zh)分整体梳、插齿梳、镶拼梳、气囊梳；
+梳子按[款式](https://openstd.samr.gov.cn/bzgk/std/showGb?hcno=6E961C6DB78254EF883B5053D08BFA3B)分整体梳、插齿梳、镶拼梳、气囊梳；
 
 按照木材见下表，其中微凹黄檀、黑酸枝、黑檀木为**国标红木**；黑檀木、黑酸枝是**辉柏嘉伯爵同款**木头；水黄杨并非小叶黄杨。
 

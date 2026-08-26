@@ -6,7 +6,7 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "tuffy"
 +++
 
-- [QQ](mqqwpa://im/chat?chat_type=wpa&uin=545659205&version=1&src_type=web
+- [QQ](mqqwpa://im/chat?chat_type=wpa&uin=545659205&version=1
   )
 - [邮箱](mailto:chlzhong@outlook.com)
 - ~~[知乎](https://zhihu.com/people/zhongcl-jiang/)~~

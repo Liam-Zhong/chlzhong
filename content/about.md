@@ -39,7 +39,7 @@ author = "Tuffy"
 
 - 程云龙：好老师
 
-- [刘星](https://b23.tv/mz9muoW)：引路人， Powerful
+- [刘星](https://space.bilibili.com/399708274)：引路人， Powerful
 
 - 赵姜涵：好哥哥！数电和 PT 之神🪄
 

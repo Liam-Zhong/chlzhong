@@ -12,7 +12,7 @@ draft = false
 
 
 
-—— [史诗 - 蛋堡](https://music.163.com/#/song?id=27533219&fx-wxqd=&playerUIModeId=76001&app_version=9.1.70&shareToken=17279552321728129927_3a2832573cff00af7f52946956097b23&fx-wechatnew=t1&fx-wordtest=t4&fx-listentest=t3&PlayerStyles_SynchronousSharing=t3&uct2=kZlq9ofmxd2hSFY49ZIdAg==&dlt=0846&H5_DownloadVIPGift=)
+—— [史诗 - 蛋堡](https://music.163.com/#/song?id=27533219)
 
 总觉着舞动自己的身体有一种羞耻感。
 
