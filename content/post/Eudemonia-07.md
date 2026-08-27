@@ -20,7 +20,7 @@ draft = false
 
 -----
 
-![全身上下没有一口袋放✒](/images/mememe.jpg)
+![全身上下没有一口袋放 ✒](/images/mememe.jpg)
 
 -----
 
@@ -28,6 +28,4 @@ draft = false
 
 -----
 
-![冷到变色](/images/blue_me.jpg)
 
------
