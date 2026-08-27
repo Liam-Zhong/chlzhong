@@ -15,4 +15,4 @@ description = "pandoc 使用指南"
 pandoc name.md -o output.docx --reference-doc=样例.docx
 ```
 
-OK，去交作业吧  :P
+OK，去交作业吧  :p
