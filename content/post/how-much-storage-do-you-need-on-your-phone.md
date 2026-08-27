@@ -24,13 +24,13 @@ description = "{{ .Summary }}"
 
 * 存储器 (Memory)
    * **主存**储器 (Main **Memory**)
-      * RAM（随机存取存储器）(Random Access Memory)
-      * ROM（只读存储器）(Read-Only Memory)
+      * RAM - 随机存取存储器 (Random Access Memory)
+      * ROM - 只读存储器 (Read-Only Memory)
    * 辅助**存储**器 (Secondary **Storage**)
       * 磁存储器 (Magnetic Storage)
       * 光存储器 (Optical Storage)
       * 固态存储器 (Solid-State Storage)
-         * 固态硬盘（SSD）(Solid-State Drive)
+         * 固态硬盘 - SSD (Solid-State Drive)
          * U 盘 (USB Flash Drive)
          * 存储卡 (Memory Card)
    * 高速**缓**冲**存**储器（Cache）
