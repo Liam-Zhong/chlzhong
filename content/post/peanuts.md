@@ -18,7 +18,7 @@ title = 'Peanuts'
 - [Snoopy, Come Home](https://tv.apple.com/us/movie/snoopy-come-home/umc.cmc.477kzjxv3qd5kfqkcm106owmx) —— 需单独付费
 - [Race for Your Life, Charlie Brown](https://tv.apple.com/us/movie/race-for-your-life-charlie-brown/umc.cmc.5j2bnyuekh1plh0bw1kcaqzav) —— 需单独付费
 - [Bon Voyage, Charlie Brown ](https://tv.apple.com/us/movie/peanuts-bon-voyage-charlie-brown/umc.cmc.62iokzq9ny81o87fa1b536ya2)—— 需单独付费
-- [The Peanuts Movie](https://tv.apple.com/us/movie/the-peanuts-movie/umc.cmc.7iqrfwf50czfru3te5iyypqch)](https://tv.apple.com/us/movie/peanuts-bon-voyage-charlie-brown/umc.cmc.62iokzq9ny81o87fa1b536ya2) —— 需单独付费
+- [The Peanuts Movie](https://tv.apple.com/us/movie/the-peanuts-movie/umc.cmc.7iqrfwf50czfru3te5iyypqch) —— 需单独付费
 
 **剧集：**
 
