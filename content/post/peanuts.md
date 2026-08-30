@@ -6,7 +6,17 @@ math = false
 title = 'Peanuts'
 +++
 
-Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整理，现根据 fandom 以及 Apple TV 将部分剧集汇合于此：
+《Peanuts》很早便开始进行影视化制作，至今已经留下了数量相当丰富的动画特别篇、电视剧集及其他影视作品，其中部分作品还曾推出中文配音版本。本博参考 Fandom 的相关资料，并结合 Apple TV 目前提供的片目，现将部分具有代表性的影视作品整理于此，方便查阅与观看。
+
+**观看方式以正版渠道为优先。**目前 Apple TV 已收录大量《Peanuts》经典动画及新作，包括许多早期特别篇以及近年来的原创系列和特别篇，因此推荐优先通过 Apple TV 观看[^1]。 
+
+**电影：**
+
+- [A Boy Named Charlie Brown](https://tv.apple.com/us/movie/a-boy-named-charlie-brown/umc.cmc.6uq83uis5jvwy9mzy32cfqomx) —— 需单独付费
+- [Snoopy, Come Home](https://tv.apple.com/us/movie/snoopy-come-home/umc.cmc.477kzjxv3qd5kfqkcm106owmx) —— 需单独付费
+- [Race for Your Life, Charlie Brown](https://tv.apple.com/us/movie/race-for-your-life-charlie-brown/umc.cmc.5j2bnyuekh1plh0bw1kcaqzav) —— 需单独付费
+- [Bon Voyage, Charlie Brown ](https://tv.apple.com/us/movie/peanuts-bon-voyage-charlie-brown/umc.cmc.62iokzq9ny81o87fa1b536ya2)—— 需单独付费
+- [The Peanuts Movie](https://tv.apple.com/us/movie/the-peanuts-movie/umc.cmc.7iqrfwf50czfru3te5iyypqch)](https://tv.apple.com/us/movie/peanuts-bon-voyage-charlie-brown/umc.cmc.62iokzq9ny81o87fa1b536ya2) —— 需单独付费
 
 **剧集：**
 
@@ -17,7 +27,7 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 - [The Snoopy Show](https://tv.apple.com/us/show/the-snoopy-show/umc.cmc.5iswprrvjjw6ab020a17x4ca3)
 - [Camp Snoopy](https://tv.apple.com/us/show/camp-snoopy/umc.cmc.4erhnrmkf9vgeojl3uryxsc0j)
 
-**《花生漫画》电视特辑（TV Specials）[^1]：**
+**《花生漫画》电视特辑（TV Specials）[^2]：**
 
 - [《查理布朗的耶诞节》 A Charlie Brown Christmas (1965)](https://tv.apple.com/us/movie/a-charlie-brown-christmas/umc.cmc.mbxalimrwrtq72wj4h601pyf)
 
@@ -127,4 +137,13 @@ Peanuts 动画化特别早，且存在中文配音，Bilibili 上亦有部分整
 
 - [《史努比开心呈献：有家真好》 Snoopy Presents: There’s No Place Like Home, Snoopyl (2026)](https://tv.apple.com/us/movie/theres-no-place-like-home-snoopy/umc.cmc.52sgmi3vdpedurrbtz6louqqo)
 
-[^1]:由于版权问题，某些特别节目仅通过 VHS 录像带发行。此后，派拉蒙家庭娱乐和华纳家庭影业都未发行过这些节目。包括——**Snoopy!!! The Musical**、**It's the Girl in the Red Truck, Charlie Brown**、**You're in the Super Bowl, Charlie Brown!**
+---
+
+**相关纪录片：**
+
+- [Peanuts in Space : secrets of Apollo 10](https://tv.apple.com/us/movie/peanuts-in-space-secrets-of-apollo-10/umc.cmc.6ippzjfc3jg0l4b8x8cslmhfa)
+
+- [Who Are You, Charlie Brown?](https://tv.apple.com/us/movie/who-are-you-charlie-brown/umc.cmc.7a7wj0y9l9p9z8dwz287j4wx3)
+
+[^1]:如果某些作品因地区、版权或其他原因暂时无法通过正版渠道观看，可将哔哩哔哩上已有的[相关整理](https://space.bilibili.com/395571656)作为补充选择。哔哩哔哩上的[内容](https://space.bilibili.com/1586993531)主要用于弥补正版平台在部分作品、语言版本或地区可用性上的不足，并不取代对正版渠道的支持。
+[^2]:由于版权问题，某些特别节目仅通过 VHS 录像带发行。此后，派拉蒙家庭娱乐和华纳家庭影业都未发行过这些节目。包括——**Snoopy!!! The Musical**、**It's the Girl in the Red Truck, Charlie Brown**、**You're in the Super Bowl, Charlie Brown!**
