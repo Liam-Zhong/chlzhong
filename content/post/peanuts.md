@@ -18,16 +18,16 @@ title = 'Peanuts'
 - [Snoopy, Come Home](https://tv.apple.com/us/movie/snoopy-come-home/umc.cmc.477kzjxv3qd5kfqkcm106owmx) —— 需单独付费
 - [Race for Your Life, Charlie Brown](https://tv.apple.com/us/movie/race-for-your-life-charlie-brown/umc.cmc.5j2bnyuekh1plh0bw1kcaqzav) —— 需单独付费
 - [Bon Voyage, Charlie Brown ](https://tv.apple.com/us/movie/peanuts-bon-voyage-charlie-brown/umc.cmc.62iokzq9ny81o87fa1b536ya2)—— 需单独付费
-- [The Peanuts Movie](https://tv.apple.com/us/movie/the-peanuts-movie/umc.cmc.7iqrfwf50czfru3te5iyypqch) —— 需单独付费
+- [《史努比》 The Peanuts Movie](https://tv.apple.com/us/movie/the-peanuts-movie/umc.cmc.7iqrfwf50czfru3te5iyypqch) —— 需单独付费
 
 **剧集：**
 
-- [The Charlie Brown and Snoopy Show](https://tv.apple.com/us/show/the-charlie-brown-and-snoopy-show/umc.cmc.1kt2wacwwoz0brw6duwve9hje)
+- [《查理布朗与史努比》 The Charlie Brown and Snoopy Show](https://tv.apple.com/us/show/the-charlie-brown-and-snoopy-show/umc.cmc.1kt2wacwwoz0brw6duwve9hje)
 - [This is America, Charlie Brown](https://tv.apple.com/us/show/this-is-america-charlie-brown/umc.cmc.3glsixv3225ngtbm57lq72oam)
 - [Peanuts](https://tv.apple.com/us/show/peanuts/umc.cmc.7efaawz79ur7qk3cxpyum2k91) —— 104 集，需单独付费
-- [Snoopy in Space: The Search for Life](https://tv.apple.com/us/show/snoopy-in-space-the-search-for-life/umc.cmc.12l86ri6vfjlimw2m8b8dzszs)
-- [The Snoopy Show](https://tv.apple.com/us/show/the-snoopy-show/umc.cmc.5iswprrvjjw6ab020a17x4ca3)
-- [Camp Snoopy](https://tv.apple.com/us/show/camp-snoopy/umc.cmc.4erhnrmkf9vgeojl3uryxsc0j)
+- [《史努比登上太空：探索生命》 Snoopy in Space: The Search for Life](https://tv.apple.com/us/show/snoopy-in-space-the-search-for-life/umc.cmc.12l86ri6vfjlimw2m8b8dzszs)
+- [《史努比欢乐秀》 The Snoopy Show](https://tv.apple.com/us/show/the-snoopy-show/umc.cmc.5iswprrvjjw6ab020a17x4ca3)
+- [《史努比的欢乐夏令营》 Camp Snoopy](https://tv.apple.com/us/show/camp-snoopy/umc.cmc.4erhnrmkf9vgeojl3uryxsc0j)
 
 **《花生漫画》电视特辑（TV Specials）[^2]：**
 
@@ -143,9 +143,9 @@ title = 'Peanuts'
 
 **相关纪录片：**
 
-- [Peanuts in Space : secrets of Apollo 10](https://tv.apple.com/us/movie/peanuts-in-space-secrets-of-apollo-10/umc.cmc.6ippzjfc3jg0l4b8x8cslmhfa)
+- [《史努比登上太空：探秘阿波罗 10 号》 Peanuts in Space : Secrets of Apollo 10](https://tv.apple.com/us/movie/peanuts-in-space-secrets-of-apollo-10/umc.cmc.6ippzjfc3jg0l4b8x8cslmhfa)
 
-- [Who Are You, Charlie Brown?](https://tv.apple.com/us/movie/who-are-you-charlie-brown/umc.cmc.7a7wj0y9l9p9z8dwz287j4wx3)
+- [《查理布朗，你是谁/》 Who Are You, Charlie Brown?](https://tv.apple.com/us/movie/who-are-you-charlie-brown/umc.cmc.7a7wj0y9l9p9z8dwz287j4wx3)
 
 [^1]:如果某些作品因地区、版权或其他原因暂时无法通过正版渠道观看，可将哔哩哔哩上已有的[相关整理](https://space.bilibili.com/395571656)作为补充选择。哔哩哔哩上的[内容](https://space.bilibili.com/1586993531)主要用于弥补正版平台在部分作品、语言版本或地区可用性上的不足，并不取代对正版渠道的支持。
 [^2]:由于版权问题，某些特别节目仅通过 VHS 录像带发行。此后，派拉蒙家庭娱乐和华纳家庭影业都未发行过这些节目。包括——**Snoopy!!! The Musical**、**It's the Girl in the Red Truck, Charlie Brown**、**You're in the Super Bowl, Charlie Brown!**
