@@ -23,9 +23,9 @@ title = 'Peanuts'
 **剧集：**
 
 - [The Charlie Brown and Snoopy Show](https://tv.apple.com/us/show/the-charlie-brown-and-snoopy-show/umc.cmc.1kt2wacwwoz0brw6duwve9hje)
-- [This Is America, Charlie Brown](https://tv.apple.com/us/show/this-is-america-charlie-brown/umc.cmc.3glsixv3225ngtbm57lq72oam)
+- [This is America, Charlie Brown](https://tv.apple.com/us/show/this-is-america-charlie-brown/umc.cmc.3glsixv3225ngtbm57lq72oam)
 - [Peanuts](https://tv.apple.com/us/show/peanuts/umc.cmc.7efaawz79ur7qk3cxpyum2k91) —— 104 集，需单独付费
-- [Snoopy in Space](https://tv.apple.com/us/show/snoopy-in-space-the-search-for-life/umc.cmc.12l86ri6vfjlimw2m8b8dzszs)
+- [Snoopy in Space: The Search for Life](https://tv.apple.com/us/show/snoopy-in-space-the-search-for-life/umc.cmc.12l86ri6vfjlimw2m8b8dzszs)
 - [The Snoopy Show](https://tv.apple.com/us/show/the-snoopy-show/umc.cmc.5iswprrvjjw6ab020a17x4ca3)
 - [Camp Snoopy](https://tv.apple.com/us/show/camp-snoopy/umc.cmc.4erhnrmkf9vgeojl3uryxsc0j)
 
