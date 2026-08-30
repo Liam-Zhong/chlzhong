@@ -105,7 +105,7 @@ title = 'Peanuts'
 
 - *You're in the Super Bowl, Charlie Brown! (1994)*
 
-- [It Was My Best Birthday Ever, Charlie Brown (1997)](http://apple.com/us/movie/it-was-my-best-birthday-ever-charlie-brown/umc.cmc.2u42dndxup4bd4n8dfczerdj8) —— 需单独付费
+- [It Was My Best Birthday Ever, Charlie Brown (1997)](https://tv.apple.com/us/movie/it-was-my-best-birthday-ever-charlie-brown/umc.cmc.2u42dndxup4bd4n8dfczerdj8) —— 需单独付费
 
 - [It's the Pied Piper, Charlie Brown (2000)](https://tv.apple.com/us/movie/its-the-pied-piper-charlie-brown/umc.cmc.36ujobs1liemcihbgswwp4g8l) —— 需单独付费
 
@@ -123,21 +123,21 @@ title = 'Peanuts'
 
   **by Apple, Only on Apple TV :**
 
-- [《史努比开心呈献：祝我们友谊长存》 Snoopy Presents: For Auld Lang Syne (2021)](https://tv.apple.com/us/movie/for-auld-lang-syne/umc.cmc.5xuo4simneuqt8ibn2kyskonu)
+- [《祝我们友谊长存》 Snoopy Presents: For Auld Lang Syne (2021)](https://tv.apple.com/us/movie/for-auld-lang-syne/umc.cmc.5xuo4simneuqt8ibn2kyskonu)
 
-- [《史努比开心呈献：环保要从小事做起，查理布朗》 Snoopy Presents: It's the Small Things, Charlie Brown (2022)](https://tv.apple.com/us/movie/its-the-small-things-charlie-brown/umc.cmc.gr1rsr9lp2tzfwb0w6zhq9y3)
+- [《环保要从小事做起，查理布朗》 Snoopy Presents: It's the Small Things, Charlie Brown (2022)](https://tv.apple.com/us/movie/its-the-small-things-charlie-brown/umc.cmc.gr1rsr9lp2tzfwb0w6zhq9y3)
 
-- [《史努比开心呈献：对爸妈大声说爱吧》 Snoopy Presents: To Mom (and Dad), With Love (2022)](https://tv.apple.com/us/movie/to-mom-and-dad-with-love/umc.cmc.3flhku7zffp93eqd53bqlzi04)
+- [《对爸妈大声说爱吧》 Snoopy Presents: To Mom (and Dad), With Love (2022)](https://tv.apple.com/us/movie/to-mom-and-dad-with-love/umc.cmc.3flhku7zffp93eqd53bqlzi04)
 
-- [《史努比开心呈献：露西创校去》 Snoopy Presents: Lucy's School (2022)](https://tv.apple.com/us/movie/lucys-school/umc.cmc.45v5b3bbri53qgfjhirzrivp2)
+- [《露西创校去》 Snoopy Presents: Lucy's School (2022)](https://tv.apple.com/us/movie/lucys-school/umc.cmc.45v5b3bbri53qgfjhirzrivp2)
 
-- [《史努比开心呈献：做自己很棒，玛茜》 Snoopy Presents: One-of-a-Kind Marcie (2023)](https://tv.apple.com/us/movie/one-of-a-kind-marcie/umc.cmc.1a1h3avg5tx7g68ws3y06ty17)
+- [《做自己很棒，玛茜》 Snoopy Presents: One-of-a-Kind Marcie (2023)](https://tv.apple.com/us/movie/one-of-a-kind-marcie/umc.cmc.1a1h3avg5tx7g68ws3y06ty17)
 
-- [《史努比开心呈献：友你真好，富兰克林》 Snoopy Presents: Welcome Home, Franklin (2024)](https://tv.apple.com/us/movie/welcome-home-franklin/umc.cmc.yy12locz1vttqczsnlnwtei3)
+- [《友你真好，富兰克林》 Snoopy Presents: Welcome Home, Franklin (2024)](https://tv.apple.com/us/movie/welcome-home-franklin/umc.cmc.yy12locz1vttqczsnlnwtei3)
 
-- [《史努比开心呈献：盛夏音乐剧》 Snoopy Presents: A Summer Musical (2025)](https://tv.apple.com/us/movie/a-summer-musical/umc.cmc.xesgxj0bt8yrrkrunae0wke7)
+- [《盛夏音乐剧》 Snoopy Presents: A Summer Musical (2025)](https://tv.apple.com/us/movie/a-summer-musical/umc.cmc.xesgxj0bt8yrrkrunae0wke7)
 
-- [《史努比开心呈献：有家真好》 Snoopy Presents: There’s No Place Like Home, Snoopyl (2026)](https://tv.apple.com/us/movie/theres-no-place-like-home-snoopy/umc.cmc.52sgmi3vdpedurrbtz6louqqo)
+- [《有家真好》 Snoopy Presents: There’s No Place Like Home, Snoopyl (2026)](https://tv.apple.com/us/movie/theres-no-place-like-home-snoopy/umc.cmc.52sgmi3vdpedurrbtz6louqqo)
 
 ---
 
