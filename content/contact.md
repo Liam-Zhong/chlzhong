@@ -12,3 +12,4 @@ author = "tuffy"
 - ~~[知乎](https://zhihu.com/people/zhongcl-jiang/)~~
 - [哔哩哔哩](https://space.bilibili.com/3546587322124798/)
 - [Steam](https://steamcommunity.com/profiles/76561199395884361/)
+- [Telegram](https://t.me/sanil_jimmy)
