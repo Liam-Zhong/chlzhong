@@ -1,0 +1,180 @@
+/* ==========================================================================
+   0. Design Tokens
+   ========================================================================== */
+   :root {
+    --theme-selection-bg: rgb(191 181 163);
+    --text-muted: #888;
+  }
+  
+  @view-transition {
+    navigation: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    @view-transition { navigation: none; }
+  }
+  
+  /* ==========================================================================
+     1. Base / Foundations
+     ========================================================================== */
+  /* Selection */
+  ::selection {
+    color: #000;
+    background: color-mix(in srgb, var(--theme-selection-bg) 100%, transparent);
+  }
+  
+  ::-moz-selection {
+    color: #000;
+    background: color-mix(in srgb, var(--theme-selection-bg) 100%, transparent);
+  }
+
+  html{
+    overflow-y: scroll;
+  }
+  
+  /* Fonts */
+  @font-face {
+    font-family: "Kai Tuffy";
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url("/fonts/Tuffy-Kai.woff2") format("woff2");
+    unicode-range:
+      U+4E00-9FFF,
+      U+3000-303F,
+      U+FF00-FFEF,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D;
+  }
+  
+  @font-face {
+    font-family: "Blog-Serif-TC";
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url("/fonts/Tuffy-Song.woff2") format("woff2");
+    unicode-range:
+      U+4E00-9FFF,
+      U+3000-303F,
+      U+FF00-FFEF,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D;
+  }
+  
+  /* ==========================================================================
+     2. Typography System 
+     ========================================================================== */
+  .prose {
+    font-weight: 550;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    text-wrap: balance;
+  }
+  .prose strong,
+  .prose b {
+    font-weight: inherit !important;
+    color: inherit !important;
+    background:
+    linear-gradient(
+      to bottom,
+      transparent 8%,
+      rgb(234 189 87 / 70%) 8%,
+      rgb(234 189 87 / 70%) 92%,
+      transparent 92%
+    );
+    border-radius: 0.35em;
+    padding-inline: 0.12em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  /* ==========================================================================
+     3. Components
+     ========================================================================== */
+  /* Images */
+  figure {
+    display: grid;
+    gap: .75rem;
+    justify-items: center;
+    margin-block: 1.8em !important;
+  }
+  
+  .img-apple {
+    display: block;
+    max-inline-size: min(100%, 700px); 
+    max-block-size: 70vh;            
+    
+    margin: 0 !important;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  
+    content-visibility: auto;
+    contain-intrinsic-size: 500px;
+  }
+  
+  figcaption {
+    max-inline-size: min(100%, 700px); 
+    margin: 0;
+    padding-inline: .5rem;
+  
+    font-size: .9rem;
+    line-height: 1.45;
+    text-align: center;
+    color: var(--secondary);
+  }
+  
+  /* ==========================================================================
+     4. Pages & Specifics
+     ========================================================================== */
+  /* Archives */
+  #archives-page ul.archive-list {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  #archives-page li {
+    display: inline-block;
+    font-size: 16px !important; 
+    margin-bottom: 0.4rem;
+  }
+  
+  #archives-page .date {
+    color: var(--text-muted);
+  }
+  
+  #archives-page a {
+    position: relative;
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: translate .2s ease-out;
+  }
+  
+  #archives-page a:hover {
+    inset: 1px 0 0 1px;
+  }
+  /* Special Page Links */
+  .prose article section a {
+    color: inherit !important;
+    text-decoration: none !important;
+    border-bottom: 1px dashed currentColor !important;
+    transition: translate .1s ease-in-out;
+  }
+  
+  .prose article section a:hover {
+    position: relative;
+    inset: 1px 0 0 1px;
+  }
+  
+  del {
+    color: inherit;
+    text-decoration: line-through;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    opacity: .5;
+  }
