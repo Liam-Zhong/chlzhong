@@ -5,7 +5,7 @@
 {{- $.Scratch.Delete "avatar_url" -}}<!---->
 
 <!-- bg_color -->
-{{- $color_map := dict "linen" "#f6f4ee" "wheat" "#f8f5d7" "gray" "#fbfbfb"
+{{- $color_map := dict "linen" "#f8f1e3" "wheat" "#f8f5d7" "gray" "#fbfbfb"
 "light" "#fff" -}}<!---->
 {{- $.Scratch.Set "bg_color" (index $color_map (site.Params.color | default
 (print "linen"))) -}}<!---->
@@ -36,7 +36,7 @@
 <html
   class="not-ready xl:text-base"
   style="--bg: {{- $bg_color -}}"
-  lang="{{- or site.Language.Locale site.Language.Lang -}}"
+  lang="{{- or site.LanguageCode site.Language.Lang -}}"
   dir="{{- if site.Params.direction -}}{{- site.Params.direction -}}{{- else -}}ltr{{- end -}}"
 >
   {{- partial "head.html" . -}}
