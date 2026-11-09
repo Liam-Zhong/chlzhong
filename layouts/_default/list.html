@@ -18,10 +18,15 @@
             <div class="profile">
                 {{- if $avatar_url -}}
                 <div class="avatar">
-                    <img src="{{- $avatar_url -}}" alt="{{- site.Params.name | default site.Title -}}" />
+                    <img src="{{- $avatar_url -}}" alt="{{- site.Params.name | default site.Title -}}"
+                         width="160"
+                         height="160"
+                         fetchpriority="high"
+                         loading="eager"
+                    />
                 </div>
-                {{- end -}}
-
+                {{- end
+                
                 {{- if site.Params.name -}}
                 <div>
                     <div class="profile-name">{{- site.Params.name -}}</div>
