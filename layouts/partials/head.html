@@ -33,13 +33,11 @@
   <!-- css & js -->
   {{- $main := resources.Get "css/main.css" -}}
   {{- $custom := resources.Get "css/custom.css" -}}
-  {{- $css := slice $main $custom | resources.Concat "css/main.css" | minify | fingerprint -}}
+  {{- $css := slice $main $custom | resources.Concat "css/main.css" | minify -}}
 
-  <link
-      rel="stylesheet"
-      href="{{ $css.Permalink }}"
-      integrity="{{ $css.Data.Integrity }}"
-  >
+  <style>
+      {{- $css.Content | safaCSS -}}
+  </style>
 
   <!-- dark icon -->
   {{- $dark_icon := resources.Get "images/theme.png" -}}
