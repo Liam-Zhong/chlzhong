@@ -7,4 +7,4 @@ description = "{{ .Summary }}"
 
 这是我的第一篇博客。
 
-`HELLO WORLD！`
+`HELLO WORLD!`
