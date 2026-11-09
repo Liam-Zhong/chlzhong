@@ -36,7 +36,7 @@
   {{- $css := slice $main $custom | resources.Concat "css/main.css" | minify -}}
 
   <style>
-      {{- $css.Content | safaCSS -}}
+      {{- $css.Content | safeCSS -}}
   </style>
 
   <!-- dark icon -->
