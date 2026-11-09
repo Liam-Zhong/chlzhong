@@ -217,8 +217,8 @@ html.open .nav-wrapper {
 
 .menu a {
   display: block;
-  font-size: 1.25rem;
-  line-height: 5rem;
+  font-size: 1.4rem;
+  line-height: 4.5rem;
   text-align: center;
 }
 
@@ -230,8 +230,8 @@ html.open .nav-wrapper {
 }
 
 .social a {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   font-size: 0;
   background: var(--url) center / contain no-repeat;
 }
@@ -300,7 +300,7 @@ html.dark .social {
 }
 
 .site-footer .credit {
-  margin: 0 24px;
+  margin: 0 0 0 24px;
 }
 
 /* ---------- 主体 ---------- */
