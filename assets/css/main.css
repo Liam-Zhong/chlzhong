@@ -51,9 +51,9 @@
   --code-bg: #262626;
   --btn-bg: #000;
   --btn-fg: #fff;
-  --zh: "Blog-Serif-TC", "Songti TC","Kai Tuffy", "Noto Serif CJK SC", serif;
-  --latin: "Latin Serif", "Iowan Old Style", Georgia, "Noto Serif";
-  --latin-bold: "Latin Serif Bold", "Iowan Old Style", Georgia, "Noto Serif";
+  --zh: "Songti TC","Blog-Serif-TC","Kai Tuffy", "Noto Serif CJK SC", serif;
+  --latin: "Iowan Old Style","Latin Serif", Georgia, "Noto Serif";
+  --latin-bold: "Iowan Old Style","Latin Serif Bold", Georgia, "Noto Serif";
 }
 
 html.dark {
