@@ -4,7 +4,6 @@ draft = false
 author = "Tuffy"
 math = false
 title = '26年中-无端又一春'
-
 +++
 
 ## 1 月
@@ -112,5 +111,3 @@ title = '26年中-无端又一春'
 - 搬到狗窝，好累好累。
 
 - 豆老师最美。
-
-  
