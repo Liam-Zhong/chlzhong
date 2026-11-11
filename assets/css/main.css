@@ -769,6 +769,8 @@ html.dark .profile .avatar {
 
 .profile-bio {
   word-break: break-word;
+  white-space: nowrap;
+  font-size: min(1rem, calc((100vw - 160px) / 13));
 }
 
 /* ---------- 归档页 ---------- */
