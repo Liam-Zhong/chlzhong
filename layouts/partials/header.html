@@ -1,87 +1,90 @@
 <header class="site-header">
-  <div class="brand">
-      <a class="site-title" href="{{- `` | absURL -}}">{{ site.Title }}</a>
-
-      {{- $bg_icon := resources.Get "images/theme.svg" -}}
-
-      <button
-          class="btn-dark"
-          type="button"
-          aria-label="切换深色模式"
-          style="--icon: url('{{ if $bg_icon }}{{ $bg_icon.Permalink }}{{ end }}')"
-      ></button>
-  </div>
-
-  <button
-      class="btn-menu"
-      type="button"
-      aria-label="菜单"
-      aria-expanded="false"
-      aria-controls="site-nav"
-  ></button>
-
-  <script>
-      // base（root / setDark 已在 head.html 中定义）
-      const htmlClass = document.documentElement.classList;
-
-      setTimeout(() => {
-          htmlClass.remove('not-ready');
-      }, 10);
-
-      // mobile menu
-      const btnMenu = document.querySelector('.btn-menu');
-
-      const setMenu = (open) => {
-          htmlClass.toggle('open', open);
-          btnMenu.setAttribute('aria-expanded', open);
-      };
-
-      btnMenu.addEventListener('click', () => {
-          setMenu(!htmlClass.contains('open'));
-      });
-
-      addEventListener('keydown', (event) => {
-          if (event.key === 'Escape') setMenu(false);
-      });
-
-      // manual dark switch（支持的浏览器用 View Transition 做渐变）
-      const btnDark = document.querySelector('.btn-dark');
-      const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-
-      btnDark.addEventListener('click', () => {
-          const toggle = () => setDark(!htmlClass.contains('dark'));
-
-          if (document.startViewTransition && !reduceMotion.matches) {
-              document.startViewTransition(toggle);
-          } else {
-              toggle();
-          }
-      });
-  </script>
-
-  <div class="nav-wrapper" id="site-nav">
-      {{- with site.Menus.main -}}
-      <nav class="menu">
-          {{- range . -}}
-          <a href="{{- .URL -}}">{{- .Name -}}</a>
-          {{- end -}}
-      </nav>
-      {{- end -}}
-
-      {{- with $.Scratch.Get "social_list" -}}
-      <nav class="social">
-          {{- range . -}}
-          {{- $icon := resources.Get (printf "icons/%s.svg" .) -}}
-
-          <a
-              style="--url: url('{{ if $icon }}{{ $icon.Permalink }}{{ end }}')"
-              href="{{- if eq . `rss` -}}{{- `index.xml` | absURL -}}{{- else if eq . `mastodon` -}}{{- index site.Params . -}}{{- else -}}{{- if eq . `threads` -}}https://threads.net/{{- else if eq . `bluesky` -}}https://bsky.app/profile/{{- else -}}https://{{- . -}}.com/{{- end -}}{{- if eq . `linkedin` -}}in/{{- end -}}{{- index site.Params . -}}{{- end -}}"
-              target="_blank"
-              rel="{{- if eq . `rss` -}}alternate{{- else -}}me{{- end -}}"
-          >{{- . -}}</a>
-
-          {{- end -}}
-      </nav>
-      {{- end -}}
-  </div>
-</header>
+    <div class="brand">
+        <a class="site-title" href="{{- `` | absURL -}}">{{ site.Title }}</a>
+  
+        {{- $bg_icon := resources.Get "images/theme.svg" -}}
+  
+        <div
+            class="btn-dark"
+            role="button"
+            aria-label="Dark"
+            style="--icon: url('{{ if $bg_icon }}{{ $bg_icon.Permalink }}{{ end }}')"
+        ></div>
+    </div>
+  
+    <div class="btn-menu" role="button" aria-label="Menu"></div>
+  
+    <script>
+        // base
+        const htmlClass = document.documentElement.classList;
+  
+        setTimeout(() => {
+            htmlClass.remove('not-ready');
+        }, 10);
+  
+        // mobile menu
+        const btnMenu = document.querySelector('.btn-menu');
+  
+        btnMenu.addEventListener('click', () => {
+            htmlClass.toggle('open');
+        });
+  
+        // dark theme
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = '{{- $.Scratch.Get "bg_color" -}}'.replace(/"/g, '');
+  
+        const setDark = (isDark) => {
+            metaTheme.setAttribute('content', isDark ? 'rgb(0 0 0 / 85%)' : lightBg);
+            htmlClass[isDark ? 'add' : 'remove']('dark');
+            localStorage.setItem('dark', isDark);
+        };
+  
+        // init
+        const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  
+        if (htmlClass.contains('dark')) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem('dark');
+            setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+        }
+  
+        // listen system
+        darkScheme.addEventListener('change', (event) => {
+            setDark(event.matches);
+        });
+  
+        // manual switch
+        const btnDark = document.querySelector('.btn-dark');
+  
+        btnDark.addEventListener('click', () => {
+            setDark(localStorage.getItem('dark') !== 'true');
+        });
+    </script>
+  
+    <div class="nav-wrapper">
+        {{- with site.Menus.main -}}
+        <nav class="menu">
+            {{- range . -}}
+            <a href="{{- .URL -}}">{{- .Name -}}</a>
+            {{- end -}}
+        </nav>
+        {{- end -}}
+  
+        {{- with $.Scratch.Get "social_list" -}}
+        <nav class="social">
+            {{- range . -}}
+            {{- $icon := resources.Get (printf "icons/%s.svg" .) -}}
+  
+            <a
+                style="--url: url('{{ if $icon }}{{ $icon.Permalink }}{{ end }}')"
+                href="{{- if eq . `rss` -}}{{- `index.xml` | absURL -}}{{- else if eq . `mastodon` -}}{{- index site.Params . -}}{{- else -}}{{- if eq . `threads` -}}https://threads.net/{{- else if eq . `bluesky` -}}https://bsky.app/profile/{{- else -}}https://{{- . -}}.com/{{- end -}}{{- if eq . `linkedin` -}}in/{{- end -}}{{- index site.Params . -}}{{- end -}}"
+                target="_blank"
+                rel="{{- if eq . `rss` -}}alternate{{- else -}}me{{- end -}}"
+            >{{- . -}}</a>
+  
+            {{- end -}}
+        </nav>
+        {{- end -}}
+    </div>
+  </header>
