@@ -86,6 +86,7 @@ html.open {
 }
 
 body {
+  text-autospace: normal;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--latin), var(--zh);
