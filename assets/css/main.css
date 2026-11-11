@@ -809,3 +809,19 @@ html.dark .profile .avatar {
   display: block;
   margin: auto;
 }
+
+@supports (animation-timeline: scroll()) {
+  body:has(article)::before {
+   content: "";
+   position: fixed;
+   inset: 0 0 auto;
+   height: 2px;
+   z-index: 60;
+   background: var(--highlight);
+   transform-origin: 0 50%;
+   transform: scaleX(0);
+   animation: read-progress linear both;
+   animation-timeline: scroll(root);
+ }
+ @keyframes read-progress { to { transform: scaleX(1); } }
+}
