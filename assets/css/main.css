@@ -313,12 +313,25 @@ html.dark .social {
   padding: 32px 24px 40px;
 }
 @media (max-width: 1023px) {
-  .site-header {
-    height: 72px;
+  .site-header,
+  .site-footer {
+    padding-inline: 32px;
   }
+
+  .btn-menu {
+    width: 80px;
+    margin-right: -32px;
+  }
+
   .main {
-    min-height: calc(100vh - 52px);
-    min-height: calc(100svh - 52px);
+    min-height: calc(100vh - 40px);
+    min-height: calc(100svh - 40px);
+    padding: 48px 32px 40px;
+  }
+
+  .profile-bio {
+    white-space: nowrap;
+    font-size: min(1rem, calc((100vw - 176px) / 13));
   }
 }
 article {
