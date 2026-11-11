@@ -8,7 +8,7 @@
             class="btn-dark"
             role="button"
             aria-label="Dark"
-            style="--icon: url('{{ if $bg_icon }}{{ $bg_icon.Permalink }}{{ end }}')"
+            {{ if $bg_icon }}style="{{ printf "--icon: url('data:image/svg+xml;base64,%s')" ($bg_icon.Content | base64Encode) | safeCSS }}"{{ end }}
         ></div>
     </div>
   
@@ -77,7 +77,7 @@
             {{- $icon := resources.Get (printf "icons/%s.svg" .) -}}
   
             <a
-                style="--url: url('{{ if $icon }}{{ $icon.Permalink }}{{ end }}')"
+                {{ if $icon }}style="{{ printf "--url: url('data:image/svg+xml;base64,%s')" ($icon.Content | base64Encode) | safeCSS }}"{{ end }}
                 href="{{- if eq . `rss` -}}{{- `index.xml` | absURL -}}{{- else if eq . `mastodon` -}}{{- index site.Params . -}}{{- else -}}{{- if eq . `threads` -}}https://threads.net/{{- else if eq . `bluesky` -}}https://bsky.app/profile/{{- else -}}https://{{- . -}}.com/{{- end -}}{{- if eq . `linkedin` -}}in/{{- end -}}{{- index site.Params . -}}{{- end -}}"
                 target="_blank"
                 rel="{{- if eq . `rss` -}}alternate{{- else -}}me{{- end -}}"
