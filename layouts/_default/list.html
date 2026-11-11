@@ -49,16 +49,17 @@
 
     {{- end -}}
 
-    {{- if gt $paginator.TotalPages 1 -}}
-    <nav class="pager">
-        {{- if $paginator.HasPrev -}}
-        <a class="btn" href="{{- $paginator.Prev.URL -}}">← {{- i18n "prev_page" -}}</a>
-        {{- end -}}
-
-        {{- if $paginator.HasNext -}}
-        <a class="btn btn-next" href="{{- $paginator.Next.URL -}}">{{- i18n "next_page" -}} →</a>
-        {{- end -}}
-    </nav>
+{{- if gt $paginator.TotalPages 1 -}}
+<nav class="pager">
+    {{- if $paginator.HasPrev -}}
+    <a class="btn" href="{{- $paginator.Prev.URL -}}">← {{- i18n "prev_page" | default "Previous Page" -}}</a>
     {{- end -}}
+
+    {{- if $paginator.HasNext -}}
+    <a class="btn btn-next" href="{{- $paginator.Next.URL -}}">{{- i18n "next_page" | default "Next Page" -}} →</a>
+    {{- end -}}
+</nav>
+{{- end -}}
+
 
 {{- end -}}
