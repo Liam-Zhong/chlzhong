@@ -4,6 +4,7 @@
 @font-face {
   font-family: "Kai Tuffy";
   font-weight: 400;
+  font-display: swap;
   src: url("/fonts/Tuffy-Kai.woff2") format("woff2");
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF, U+2014, U+2018-2019, U+201C-201D;
 }
@@ -32,42 +33,56 @@
   src: local("Georgia Bold"), local("Georgia-Bold");
 }
 
+/* ---------- 页面转场（跨页面 View Transitions） ---------- */
 @view-transition {
   navigation: auto;
 }
 
+/* 页脚在翻页时保持不动，不跟着淡入淡出。
+   注意：不要给 .site-header 加 view-transition-name，
+   否则手机上 position: fixed 的全屏菜单会被困在页眉里。 */
+.site-footer {
+  view-transition-name: site-footer;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.25s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
 /* ---------- 变量 ---------- */
+/* 深浅两套颜色用 light-dark() 合并，依赖下面的 color-scheme（由 html.dark 切换）。
+   --bg-light 由 head.html 根据 Hugo 的 color 参数覆盖，默认亚麻色。 */
 :root {
+  color-scheme: light;
+
   --w: 744px;
-  --bg: #f8f1e3;
-  --fg: #000;
-  --text: rgb(91 70 54);
-  --heading: #171717;
-  --muted: #888;
-  --line: #e5e5e5;
-  --panel: rgb(0 0 0 / 3%);
-  --panel-hover: rgb(0 0 0 / 6%);
+  --bg-light: #f8f1e3;
+  --bg: light-dark(var(--bg-light), #252422);
+  --fg: light-dark(#000, #fff);
+  --text: light-dark(rgb(91 70 54), #d1d5db);
+  --heading: light-dark(#171717, #fff);
+  --muted: light-dark(#888, #a3a3a3);
+  --line: light-dark(#e5e5e5, #404040);
+  --panel: light-dark(rgb(0 0 0 / 3%), rgb(255 255 255 / 8%));
+  --panel-hover: light-dark(rgb(0 0 0 / 6%), rgb(255 255 255 / 12%));
   --highlight: rgb(234 189 87 / 70%);
-  --code-bg: #262626;
-  --btn-bg: #000;
-  --btn-fg: #fff;
+  --code-bg: light-dark(#262626, rgb(0 0 0 / 50%));
+  --btn-bg: light-dark(#000, #fff);
+  --btn-fg: light-dark(#fff, #000);
   --zh: "Songti TC","Blog-Serif-TC","Kai Tuffy", "Noto Serif CJK SC", serif;
   --latin: "Iowan Old Style","Latin Serif", Georgia, "Noto Serif";
   --latin-bold: "Iowan Old Style","Latin Serif Bold", Georgia, "Noto Serif";
 }
 
 html.dark {
-  --bg: #252422;
-  --fg: #fff;
-  --text: #d1d5db;
-  --heading: #fff;
-  --muted: #a3a3a3;
-  --line: #404040;
-  --panel: rgb(255 255 255 / 8%);
-  --panel-hover: rgb(255 255 255 / 12%);
-  --code-bg: rgb(0 0 0 / 50%);
-  --btn-bg: #fff;
-  --btn-fg: #000;
+  color-scheme: dark;
 }
 
 /* ---------- 基础 ---------- */
@@ -78,7 +93,11 @@ html.dark {
 }
 
 html {
-  overflow-y: scroll;
+  /* html 自己带底色：Safari 取色、橡皮筋回弹、theme-color 同步都更可靠 */
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scrollbar-gutter: stable;
 }
 
 html.open {
@@ -92,6 +111,11 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+
+  /* 中文排版：中英文自动间距、标点悬挂（仅 Safari）、严格断行；不支持的浏览器自动忽略 */
+  text-autospace: normal;
+  hanging-punctuation: first allow-end;
+  line-break: strict;
 }
 
 img {
@@ -117,11 +141,38 @@ ol {
   background: #bfb5a3;
 }
 
+:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 3px;
+}
+
 /* 拉丁字母片段，由 Go 处理器包裹 */
 .latin {
   font-family: var(--latin);
   font-weight: 400;
   font-synthesis: none;
+}
+
+/* ---------- 阅读进度线（滚动驱动动画，仅文章页） ---------- */
+@supports (animation-timeline: scroll()) {
+  body:has(article):not(:has(.post-item))::before {
+    content: "";
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 60;
+    height: 2px;
+    background: var(--highlight);
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    animation: read-progress linear both;
+    animation-timeline: scroll(root);
+  }
+
+  @keyframes read-progress {
+    to {
+      transform: scaleX(1);
+    }
+  }
 }
 
 /* ---------- 页眉 ---------- */
@@ -131,7 +182,7 @@ ol {
   height: 60px;
   max-width: var(--w);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 max(24px, env(safe-area-inset-right)) 0 max(24px, env(safe-area-inset-left));
   white-space: nowrap;
 }
 
@@ -146,6 +197,17 @@ ol {
 .site-title {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+/* 两个按钮现在是 <button>，先重置浏览器默认样式 */
+.btn-dark,
+.btn-menu {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .btn-dark {
@@ -173,6 +235,7 @@ html.dark .btn-dark {
   width: 72px;
   height: 72px;
   margin-right: -24px;
+  background: none;
   cursor: pointer;
 }
 
@@ -195,24 +258,31 @@ html.open .btn-menu::after {
   transform: translateY(-6px) rotate(-45deg);
 }
 
+/* 手机全屏菜单：用 transform 动画（不触发布局），
+   收起时 visibility: hidden，里面的链接不会被 Tab 聚焦到 */
 .nav-wrapper {
   position: fixed;
-  top: 100%;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 40;
   height: 100%;
-  padding-bottom: 64px;
+  padding-bottom: calc(64px + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--bg);
+  -webkit-user-select: none;
   user-select: none;
-  transition: top 0.2s ease-out;
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: transform 0.2s ease-out, visibility 0s 0.2s;
 }
 
 html.open .nav-wrapper {
-  top: 0;
+  transform: none;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .menu a {
@@ -256,6 +326,8 @@ html.dark .social {
       height: auto;
       padding: 0;
       background: none;
+      transform: none;
+      visibility: visible;
       transition: none;
   }
 
@@ -288,7 +360,7 @@ html.dark .social {
   height: 60px;
   max-width: var(--w);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 max(24px, env(safe-area-inset-right)) 0 max(24px, env(safe-area-inset-left));
   font-size: 12px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -306,9 +378,10 @@ html.dark .social {
 /* ---------- 主体 ---------- */
 .main {
   min-height: calc(100vh - 144px);
+  min-height: calc(100svh - 144px); /* 手机地址栏伸缩时不跳动 */
   max-width: var(--w);
   margin: 0 auto;
-  padding: 32px 24px 40px;
+  padding: 32px max(24px, env(safe-area-inset-right)) 40px max(24px, env(safe-area-inset-left));
 }
 
 article {
@@ -708,6 +781,13 @@ figcaption {
   color: transparent;
 }
 
+/* 列表卡片整块悬停反馈：.cover 铺满整个条目，悬停时标题出现下划线 */
+.post-item:has(.cover:hover) h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 /* ---------- 首页个人信息 ---------- */
 .profile {
   display: flex;
@@ -807,4 +887,18 @@ html.dark .profile .avatar {
 .mermaid svg {
   display: block;
   margin: auto;
+}
+
+/* ---------- 减少动态效果 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .profile .avatar img:hover {
+    animation: none;
+  }
+
+  .nav-wrapper,
+  .btn-menu::before,
+  .btn-menu::after,
+  .btn {
+    transition-duration: 0.01ms;
+  }
 }

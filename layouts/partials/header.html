@@ -4,18 +4,24 @@
 
       {{- $bg_icon := resources.Get "images/theme.svg" -}}
 
-      <div
+      <button
           class="btn-dark"
-          role="button"
-          aria-label="Dark"
+          type="button"
+          aria-label="切换深色模式"
           style="--icon: url('{{ if $bg_icon }}{{ $bg_icon.Permalink }}{{ end }}')"
-      ></div>
+      ></button>
   </div>
 
-  <div class="btn-menu" role="button" aria-label="Menu"></div>
+  <button
+      class="btn-menu"
+      type="button"
+      aria-label="菜单"
+      aria-expanded="false"
+      aria-controls="site-nav"
+  ></button>
 
   <script>
-      // base
+      // base（root / setDark 已在 head.html 中定义）
       const htmlClass = document.documentElement.classList;
 
       setTimeout(() => {
@@ -25,44 +31,35 @@
       // mobile menu
       const btnMenu = document.querySelector('.btn-menu');
 
-      btnMenu.addEventListener('click', () => {
-          htmlClass.toggle('open');
-      });
-
-      // dark theme
-      const metaTheme = document.querySelector('meta[name="theme-color"]');
-      const lightBg = '{{- $.Scratch.Get "bg_color" -}}'.replace(/"/g, '');
-
-      const setDark = (isDark) => {
-          metaTheme.setAttribute('content', isDark ? 'rgb(0 0 0 / 85%)' : lightBg);
-          htmlClass[isDark ? 'add' : 'remove']('dark');
-          localStorage.setItem('dark', isDark);
+      const setMenu = (open) => {
+          htmlClass.toggle('open', open);
+          btnMenu.setAttribute('aria-expanded', open);
       };
 
-      // init
-      const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-      if (htmlClass.contains('dark')) {
-          setDark(true);
-      } else {
-          const darkVal = localStorage.getItem('dark');
-          setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
-      }
-
-      // listen system
-      darkScheme.addEventListener('change', (event) => {
-          setDark(event.matches);
+      btnMenu.addEventListener('click', () => {
+          setMenu(!htmlClass.contains('open'));
       });
 
-      // manual switch
+      addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') setMenu(false);
+      });
+
+      // manual dark switch（支持的浏览器用 View Transition 做渐变）
       const btnDark = document.querySelector('.btn-dark');
+      const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
       btnDark.addEventListener('click', () => {
-          setDark(localStorage.getItem('dark') !== 'true');
+          const toggle = () => setDark(!htmlClass.contains('dark'));
+
+          if (document.startViewTransition && !reduceMotion.matches) {
+              document.startViewTransition(toggle);
+          } else {
+              toggle();
+          }
       });
   </script>
 
-  <div class="nav-wrapper">
+  <div class="nav-wrapper" id="site-nav">
       {{- with site.Menus.main -}}
       <nav class="menu">
           {{- range . -}}

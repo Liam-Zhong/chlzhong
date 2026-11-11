@@ -1,9 +1,8 @@
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
   />
 
   <!-- title -->
@@ -36,8 +35,36 @@
   {{- $css := slice $main $custom | resources.Concat "css/main.css" | minify -}}
 
   <style>
-      {{- $css.Content | safeCSS -}}
+      {{- $css.Content | safeCSS }}
+      :root{--bg-light:{{- $.Scratch.Get "bg_color" | safeCSS -}}}
   </style>
+
+  <!-- theme: 放在 head 里、样式之后，首屏渲染前就确定深浅色，避免闪烁 -->
+  <script>
+      const root = document.documentElement;
+      const metaTheme = document.querySelector('meta[name="theme-color"]');
+      const scheme = matchMedia('(prefers-color-scheme: dark)');
+
+      const setDark = (isDark) => {
+          root.classList.toggle('dark', isDark);
+          // 直接读取页面实际背景色，theme-color 永远与 CSS 一致
+          metaTheme.setAttribute('content', getComputedStyle(root).backgroundColor);
+          try {
+              localStorage.setItem('dark', isDark);
+          } catch (e) {}
+      };
+
+      let savedDark = null;
+      try {
+          savedDark = localStorage.getItem('dark');
+      } catch (e) {}
+
+      setDark(savedDark ? savedDark === 'true' : scheme.matches);
+
+      scheme.addEventListener('change', (event) => {
+          setDark(event.matches);
+      });
+  </script>
 
   <!-- dark icon -->
   {{- $dark_icon := resources.Get "images/theme.png" -}}
