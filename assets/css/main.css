@@ -312,11 +312,11 @@ html.dark .social {
   margin: 0 auto;
   padding: 32px 24px 40px;
 }
-@mrdia (max-width: 1023px) {
- .main {
-   min-height: calc(100vh - 52px);
-   min-height: calc(100svh - 52px));
- }
+@media (max-width: 1023px) {
+  .main {
+    min-height: calc(100vh - 40px);
+    min-height: calc(100svh - 40px);
+  }
 }
 article {
   font-size: 1.25rem;
