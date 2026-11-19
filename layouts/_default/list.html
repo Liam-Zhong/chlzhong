@@ -1,0 +1,65 @@
+{{- define "main" -}}
+
+    {{- if and .Title (eq .Type "tags") -}}
+    <h1 class="tag-title">#{{- .Title -}}</h1>
+    {{- end -}}
+
+    {{- $pages := union .RegularPages .Sections -}}
+    {{- if .IsHome -}}
+        {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections -}}
+    {{- end -}}
+
+    {{- $paginator := .Paginate $pages -}}
+    {{- range $index, $page := $paginator.Pages -}}
+
+        {{- if and $.IsHome (eq $index 0) -}}
+            {{- $avatar_url := $.Scratch.Get "avatar_url" -}}
+            {{- if or $avatar_url site.Params.name -}}
+            <div class="profile">
+                {{- if $avatar_url -}}
+                <div class="avatar">
+                    <img src="{{- $avatar_url -}}" alt="{{- site.Params.name | default site.Title -}}"
+                         width="160"
+                         height="160"
+                         fetchpriority="high"
+                         loading="eager"
+                    />
+                </div>
+                {{- end -}}
+                
+                {{- if site.Params.name -}}
+                <div>
+                    <div class="profile-name">{{- site.Params.name -}}</div>
+                    <div class="profile-bio">{{- site.Params.bio | default (print `A personal blog by ` site.Params.name) -}}</div>
+                </div>
+                {{- end -}}
+            </div>
+            {{- end -}}
+        {{- end -}}
+
+        <section class="post-item">
+            {{- if gt .Weight 0 -}}
+            <span class="featured">Featured</span>
+            {{- end -}}
+
+            <h2>{{- .Title -}}</h2>
+            <time class="list-date">{{- .Date | time.Format ":date_medium" -}}</time>
+            <a class="cover" href="{{- .Permalink -}}">{{- .Title -}}</a>
+        </section>
+
+    {{- end -}}
+
+{{- if gt $paginator.TotalPages 1 -}}
+<nav class="pager">
+    {{- if $paginator.HasPrev -}}
+    <a class="btn" href="{{- $paginator.Prev.URL -}}">← {{- i18n "prev_page" | default "Prev Page" -}}</a>
+    {{- end -}}
+
+    {{- if $paginator.HasNext -}}
+    <a class="btn btn-next" href="{{- $paginator.Next.URL -}}">{{- i18n "next_page" | default "Next Page" -}} →</a>
+    {{- end -}}
+</nav>
+{{- end -}}
+
+
+{{- end -}}

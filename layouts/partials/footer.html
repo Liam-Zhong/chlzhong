@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="copyright">
+      {{- with site.Copyright -}}
+          {{ . }}
+      {{- else -}}
+          &copy; {{ now.Year }} <a href="{{- `` | absURL -}}">{{- site.Title -}}</a>
+      {{- end -}}
+  </div>
+
+  <a class="credit" href="https://gohugo.io/" rel="noopener" target="_blank">powered by Hugo</a>
+</footer>

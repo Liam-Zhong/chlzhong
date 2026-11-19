@@ -1,0 +1,90 @@
+<header class="site-header">
+    <div class="brand">
+        <a class="site-title" href="{{- `` | absURL -}}">{{ site.Title }}</a>
+  
+        {{- $bg_icon := resources.Get "images/theme.svg" -}}
+  
+        <div
+            class="btn-dark"
+            role="button"
+            aria-label="Dark"
+            {{ if $bg_icon }}style="{{ printf "--icon: url('data:image/svg+xml;base64,%s')" ($bg_icon.Content | base64Encode) | safeCSS }}"{{ end }}
+        ></div>
+    </div>
+  
+    <div class="btn-menu" role="button" aria-label="Menu"></div>
+  
+    <script>
+        // base
+        const htmlClass = document.documentElement.classList;
+  
+        setTimeout(() => {
+            htmlClass.remove('not-ready');
+        }, 10);
+  
+        // mobile menu
+        const btnMenu = document.querySelector('.btn-menu');
+  
+        btnMenu.addEventListener('click', () => {
+            htmlClass.toggle('open');
+        });
+  
+        // dark theme
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = '{{- $.Scratch.Get "bg_color" -}}'.replace(/"/g, '');
+  
+        const setDark = (isDark) => {
+            metaTheme.setAttribute('content', isDark ? 'rgb(0 0 0 / 85%)' : lightBg);
+            htmlClass[isDark ? 'add' : 'remove']('dark');
+            localStorage.setItem('dark', isDark);
+        };
+  
+        // init
+        const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  
+        if (htmlClass.contains('dark')) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem('dark');
+            setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+        }
+  
+        // listen system
+        darkScheme.addEventListener('change', (event) => {
+            setDark(event.matches);
+        });
+  
+        // manual switch
+        const btnDark = document.querySelector('.btn-dark');
+  
+        btnDark.addEventListener('click', () => {
+            setDark(localStorage.getItem('dark') !== 'true');
+        });
+    </script>
+  
+    <div class="nav-wrapper">
+        {{- with site.Menus.main -}}
+        <nav class="menu">
+            {{- range . -}}
+            <a href="{{- .URL -}}">{{- .Name -}}</a>
+            {{- end -}}
+        </nav>
+        {{- end -}}
+  
+        {{- with $.Scratch.Get "social_list" -}}
+        <nav class="social">
+            {{- range . -}}
+            {{- $icon := resources.Get (printf "icons/%s.svg" .) -}}
+  
+            <a
+                {{ if $icon }}style="{{ printf "--url: url('data:image/svg+xml;base64,%s')" ($icon.Content | base64Encode) | safeCSS }}"{{ end }}
+                href="{{- if eq . `rss` -}}{{- `index.xml` | absURL -}}{{- else if eq . `mastodon` -}}{{- index site.Params . -}}{{- else -}}{{- if eq . `threads` -}}https://threads.net/{{- else if eq . `bluesky` -}}https://bsky.app/profile/{{- else -}}https://{{- . -}}.com/{{- end -}}{{- if eq . `linkedin` -}}in/{{- end -}}{{- index site.Params . -}}{{- end -}}"
+                target="_blank"
+                rel="{{- if eq . `rss` -}}alternate{{- else -}}me{{- end -}}"
+            >{{- . -}}</a>
+  
+            {{- end -}}
+        </nav>
+        {{- end -}}
+    </div>
+  </header>
